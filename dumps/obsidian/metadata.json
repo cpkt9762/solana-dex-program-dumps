@@ -1,0 +1,16 @@
+{
+  "name": "obsidian",
+  "program_id": "HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "6mcBm5FaVN41Mah1owk5zARZHWW9p3GhbRms9vPGCvVC",
+  "sha256": "ae9105b3537df3de56d8636b16a56e5c5480cc0af0fd8f88337509e5f3cdc0b0",
+  "size": 194520,
+  "onchain_sha256": "e8dbda4ae9c512fc9414e3188af534b7d39857c676943cefc80b69ba99e8476a",
+  "onchain_size": 194840,
+  "last_deployed_slot": 459988613,
+  "upgrade_authority": "6iqLgPtKrpmJaXrAU8HmmcEWk9FVqsTZ2GF3eKD39xew",
+  "collected_at": "2026-10-24T18:12:26Z",
+  "previous_slot": null,
+  "release_tag": "obsidian-459988613",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/obsidian-459988613/obsidian-459988613.so"
+}

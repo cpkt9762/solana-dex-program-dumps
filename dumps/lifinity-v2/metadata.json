@@ -1,0 +1,16 @@
+{
+  "name": "lifinity-v2",
+  "program_id": "2wT8Yq49kHgDzXuPxZSaeLaH1qbmGXtEyPy64bL7aD3c",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "FbuWvxNXqC9wpu2TZufhjKWKfPdd2cNH3StqpN2DrMSS",
+  "sha256": "4a3ba0c81807f08108c8a933ea3efffac41bbea77c6de630bc4ed356a07dd97e",
+  "size": 530864,
+  "onchain_sha256": "935506ba18f82df328d7a9c722cefd440a72e9e5e16a6da9c48eacf5a84793c7",
+  "onchain_size": 1147888,
+  "last_deployed_slot": 388386900,
+  "upgrade_authority": "2i4PUSybSF8V7KuYd9EUvj2BKAXMq2LNEax8M6Y9snoj",
+  "collected_at": "2026-10-24T18:09:59Z",
+  "previous_slot": null,
+  "release_tag": "lifinity-v2-388386900",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/lifinity-v2-388386900/lifinity-v2-388386900.so"
+}

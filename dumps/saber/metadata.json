@@ -1,0 +1,16 @@
+{
+  "name": "saber",
+  "program_id": "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "54aePuBcYcf8G3CDrWWd2MEiw6Q7UGy2kjgQBDhqoMdt",
+  "sha256": "eeacf0770556dabc19c0c5e11e3f3d743367e200781bdc3d9d1c5b49c2ca6992",
+  "size": 217192,
+  "onchain_sha256": "383f720f2e0d47ce616dfda2f9f263ccd83fc6d38a2629b472dcbfad9dfb4504",
+  "onchain_size": 609792,
+  "last_deployed_slot": 119721738,
+  "upgrade_authority": "EVmbDJCTGeExFGUKxmZwrfnzw4zpf7SPhPgfiLDJkUEV",
+  "collected_at": "2026-10-24T18:08:48Z",
+  "previous_slot": null,
+  "release_tag": "saber-119721738",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saber-119721738/saber-119721738.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "drift-v2",
+  "program_id": "dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "7dLgmtcTavcguNoynVimF9ZNVb13FvhXVRfj2HyrDGaP",
+  "sha256": "a1e3e0edce6f3ef14bf9e0f8fc1501e88c5f8bb991100b2bf3f181d28fbb5177",
+  "size": 193728,
+  "onchain_sha256": "8fd1059e0de70ab1e8c8939d5b12a5a1195c713ce7c894c0ae946d24131c4b3c",
+  "onchain_size": 6673069,
+  "last_deployed_slot": 429731225,
+  "upgrade_authority": "8jj7zJgdr5bDndc7evM74FMGwzLPmd4u4QxNzFi1BMai",
+  "collected_at": "2026-10-24T18:11:29Z",
+  "previous_slot": null,
+  "release_tag": "drift-v2-429731225",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/drift-v2-429731225/drift-v2-429731225.so"
+}

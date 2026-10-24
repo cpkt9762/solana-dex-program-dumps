@@ -1,0 +1,16 @@
+{
+  "name": "humidifi",
+  "program_id": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "G9S64i58RRWJA28vZiNhnP56Ux4Ef7hfMgHNREnZZSom",
+  "sha256": "7a012f408fee971c9ec66486eecd8715a8bbbab998d4394fb0aac0a00714282e",
+  "size": 391200,
+  "onchain_sha256": "47b5937d5b1f47763503ca0337f998b2c7e6a5b029b19112b9520e5c187a23af",
+  "onchain_size": 393696,
+  "last_deployed_slot": 458946555,
+  "upgrade_authority": "FMP7rvAsrs69YKBsaqgbB5mpnWrimNM8LNDfHLEzngLA",
+  "collected_at": "2026-10-24T18:10:11Z",
+  "previous_slot": null,
+  "release_tag": "humidifi-458946555",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/humidifi-458946555/humidifi-458946555.so"
+}

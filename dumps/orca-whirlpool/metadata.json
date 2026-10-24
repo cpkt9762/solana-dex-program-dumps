@@ -1,0 +1,16 @@
+{
+  "name": "orca-whirlpool",
+  "program_id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "CtXfPzz36dH5Ws4UYKZvrQ1Xqzn42ecDW6y8NKuiN8nD",
+  "sha256": "94da79f11a6c57646c7483cbee37dbb135d91dbe4c2a6200e3ef24f4ca776273",
+  "size": 1495896,
+  "onchain_sha256": "c422b22f3eefe86dd55878a4f505b9c68c26e241dc96af1573ca032b24b8ee3f",
+  "onchain_size": 10485715,
+  "last_deployed_slot": 457152296,
+  "upgrade_authority": "GwH3Hiv5mACLX3ufTw1pFsrhSPon5tdw252DBs4Rx4PV",
+  "collected_at": "2026-10-24T18:08:09Z",
+  "previous_slot": null,
+  "release_tag": "orca-whirlpool-457152296",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-whirlpool-457152296/orca-whirlpool-457152296.so"
+}

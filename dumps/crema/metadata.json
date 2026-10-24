@@ -1,0 +1,16 @@
+{
+  "name": "crema",
+  "program_id": "CLMM9tUoggJu2wagPkkqs9eFG4BWhVBZWkP1qv3Sp7tR",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "57uurAYB33adABQ2yTvSBdhNV8jChDs6yqkxwur4Svgd",
+  "sha256": "5a086ad2a968c86ef6381895212b2a40f097b9a2adcd87a675a54b0410b71e3b",
+  "size": 1162504,
+  "onchain_sha256": "c915abcd179507f611b7dd4d1fdf7c640c7cf443824f61738ae8b6ccfc029034",
+  "onchain_size": 2246688,
+  "last_deployed_slot": 169658954,
+  "upgrade_authority": "DR1tLcKEmiNFxF5dxgdWCANdeBMNu9FjuHur2i4vAPHV",
+  "collected_at": "2026-10-24T18:09:00Z",
+  "previous_slot": null,
+  "release_tag": "crema-169658954",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/crema-169658954/crema-169658954.so"
+}

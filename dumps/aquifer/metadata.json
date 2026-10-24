@@ -1,0 +1,16 @@
+{
+  "name": "aquifer",
+  "program_id": "AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "GrHYWjuGETV5pZgUZLfzvvQEugYk6SutwHUPxFjrHda6",
+  "sha256": "eee40542e99b2debef3860afe98b08e2bf7d293deefa712ee9453898ab903d2d",
+  "size": 618944,
+  "onchain_sha256": "c5845172e87bbffc641741ce176b8ec6564df76569e3bf277e52b125d4a7c5ad",
+  "onchain_size": 627480,
+  "last_deployed_slot": 459979090,
+  "upgrade_authority": "8pJhHxPQRiUGdtVSCNPyP9AH994zeyYEBGb5yZRzheSA",
+  "collected_at": "2026-10-24T18:12:09Z",
+  "previous_slot": null,
+  "release_tag": "aquifer-459979090",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aquifer-459979090/aquifer-459979090.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "saros-dlmm",
+  "program_id": "1qbkdrr3z4ryLA7pZykqxvxWPoeifcVKo6ZG9CfkvVE",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "33MJjVPagsAkw1Vquuv7rEcr8xGRNWpWTFXHfokzpEwC",
+  "sha256": "2af807547c9a91c75a926ad13e6d03541cf3a0155a3a710f0ca799fd629e6aa1",
+  "size": 723064,
+  "onchain_sha256": "fe5b8e318e3ce1aaf742715103a374c6842cc99b446039e9ba1205eedf4ab2aa",
+  "onchain_size": 743104,
+  "last_deployed_slot": 376317878,
+  "upgrade_authority": "dhEHT7iMcdULiRwufAG9E6y2F4eSRH5gJiAowhksDq2",
+  "collected_at": "2026-10-24T18:09:09Z",
+  "previous_slot": null,
+  "release_tag": "saros-dlmm-376317878",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saros-dlmm-376317878/saros-dlmm-376317878.so"
+}

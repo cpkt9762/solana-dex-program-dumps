@@ -1,0 +1,16 @@
+{
+  "name": "goosefx-gamma",
+  "program_id": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "Air78V3qbU1gbfZkonWPHM8u81GQsX8trLMdFJKEB3Vf",
+  "sha256": "90a39fa741d4ecdf99f1ffae41f0395aba74c95769d2545620e088c71a2fdf50",
+  "size": 875912,
+  "onchain_sha256": "e9a477e3b533ab7d3fe1099afc7498cd055e5ad94afb922374e634d27f75d1e0",
+  "onchain_size": 1227998,
+  "last_deployed_slot": 365080322,
+  "upgrade_authority": "9QcHinaHcJFdzSHeiF1yGchcuQk3qPFNV13q6dZJbAny",
+  "collected_at": "2026-10-24T18:11:12Z",
+  "previous_slot": null,
+  "release_tag": "goosefx-gamma-365080322",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/goosefx-gamma-365080322/goosefx-gamma-365080322.so"
+}

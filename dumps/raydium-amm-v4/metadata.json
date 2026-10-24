@@ -1,0 +1,16 @@
+{
+  "name": "raydium-amm-v4",
+  "program_id": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "A7ZG7ByDi8DpzT9Ab7CiXhvgYTJQmaDPJkMDoPitaCQV",
+  "sha256": "3849aece6fee86df0090d2824396f29220b5948da34d2ab5c7167655684a6467",
+  "size": 308616,
+  "onchain_sha256": "3bcf0828cf38e5f703adbf31dc1bf81f0a1254dcb176ca950ae52231c20e6d14",
+  "onchain_size": 1406384,
+  "last_deployed_slot": 445763204,
+  "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
+  "collected_at": "2026-10-24T18:07:51Z",
+  "previous_slot": null,
+  "release_tag": "raydium-amm-v4-445763204",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-amm-v4-445763204/raydium-amm-v4-445763204.so"
+}

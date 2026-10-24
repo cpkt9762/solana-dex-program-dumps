@@ -1,0 +1,16 @@
+{
+  "name": "quantum",
+  "program_id": "QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "7mcuRHpxz7umw9qi11ZybbiDtQu9AjWMb563Yrnam6BW",
+  "sha256": "54aaea3c137c3fb996e3b8804f2206fc85320ca357184046d14562b57a5b7482",
+  "size": 162088,
+  "onchain_sha256": "ffded97d1f6eaa69e3fd1fcd923a7bca97c724fb814a33cb4113a32841613e2b",
+  "onchain_size": 164992,
+  "last_deployed_slot": 460086125,
+  "upgrade_authority": "qtSTQb8FwK27pGSJMUXE3vqAN8doEVWAbvSxUPQhCCg",
+  "collected_at": "2026-10-24T18:12:18Z",
+  "previous_slot": null,
+  "release_tag": "quantum-460086125",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/quantum-460086125/quantum-460086125.so"
+}

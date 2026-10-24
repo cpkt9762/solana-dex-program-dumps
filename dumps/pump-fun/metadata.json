@@ -1,0 +1,16 @@
+{
+  "name": "pump-fun",
+  "program_id": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "B5MvUwXdiW1NMM6QFFD3ssPKBujD4zMohncbM73Z2BQu",
+  "sha256": "05249b60f8ddf02a53d0f8a43980fde40cce33f73526355b4ef08e292279819f",
+  "size": 1934800,
+  "onchain_sha256": "7a19affaa2c6187e04a5fe0ea298cee81fa5eb8c24cfcc30d85f615e89f7b02d",
+  "onchain_size": 10485715,
+  "last_deployed_slot": 458921440,
+  "upgrade_authority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+  "collected_at": "2026-10-24T18:09:43Z",
+  "previous_slot": null,
+  "release_tag": "pump-fun-458921440",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pump-fun-458921440/pump-fun-458921440.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "woofi",
+  "program_id": "WooFif76YGRNjk1pA8wCsN67aQsD9f9iLsz4NcJ1AVb",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "3WAW7dmVgGqJkhaGQxMSvWA7F5YB8d3v69YouxH13yqB",
+  "sha256": "7fab739a7f3334fb57f961fc5038081a89f1f0c75452ab43bdf6c9fff68467a0",
+  "size": 612592,
+  "onchain_sha256": "7fab739a7f3334fb57f961fc5038081a89f1f0c75452ab43bdf6c9fff68467a0",
+  "onchain_size": 612592,
+  "last_deployed_slot": 323166452,
+  "upgrade_authority": "4CSTppsJaFW41Kxh41qdfCQwZy4wf9efxyENqBvvkGoq",
+  "collected_at": "2026-10-24T18:10:07Z",
+  "previous_slot": null,
+  "release_tag": "woofi-323166452",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/woofi-323166452/woofi-323166452.so"
+}

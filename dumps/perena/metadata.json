@@ -1,0 +1,16 @@
+{
+  "name": "perena",
+  "program_id": "NUMERUNsFCP3kuNmWZuXtm1AaQCPj9uw6Guv2Ekoi5P",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "64h2hsxpnUprJu87bwH7HcYxoVtbidw95bZ7m5JTXGp",
+  "sha256": "177325c4ccc46e85c4584a10d6c7a7d15fd83d9f5949bbe554e45570227e8775",
+  "size": 1096808,
+  "onchain_sha256": "f45357b0b8273edacf1ca3f497edf7c7a008fc3896de4f477d6a9bf9e31f5e04",
+  "onchain_size": 1100691,
+  "last_deployed_slot": 329553166,
+  "upgrade_authority": "CPJo7euWKrEETLmGJsctRnrXxbikFsb6KLN59moNN88K",
+  "collected_at": "2026-10-24T18:09:17Z",
+  "previous_slot": null,
+  "release_tag": "perena-329553166",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/perena-329553166/perena-329553166.so"
+}

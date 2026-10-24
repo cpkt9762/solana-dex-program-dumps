@@ -1,0 +1,16 @@
+{
+  "name": "mercurial",
+  "program_id": "MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "EZYY79WaLDRRQKAzd9vdjYsZMne3G6B9o2Yg43AezP8n",
+  "sha256": "44bae35cb7e8c5bd829145fd29f7433651ea26956cef9799082074fdbd510305",
+  "size": 199592,
+  "onchain_sha256": "c2f985f87621e69d329fb3c1e60c5bfe5cdb87c361dbd88097f213aef76790ae",
+  "onchain_size": 437360,
+  "last_deployed_slot": 100141975,
+  "upgrade_authority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+  "collected_at": "2026-10-24T18:10:55Z",
+  "previous_slot": null,
+  "release_tag": "mercurial-100141975",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/mercurial-100141975/mercurial-100141975.so"
+}

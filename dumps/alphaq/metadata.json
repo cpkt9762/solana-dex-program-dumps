@@ -1,0 +1,16 @@
+{
+  "name": "alphaq",
+  "program_id": "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "BVSfZyEjqJsfcGn5qq1VKhxSCJ7JCR2ypFXsXY8yUdRK",
+  "sha256": "3192a190b0aa4ade360844924118cebd47a5479b26658764ae285362f2ede6d0",
+  "size": 277976,
+  "onchain_sha256": "3d7bc173c67ba1858eacc69b5c504af8e160dbd38aea93779c3c65b6b011d877",
+  "onchain_size": 500000,
+  "last_deployed_slot": 422791798,
+  "upgrade_authority": "H2mDaMYkYAkZxZy8ByTjU13yputt7ScyGQwVtCyj8TMA",
+  "collected_at": "2026-10-24T18:12:14Z",
+  "previous_slot": null,
+  "release_tag": "alphaq-422791798",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/alphaq-422791798/alphaq-422791798.so"
+}

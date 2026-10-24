@@ -1,0 +1,16 @@
+{
+  "name": "saros-amm",
+  "program_id": "SSwapUtytfBdBn1b9NUGG6foMVPtcWgpRU32HToDUZr",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "41UWGh9BaHWek7QY7uozoARUnUTx5hDSUi8wrMNnpSZX",
+  "sha256": "a7fdf48428a321ba10698d691895de0dfefe2c8682ac33cdfb02ce4a1437a150",
+  "size": 213032,
+  "onchain_sha256": "ab4b070bdb09c47a310f5bbbcec93444c3f3c1bb720096497dd2ff0694e641bd",
+  "onchain_size": 561296,
+  "last_deployed_slot": 379101676,
+  "upgrade_authority": "dhEHT7iMcdULiRwufAG9E6y2F4eSRH5gJiAowhksDq2",
+  "collected_at": "2026-10-24T18:09:13Z",
+  "previous_slot": null,
+  "release_tag": "saros-amm-379101676",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saros-amm-379101676/saros-amm-379101676.so"
+}

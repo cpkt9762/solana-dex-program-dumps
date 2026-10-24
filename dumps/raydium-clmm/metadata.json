@@ -1,0 +1,16 @@
+{
+  "name": "raydium-clmm",
+  "program_id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "HzD2cCXXT3UQNjMMY6kDv9w6gZ9qquSdfoGXrLL3LXx",
+  "sha256": "5409ba8fb81f957149f1a3d203140ce65d62acf45695ffe0ac9bfaf7f6d95cc2",
+  "size": 1498416,
+  "onchain_sha256": "e9ae00f7bdfa3b104595e68b3e328d108029e16af3ba4fb1f3968210178ffc5c",
+  "onchain_size": 1700160,
+  "last_deployed_slot": 459932378,
+  "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
+  "collected_at": "2026-10-24T18:08:00Z",
+  "previous_slot": null,
+  "release_tag": "raydium-clmm-459932378",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-clmm-459932378/raydium-clmm-459932378.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pump-swap",
+  "program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "6naEzKeUuFh1Jeeu51NXQgr5qkXgXtc9WKNct4xynVJc",
+  "sha256": "51a5f6a7fb5a812de7686e593ce6159f6ee59b15771a3d5d37ab661c46d64586",
+  "size": 1268504,
+  "onchain_sha256": "6a7ad34596d83b4c435b32f458a56e718e9f82eb4ad38e4316616d15d24d8ff7",
+  "onchain_size": 10485715,
+  "last_deployed_slot": 458921517,
+  "upgrade_authority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+  "collected_at": "2026-10-24T18:09:47Z",
+  "previous_slot": null,
+  "release_tag": "pump-swap-458921517",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pump-swap-458921517/pump-swap-458921517.so"
+}

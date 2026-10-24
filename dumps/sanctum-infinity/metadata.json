@@ -1,0 +1,16 @@
+{
+  "name": "sanctum-infinity",
+  "program_id": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "ALmAxhSP7TDWGMHWBLjD9qS71YjqxjN1ba6JLRdzdVy",
+  "sha256": "2fd31fca1b93a4911e4937a970aaa2ee06e09d66eff8376b0c551e3bed35f9f7",
+  "size": 158520,
+  "onchain_sha256": "4d11d617b2be14a13cbb859b6a8afb7355e609b0fa14a054c4b127c4b2c93947",
+  "onchain_size": 1037504,
+  "last_deployed_slot": 411884877,
+  "upgrade_authority": "47SND7bGKvNXrqfP1bjsLCbwTgZhFBzAgmZ42QSkRScz",
+  "collected_at": "2026-10-24T18:09:38Z",
+  "previous_slot": null,
+  "release_tag": "sanctum-infinity-411884877",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/sanctum-infinity-411884877/sanctum-infinity-411884877.so"
+}

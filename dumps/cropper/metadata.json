@@ -1,0 +1,16 @@
+{
+  "name": "cropper",
+  "program_id": "H8W3ctz92svYg6mkn1UtGfu2aQr2fnUFHM1RhScEtQDt",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "6xY44Go2bnR9VoVckoE2weNhGxwPwVo6rf7fe4LtW651",
+  "sha256": "600da789e452e9af90ee78bc8be1d1313220cd114f4a2f9c71bd1add47d01261",
+  "size": 992488,
+  "onchain_sha256": "e82e0686e7c793b8d1b08579c7952c4334c535bb5aa9b7d3836cb0297567766c",
+  "onchain_size": 992544,
+  "last_deployed_slot": 264411854,
+  "upgrade_authority": "GXCSMdWB19seZ8ZjELFfkzkfSjgdY1FnatzXGbYahMbv",
+  "collected_at": "2026-10-24T18:11:03Z",
+  "previous_slot": null,
+  "release_tag": "cropper-264411854",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/cropper-264411854/cropper-264411854.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "taurusfi",
+  "program_id": "9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "DRnfKzRHq3gR5McRv3xvGoiXGCKbLvm2ZBYY2VRutLji",
+  "sha256": "aca1671bfdd54fe1de2b7afb977c7687ef14ff3ecbe58a718e8e1ad1a9a50044",
+  "size": 205952,
+  "onchain_sha256": "cc7bff76ea223d72446cd5beb0e83132d5239f29587c4906a6d30bacf59fb334",
+  "onchain_size": 231904,
+  "last_deployed_slot": 459497904,
+  "upgrade_authority": "6kruCyQCPMBXGo89bjDaaJHAtyw75oXevFxZBJsnvzMv",
+  "collected_at": "2026-10-24T18:12:35Z",
+  "previous_slot": null,
+  "release_tag": "taurusfi-459497904",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/taurusfi-459497904/taurusfi-459497904.so"
+}

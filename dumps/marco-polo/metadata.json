@@ -1,0 +1,16 @@
+{
+  "name": "marco-polo",
+  "program_id": "9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "49BfBrR2oseea9w1sbkBupHVEy3v1AXwhRG9ip5homMe",
+  "sha256": "26b54f5b4737f66c6af33d0744262d58db4dec10ca5a599c6555c54abd26b059",
+  "size": 806712,
+  "onchain_sha256": "7dfbabf496199f5fd2ebd8307b640b5302793fbd4ba46d0f4478d875986ca32b",
+  "onchain_size": 1748336,
+  "last_deployed_slot": 232074629,
+  "upgrade_authority": "MaPoNRu6RgbTkE978RYGuaXKobsciLLTDdgL6juqh68",
+  "collected_at": "2026-10-24T18:12:46Z",
+  "previous_slot": null,
+  "release_tag": "marco-polo-232074629",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/marco-polo-232074629/marco-polo-232074629.so"
+}

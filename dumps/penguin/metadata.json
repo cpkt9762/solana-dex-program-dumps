@@ -1,0 +1,16 @@
+{
+  "name": "penguin",
+  "program_id": "PSwapMdSai8tjrEXcxFeQth87xC4rRsa4VA5mhGhXkP",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "2MCSk2AkTAFK4YdaGNahxsiUiG5u7qf8vKqn4zZhYYQt",
+  "sha256": "d11977e133c292901543909e43886a2205bede844600067ffd58283d8e5b4de7",
+  "size": 235528,
+  "onchain_sha256": "93622e51c0582563f50e4e16e9912c3768026fc51c9f741ae2b791dbc33614f6",
+  "onchain_size": 564672,
+  "last_deployed_slot": 161376048,
+  "upgrade_authority": "3M1gJoNCxuw6GBMRatHzCvxwbQMiUZ6VoG22UCjubQZq",
+  "collected_at": "2026-10-24T18:10:30Z",
+  "previous_slot": null,
+  "release_tag": "penguin-161376048",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/penguin-161376048/penguin-161376048.so"
+}

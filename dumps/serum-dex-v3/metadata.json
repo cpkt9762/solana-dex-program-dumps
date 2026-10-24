@@ -1,0 +1,16 @@
+{
+  "name": "serum-dex-v3",
+  "program_id": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "9K32VSPTg4PHY7Hb2QZq26e5CujwMgt8Bqq4kJrp5zp8",
+  "sha256": "61fab2f0b7b829a2b228b3bce8e5f01322e8f45d7b0eb9a74c0372ddffdbaeea",
+  "size": 241088,
+  "onchain_sha256": "078ade55aea60c32e3084c3f56806e097b1bc066c9480d484e51cfd11db88333",
+  "onchain_size": 468896,
+  "last_deployed_slot": 168006653,
+  "upgrade_authority": "8xYs2tGXPayMtgsqs4NuMy7bnWr7DM9tnnkbY2SHVbys",
+  "collected_at": "2026-10-24T18:08:44Z",
+  "previous_slot": null,
+  "release_tag": "serum-dex-v3-168006653",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/serum-dex-v3-168006653/serum-dex-v3-168006653.so"
+}

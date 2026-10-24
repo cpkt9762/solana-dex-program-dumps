@@ -1,0 +1,16 @@
+{
+  "name": "virtuals",
+  "program_id": "5U3EU2ubXtK84QcRjWVmYt9RaDyA8gKxdUrPFXmZyaki",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "FEcgdr8rd9FuBbJAD3WWvejN738Z3nhQPFqbMSkzyJY4",
+  "sha256": "4fb0c085f7a1afb74e2445c70c46c6744b51acc7879d0e86a61c9460342b3a25",
+  "size": 573976,
+  "onchain_sha256": "4fb0c085f7a1afb74e2445c70c46c6744b51acc7879d0e86a61c9460342b3a25",
+  "onchain_size": 573976,
+  "last_deployed_slot": 319985732,
+  "upgrade_authority": "8nkmk4srVWABZe6ZfR1eqBMn1RAnAqFhLPtSWUiVRT14",
+  "collected_at": "2026-10-24T18:09:55Z",
+  "previous_slot": null,
+  "release_tag": "virtuals-319985732",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/virtuals-319985732/virtuals-319985732.so"
+}

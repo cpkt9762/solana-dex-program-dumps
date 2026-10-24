@@ -1,0 +1,16 @@
+{
+  "name": "aldrin-v1",
+  "program_id": "AMM55ShdkoGRB5jVYPjWziwk8m5MpwyDgsMWHaMSQWH6",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "JB8ZTsvtynsHA3swffp8omak2Z5RcnbpxqPaZ121gtzD",
+  "sha256": "fac58719a8f020acc2ef9889cd23df4e1c93dc0be2ed0d57ca3165be7579e85d",
+  "size": 516560,
+  "onchain_sha256": "9116c1d1c87543f57e03e2131ab349b0252203e6ba839d5852ac72ba91cef0ff",
+  "onchain_size": 1184816,
+  "last_deployed_slot": 249613938,
+  "upgrade_authority": "8gXLUDHme93x8Ypiv8vyRVAtVXHNvXssbJs2nV7Np2J7",
+  "collected_at": "2026-10-24T18:10:48Z",
+  "previous_slot": null,
+  "release_tag": "aldrin-v1-249613938",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aldrin-v1-249613938/aldrin-v1-249613938.so"
+}

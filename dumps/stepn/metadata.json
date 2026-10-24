@@ -1,0 +1,16 @@
+{
+  "name": "stepn",
+  "program_id": "Dooar9JkhdZ7J3LHN3A7YCuoGRUggXhQaG4kijfLGU2j",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "DHn89pAKMDwQsQTqkvgT4Sm69opZzQS5nK6pgqazssx2",
+  "sha256": "f764057f44629d4080e54538263ec8a9df965f09a2cab33a3300bf905eaaf490",
+  "size": 194544,
+  "onchain_sha256": "bd4b1920d38a9563b271fbb76a360f8dcc592130af99ecd2e16ceef3e3314b96",
+  "onchain_size": 403616,
+  "last_deployed_slot": 348857285,
+  "upgrade_authority": "5qxZAis4NFW9uMQAhrHBD1Pg8bnbgzi3EVy4wFTv59dG",
+  "collected_at": "2026-10-24T18:10:26Z",
+  "previous_slot": null,
+  "release_tag": "stepn-348857285",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stepn-348857285/stepn-348857285.so"
+}

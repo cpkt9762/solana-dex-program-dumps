@@ -1,0 +1,16 @@
+{
+  "name": "jupiter-perps",
+  "program_id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "C258LjtN8Q928yz2nJe5kwQycckGfWBSrhZBP2mTpLQt",
+  "sha256": "256407815a16b7a647c80962391ce8374c1230579b072ea61b37967efaf9262c",
+  "size": 2602920,
+  "onchain_sha256": "a2891a9277f865eb96feaae67e03cd88efc128d43f6093cc70618ad63cb7d9ba",
+  "onchain_size": 10485715,
+  "last_deployed_slot": 413092478,
+  "upgrade_authority": "5myNNmEmPm3UAnJ2ggLEpnTFb9t9Gk8369wKw6n3uAKx",
+  "collected_at": "2026-10-24T18:11:33Z",
+  "previous_slot": null,
+  "release_tag": "jupiter-perps-413092478",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/jupiter-perps-413092478/jupiter-perps-413092478.so"
+}

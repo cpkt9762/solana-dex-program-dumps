@@ -1,0 +1,16 @@
+{
+  "name": "solfi-v2",
+  "program_id": "SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "H6M3jMJCednoAr7BR9P6versKQmbo5kV3oi8R5JsWNKz",
+  "sha256": "8ab9b7a51db873fe7ce24fb83c5cb2c57e2afecf1a66239605e5eb901371c939",
+  "size": 236288,
+  "onchain_sha256": "1d8503647bd9d4982c5ac333f12c3b803c50dfa241b9e8d087983c1ec28c549b",
+  "onchain_size": 248272,
+  "last_deployed_slot": 406030591,
+  "upgrade_authority": "BQoUfnC2UGfzgv9joUhNZ9BoPaXbPifs3WDR7pV5DFXm",
+  "collected_at": "2026-10-24T18:11:41Z",
+  "previous_slot": null,
+  "release_tag": "solfi-v2-406030591",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/solfi-v2-406030591/solfi-v2-406030591.so"
+}

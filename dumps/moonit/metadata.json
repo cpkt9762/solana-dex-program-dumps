@@ -1,0 +1,16 @@
+{
+  "name": "moonit",
+  "program_id": "MoonCVVNZFSYkqNXP6bxHLPL6QQJiMagDL3qcqUQTrG",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "GHDmSNfdiL8i5c4aBscGpAewpFxx3PwhmXtZoyak9Vyn",
+  "sha256": "0f0fda99f247fbea0dab5be3440ab06e7be768ccf07db24e83273ec248f18dcc",
+  "size": 686344,
+  "onchain_sha256": "54dfc30c218e6ef2f7dc5cbe887b187d035e7faada085d1c0a17810b29fc9bcc",
+  "onchain_size": 1000000,
+  "last_deployed_slot": 350198871,
+  "upgrade_authority": "9h2weJxwXFG9G8V8Qt6Vo6w2pPEJ1zCt2nDiBHPmY5TL",
+  "collected_at": "2026-10-24T18:09:26Z",
+  "previous_slot": null,
+  "release_tag": "moonit-350198871",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/moonit-350198871/moonit-350198871.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "stabble-weighted",
+  "program_id": "swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "4FcCErmtQ69JaMgDMH7qCezVyEN5yNtDr7vBcceWQFHp",
+  "sha256": "fd4703de8422f6b828c8b63311299ea94a285c281c1b8bd4189e6948064b923c",
+  "size": 482496,
+  "onchain_sha256": "880b1ba903f20572b7002227723c282b644f39011808e78bce607e6bf3693cd0",
+  "onchain_size": 1246000,
+  "last_deployed_slot": 460237949,
+  "upgrade_authority": "9rHUPE2ng7stBuaeAM7heiVHLLGPAqGjYKQ3BBUWxKSP",
+  "collected_at": "2026-10-24T18:11:20Z",
+  "previous_slot": null,
+  "release_tag": "stabble-weighted-460237949",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-weighted-460237949/stabble-weighted-460237949.so"
+}

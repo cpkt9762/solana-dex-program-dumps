@@ -1,0 +1,16 @@
+{
+  "name": "zerofi",
+  "program_id": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "6PFxy3S1LF9juamK4y6bcf3AEdJ47CF9zQV3DbdtMgBm",
+  "sha256": "07a2b095875550edd723767b6bdb7321d0e40015452089e2ec81e36ad4865229",
+  "size": 380448,
+  "onchain_sha256": "6374e05e7310e71ea1ffca7770ab0d019d191cc6443129aca9603cf7a00e7e53",
+  "onchain_size": 425440,
+  "last_deployed_slot": 460280271,
+  "upgrade_authority": "UPgd1zNpfgYRRcudZyubhKPrrYKL7vKRmw25SR6qto5",
+  "collected_at": "2026-10-24T18:11:57Z",
+  "previous_slot": null,
+  "release_tag": "zerofi-460280271",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/zerofi-460280271/zerofi-460280271.so"
+}

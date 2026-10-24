@@ -1,0 +1,16 @@
+{
+  "name": "stabble-stable",
+  "program_id": "swapNyd8XiQwJ6ianp9snpu4brUqFxadzvHebnAXjJZ",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "5CkCpgrfyjami8wBK9oVSF8EsQEAdHp5RPR4f9wuYEVS",
+  "sha256": "f878f7aa22ff190348863b4316e7facda04b2f1078f317c4cdc1818a1ce7c526",
+  "size": 561632,
+  "onchain_sha256": "ee3d3ecf3d7759cef2d91123eef1c363f076e5a456ba9dcc5c8a79cf44890622",
+  "onchain_size": 1246000,
+  "last_deployed_slot": 395407721,
+  "upgrade_authority": "9rHUPE2ng7stBuaeAM7heiVHLLGPAqGjYKQ3BBUWxKSP",
+  "collected_at": "2026-10-24T18:11:17Z",
+  "previous_slot": null,
+  "release_tag": "stabble-stable-395407721",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-stable-395407721/stabble-stable-395407721.so"
+}

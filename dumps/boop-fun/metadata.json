@@ -1,0 +1,16 @@
+{
+  "name": "boop-fun",
+  "program_id": "boop8hVGQGqehUK2iVEMEnMrL5RbjywRzHKBmBE7ry4",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "2Rc3zvp3SxtTSz4GerNLoHr8PBPnRMNWALSSkwZFxDGP",
+  "sha256": "3eb1d8e8470d1411c531a2c1d257db8a0cab34d9b97632fad5666ca6f19ce403",
+  "size": 1322784,
+  "onchain_sha256": "3eb1d8e8470d1411c531a2c1d257db8a0cab34d9b97632fad5666ca6f19ce403",
+  "onchain_size": 1322784,
+  "last_deployed_slot": 362618777,
+  "upgrade_authority": "8vNDGweVTPBDKFSuLnnxPVWT33PgiKdCqFPj7KUSer2w",
+  "collected_at": "2026-10-24T18:09:51Z",
+  "previous_slot": null,
+  "release_tag": "boop-fun-362618777",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/boop-fun-362618777/boop-fun-362618777.so"
+}

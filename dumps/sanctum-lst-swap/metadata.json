@@ -1,0 +1,16 @@
+{
+  "name": "sanctum-lst-swap",
+  "program_id": "stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "7EEWx5mzzsYjU1GK2Y5eP3ngQGaRit8wJhmkkoQMnouA",
+  "sha256": "e98a0617a3907183f00d0867030c1fcb3c92b5228c9cf6466bd1fe217da5e35e",
+  "size": 379856,
+  "onchain_sha256": "5aeb9680cb8b78cac1b07b65d72644d030ed497fe0b8842d4139033f0e6c306f",
+  "onchain_size": 512768,
+  "last_deployed_slot": 341718242,
+  "upgrade_authority": "8VE2uJkoheDbJd9rCyKzfXmiMqAS4o1B3XGshEh86BGk",
+  "collected_at": "2026-10-24T18:09:34Z",
+  "previous_slot": null,
+  "release_tag": "sanctum-lst-swap-341718242",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/sanctum-lst-swap-341718242/sanctum-lst-swap-341718242.so"
+}

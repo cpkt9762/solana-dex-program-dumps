@@ -1,0 +1,16 @@
+{
+  "name": "orca-v1",
+  "program_id": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+  "loader": "BPFLoader2111111111111111111111111111111111",
+  "program_data_address": null,
+  "sha256": "4f316b5d1eb435105dc8166e77e9dc44569e9a30ed0d8ec8636f6a14e74b2739",
+  "size": 310464,
+  "onchain_sha256": "4f316b5d1eb435105dc8166e77e9dc44569e9a30ed0d8ec8636f6a14e74b2739",
+  "onchain_size": 310464,
+  "last_deployed_slot": null,
+  "upgrade_authority": null,
+  "collected_at": "2026-10-24T18:10:18Z",
+  "previous_slot": null,
+  "release_tag": "orca-v1-sha256-4f316b5d1eb4",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-v1-sha256-4f316b5d1eb4/orca-v1-sha256-4f316b5d1eb4.so"
+}

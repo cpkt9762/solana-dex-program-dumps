@@ -1,0 +1,16 @@
+{
+  "name": "obric-v2",
+  "program_id": "obriQD1zbpyLz95G5n7nJe6a4DPjpFwa5XYPoNm113y",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "Ap49p8hZ7i4E6J6bky7LXCQjJ6ZaHakkRDZGVaL2rpup",
+  "sha256": "7a9bf245119465baf22991e9edf0d215a6b2cc515ab4e246d24cb2b295e0669c",
+  "size": 694352,
+  "onchain_sha256": "4851c9be2f509f29ba48395837440f525edae01ac74a3490e7ff096ed5250ba8",
+  "onchain_size": 1171520,
+  "last_deployed_slot": 368947712,
+  "upgrade_authority": "admvs2QG84sZRHaeDrVt4Ax7rewYPrKAhb3byA6QSrA",
+  "collected_at": "2026-10-24T18:12:05Z",
+  "previous_slot": null,
+  "release_tag": "obric-v2-368947712",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/obric-v2-368947712/obric-v2-368947712.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "byreal",
+  "program_id": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "6YDesqidNpd8H4pWThk3yzT1aYaHLK4XYDXJcwbgMxdq",
+  "sha256": "1dc2dd8b6fcdd01ed9818333a9fb02aac19a1eb06fb74ec1db83bdb7dd5fce16",
+  "size": 1488392,
+  "onchain_sha256": "47e871597ac7c6750991722744a2fca235e6fc10448eb705adce10e7261c660c",
+  "onchain_size": 1498048,
+  "last_deployed_slot": 438767271,
+  "upgrade_authority": "EmEa9b4yGffixdeFQ9zoyB3V5D9PZAbcE79mfwXb3bhs",
+  "collected_at": "2026-10-24T18:08:56Z",
+  "previous_slot": null,
+  "release_tag": "byreal-438767271",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/byreal-438767271/byreal-438767271.so"
+}

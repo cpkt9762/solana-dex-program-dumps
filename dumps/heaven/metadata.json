@@ -1,0 +1,16 @@
+{
+  "name": "heaven",
+  "program_id": "HEAVENoP2qxoeuF8Dj2oT1GHEnu49U5mJYkdeC8BAX2o",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "DuevhUr92TiYhu3dgdMDkHdjsK72fqgNr5er4jkRFRCy",
+  "sha256": "0e18c5af66c10c7f8ccadfa915203303895c0fd977f11f8e57b44331cb0720f1",
+  "size": 1382968,
+  "onchain_sha256": "d91c053be9e1ef0fffbec008c9412bd249f02f744bb35da1619d8345ac24644b",
+  "onchain_size": 1633549,
+  "last_deployed_slot": 410580266,
+  "upgrade_authority": "3VAxiBzxbxgH4FYfCjGKsGc1oTkJPJN6SiwMaTWaRfuU",
+  "collected_at": "2026-10-24T18:12:30Z",
+  "previous_slot": null,
+  "release_tag": "heaven-410580266",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/heaven-410580266/heaven-410580266.so"
+}

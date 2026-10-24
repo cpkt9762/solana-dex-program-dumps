@@ -1,0 +1,1156 @@
+{
+  "programs": [
+    {
+      "name": "raydium-amm-v4",
+      "program_id": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+      "type": "amm",
+      "description": "Raydium AMM v4, constant-product AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 445763204,
+          "sha256": "3849aece6fee86df0090d2824396f29220b5948da34d2ab5c7167655684a6467",
+          "size": 308616,
+          "collected_at": "2026-10-24T18:07:51Z",
+          "release_tag": "raydium-amm-v4-445763204",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-amm-v4-445763204/raydium-amm-v4-445763204.so"
+        }
+      ]
+    },
+    {
+      "name": "raydium-cpmm",
+      "program_id": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+      "type": "amm",
+      "description": "Raydium CPMM, constant-product market maker (new architecture)",
+      "versions": [
+        {
+          "last_deployed_slot": 452376460,
+          "sha256": "2a90c3302d1907dc9b8bd0b000e4620166e671316a440f10add0b4ba08f28b3d",
+          "size": 722632,
+          "collected_at": "2026-10-24T18:07:55Z",
+          "release_tag": "raydium-cpmm-452376460",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-cpmm-452376460/raydium-cpmm-452376460.so"
+        }
+      ]
+    },
+    {
+      "name": "raydium-clmm",
+      "program_id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+      "type": "clmm",
+      "description": "Raydium CLMM, tick-based concentrated liquidity",
+      "versions": [
+        {
+          "last_deployed_slot": 459932378,
+          "sha256": "5409ba8fb81f957149f1a3d203140ce65d62acf45695ffe0ac9bfaf7f6d95cc2",
+          "size": 1498416,
+          "collected_at": "2026-10-24T18:08:00Z",
+          "release_tag": "raydium-clmm-459932378",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-clmm-459932378/raydium-clmm-459932378.so"
+        }
+      ]
+    },
+    {
+      "name": "raydium-launchlab",
+      "program_id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+      "type": "bonding-curve",
+      "description": "Raydium LaunchLab, token launchpad with bonding curve",
+      "versions": [
+        {
+          "last_deployed_slot": 446221802,
+          "sha256": "30985f5e1f232840adc006befacd95cac2bf09f33e467c3b1cbc4a0ff4a8d00b",
+          "size": 1151544,
+          "collected_at": "2026-10-24T18:08:04Z",
+          "release_tag": "raydium-launchlab-446221802",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-launchlab-446221802/raydium-launchlab-446221802.so"
+        }
+      ]
+    },
+    {
+      "name": "orca-whirlpool",
+      "program_id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+      "type": "clmm",
+      "description": "Orca Whirlpools, concentrated liquidity AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 457152296,
+          "sha256": "94da79f11a6c57646c7483cbee37dbb135d91dbe4c2a6200e3ef24f4ca776273",
+          "size": 1495896,
+          "collected_at": "2026-10-24T18:08:09Z",
+          "release_tag": "orca-whirlpool-457152296",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-whirlpool-457152296/orca-whirlpool-457152296.so"
+        }
+      ]
+    },
+    {
+      "name": "meteora-dlmm",
+      "program_id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+      "type": "dlmm",
+      "description": "Meteora DLMM, bin-based dynamic liquidity market maker",
+      "versions": [
+        {
+          "last_deployed_slot": 423977638,
+          "sha256": "7a03a1465ca5f2ed1331188adb8feb024d6663b78f00f1f3f5346909946083b5",
+          "size": 2198032,
+          "collected_at": "2026-10-24T18:08:13Z",
+          "release_tag": "meteora-dlmm-423977638",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-dlmm-423977638/meteora-dlmm-423977638.so"
+        }
+      ]
+    },
+    {
+      "name": "meteora-damm-v2",
+      "program_id": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+      "type": "amm",
+      "description": "Meteora DAMM v2 (Dynamic AMM v2), constant product with optional price range and dynamic fees",
+      "versions": [
+        {
+          "last_deployed_slot": 457080014,
+          "sha256": "ca7a32627e284798de74eab2c8c3fe5c904c02b282f93a3314d5ad5bc92e5a67",
+          "size": 1430792,
+          "collected_at": "2026-10-24T18:08:18Z",
+          "release_tag": "meteora-damm-v2-457080014",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-damm-v2-457080014/meteora-damm-v2-457080014.so"
+        }
+      ]
+    },
+    {
+      "name": "meteora-damm-v1",
+      "program_id": "Eo7WjKq67rjJQSZxS6z3YkapzY3eMj6Xy8X5EQVn5UaB",
+      "type": "amm",
+      "description": "Meteora Dynamic AMM v1 (legacy)",
+      "versions": [
+        {
+          "last_deployed_slot": 457247107,
+          "sha256": "f4f830919517d0d452faad436ace949507759b4bf08120709ecd71858beec6b1",
+          "size": 1429984,
+          "collected_at": "2026-10-24T18:08:23Z",
+          "release_tag": "meteora-damm-v1-457247107",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-damm-v1-457247107/meteora-damm-v1-457247107.so"
+        }
+      ]
+    },
+    {
+      "name": "meteora-dbc",
+      "program_id": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "type": "bonding-curve",
+      "description": "Meteora Dynamic Bonding Curve",
+      "versions": [
+        {
+          "last_deployed_slot": 457502600,
+          "sha256": "c9f45da65b0c87ca76c1ed5ad0d1ef2ead7c3392e8e41f194d50296820a22bb9",
+          "size": 1693328,
+          "collected_at": "2026-10-24T18:08:27Z",
+          "release_tag": "meteora-dbc-457502600",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-dbc-457502600/meteora-dbc-457502600.so"
+        }
+      ]
+    },
+    {
+      "name": "phoenix",
+      "program_id": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+      "type": "clob",
+      "description": "Phoenix, on-chain central limit order book",
+      "versions": [
+        {
+          "last_deployed_slot": 231433470,
+          "sha256": "6241abb8524488e6dfc5d368f00e26d294745d319d4e3dd34ca8a8b20579db0d",
+          "size": 1344472,
+          "collected_at": "2026-10-24T18:08:32Z",
+          "release_tag": "phoenix-231433470",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/phoenix-231433470/phoenix-231433470.so"
+        }
+      ]
+    },
+    {
+      "name": "openbook-v2",
+      "program_id": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+      "type": "clob",
+      "description": "OpenBook v2, on-chain central limit order book",
+      "versions": [
+        {
+          "last_deployed_slot": 250859864,
+          "sha256": "a3eb0fad20778b31a20c6b98e4e61b8e9425ccbfb27a96f8165f70c0381bafa8",
+          "size": 1035960,
+          "collected_at": "2026-10-24T18:08:36Z",
+          "release_tag": "openbook-v2-250859864",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/openbook-v2-250859864/openbook-v2-250859864.so"
+        }
+      ]
+    },
+    {
+      "name": "manifest",
+      "program_id": "MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms",
+      "type": "clob",
+      "description": "Manifest, on-chain order book",
+      "versions": [
+        {
+          "last_deployed_slot": 459237697,
+          "sha256": "31ac04c9159fa7090430759ec47e13f6a901cd708464656131be2addb5c36996",
+          "size": 360232,
+          "collected_at": "2026-10-24T18:08:40Z",
+          "release_tag": "manifest-459237697",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/manifest-459237697/manifest-459237697.so"
+        }
+      ]
+    },
+    {
+      "name": "serum-dex-v3",
+      "program_id": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+      "type": "clob",
+      "description": "Serum DEX v3 (legacy order book, still referenced by Raydium AMM v4 pools)",
+      "versions": [
+        {
+          "last_deployed_slot": 168006653,
+          "sha256": "61fab2f0b7b829a2b228b3bce8e5f01322e8f45d7b0eb9a74c0372ddffdbaeea",
+          "size": 241088,
+          "collected_at": "2026-10-24T18:08:44Z",
+          "release_tag": "serum-dex-v3-168006653",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/serum-dex-v3-168006653/serum-dex-v3-168006653.so"
+        }
+      ]
+    },
+    {
+      "name": "saber",
+      "program_id": "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ",
+      "type": "stable-swap",
+      "description": "Saber StableSwap",
+      "versions": [
+        {
+          "last_deployed_slot": 119721738,
+          "sha256": "eeacf0770556dabc19c0c5e11e3f3d743367e200781bdc3d9d1c5b49c2ca6992",
+          "size": 217192,
+          "collected_at": "2026-10-24T18:08:48Z",
+          "release_tag": "saber-119721738",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saber-119721738/saber-119721738.so"
+        }
+      ]
+    },
+    {
+      "name": "saber-decimals",
+      "program_id": "DecZY86MU5Gj7kppfUCEmd4LbXXuyZH1yHaP2NTqdiZB",
+      "type": "stable-swap",
+      "description": "Saber Decimals, decimal-wrapper pools on top of StableSwap",
+      "versions": [
+        {
+          "last_deployed_slot": 114149094,
+          "sha256": "2d0f6e341290fba2df6f2225183e7826bd9a386c80344d0f756b24e48e7cce30",
+          "size": 264816,
+          "collected_at": "2026-10-24T18:08:51Z",
+          "release_tag": "saber-decimals-114149094",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saber-decimals-114149094/saber-decimals-114149094.so"
+        }
+      ]
+    },
+    {
+      "name": "byreal",
+      "program_id": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+      "type": "clmm",
+      "description": "Byreal CLMM (Raydium CLMM fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 438767271,
+          "sha256": "1dc2dd8b6fcdd01ed9818333a9fb02aac19a1eb06fb74ec1db83bdb7dd5fce16",
+          "size": 1488392,
+          "collected_at": "2026-10-24T18:08:56Z",
+          "release_tag": "byreal-438767271",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/byreal-438767271/byreal-438767271.so"
+        }
+      ]
+    },
+    {
+      "name": "crema",
+      "program_id": "CLMM9tUoggJu2wagPkkqs9eFG4BWhVBZWkP1qv3Sp7tR",
+      "type": "clmm",
+      "description": "Crema Finance CLMM",
+      "versions": [
+        {
+          "last_deployed_slot": 169658954,
+          "sha256": "5a086ad2a968c86ef6381895212b2a40f097b9a2adcd87a675a54b0410b71e3b",
+          "size": 1162504,
+          "collected_at": "2026-10-24T18:09:00Z",
+          "release_tag": "crema-169658954",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/crema-169658954/crema-169658954.so"
+        }
+      ]
+    },
+    {
+      "name": "invariant",
+      "program_id": "HyaB3W9q6XdA5xwpU4XnSZV94htfmbmqJXZcEbRaJutt",
+      "type": "clmm",
+      "description": "Invariant concentrated liquidity AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 343244916,
+          "sha256": "b5149b0ce7755fbd3b08bbd145fda2d5e49b954d1ff25606600dd65141c42183",
+          "size": 733720,
+          "collected_at": "2026-10-24T18:09:04Z",
+          "release_tag": "invariant-343244916",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/invariant-343244916/invariant-343244916.so"
+        }
+      ]
+    },
+    {
+      "name": "saros-dlmm",
+      "program_id": "1qbkdrr3z4ryLA7pZykqxvxWPoeifcVKo6ZG9CfkvVE",
+      "type": "dlmm",
+      "description": "Saros DLMM, bin-based liquidity",
+      "versions": [
+        {
+          "last_deployed_slot": 376317878,
+          "sha256": "2af807547c9a91c75a926ad13e6d03541cf3a0155a3a710f0ca799fd629e6aa1",
+          "size": 723064,
+          "collected_at": "2026-10-24T18:09:09Z",
+          "release_tag": "saros-dlmm-376317878",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saros-dlmm-376317878/saros-dlmm-376317878.so"
+        }
+      ]
+    },
+    {
+      "name": "saros-amm",
+      "program_id": "SSwapUtytfBdBn1b9NUGG6foMVPtcWgpRU32HToDUZr",
+      "type": "amm",
+      "description": "Saros AMM (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 379101676,
+          "sha256": "a7fdf48428a321ba10698d691895de0dfefe2c8682ac33cdfb02ce4a1437a150",
+          "size": 213032,
+          "collected_at": "2026-10-24T18:09:13Z",
+          "release_tag": "saros-amm-379101676",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saros-amm-379101676/saros-amm-379101676.so"
+        }
+      ]
+    },
+    {
+      "name": "perena",
+      "program_id": "NUMERUNsFCP3kuNmWZuXtm1AaQCPj9uw6Guv2Ekoi5P",
+      "type": "stable-swap",
+      "description": "Perena Numeraire, stable-swap AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 329553166,
+          "sha256": "177325c4ccc46e85c4584a10d6c7a7d15fd83d9f5949bbe554e45570227e8775",
+          "size": 1096808,
+          "collected_at": "2026-10-24T18:09:17Z",
+          "release_tag": "perena-329553166",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/perena-329553166/perena-329553166.so"
+        }
+      ]
+    },
+    {
+      "name": "metadao-futarchy",
+      "program_id": "FUTARELBfJfQ8RDGhg1wdhddq1odMAJUePHFuBYfUxKq",
+      "type": "amm",
+      "description": "MetaDAO futarchy, conditional-market AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 459399315,
+          "sha256": "3784a4566a3b53f37cef18857d98820ee373c0f237b8888c1caf27cd25d06a1d",
+          "size": 1512568,
+          "collected_at": "2026-10-24T18:09:21Z",
+          "release_tag": "metadao-futarchy-459399315",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/metadao-futarchy-459399315/metadao-futarchy-459399315.so"
+        }
+      ]
+    },
+    {
+      "name": "moonit",
+      "program_id": "MoonCVVNZFSYkqNXP6bxHLPL6QQJiMagDL3qcqUQTrG",
+      "type": "bonding-curve",
+      "description": "Moonit bonding-curve launchpad",
+      "versions": [
+        {
+          "last_deployed_slot": 350198871,
+          "sha256": "0f0fda99f247fbea0dab5be3440ab06e7be768ccf07db24e83273ec248f18dcc",
+          "size": 686344,
+          "collected_at": "2026-10-24T18:09:26Z",
+          "release_tag": "moonit-350198871",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/moonit-350198871/moonit-350198871.so"
+        }
+      ]
+    },
+    {
+      "name": "omnipair",
+      "program_id": "omnixgS8fnqHfCcTGKWj6JtKjzpJZ1Y5y9pyFkQDkYE",
+      "type": "amm",
+      "description": "Omnipair, constant-product AMM combined with lending",
+      "versions": [
+        {
+          "last_deployed_slot": 439721901,
+          "sha256": "a04b47b46a84d59768f58645e1f242267a27a2de99fac11bb94cd5d7cea22298",
+          "size": 1143680,
+          "collected_at": "2026-10-24T18:09:30Z",
+          "release_tag": "omnipair-439721901",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/omnipair-439721901/omnipair-439721901.so"
+        }
+      ]
+    },
+    {
+      "name": "sanctum-lst-swap",
+      "program_id": "stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq",
+      "type": "lst-swap",
+      "description": "Sanctum LST-to-LST swap program",
+      "versions": [
+        {
+          "last_deployed_slot": 341718242,
+          "sha256": "e98a0617a3907183f00d0867030c1fcb3c92b5228c9cf6466bd1fe217da5e35e",
+          "size": 379856,
+          "collected_at": "2026-10-24T18:09:34Z",
+          "release_tag": "sanctum-lst-swap-341718242",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/sanctum-lst-swap-341718242/sanctum-lst-swap-341718242.so"
+        }
+      ]
+    },
+    {
+      "name": "sanctum-infinity",
+      "program_id": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+      "type": "lst-swap",
+      "description": "Sanctum Infinity, multi-LST liquidity pool",
+      "versions": [
+        {
+          "last_deployed_slot": 411884877,
+          "sha256": "2fd31fca1b93a4911e4937a970aaa2ee06e09d66eff8376b0c551e3bed35f9f7",
+          "size": 158520,
+          "collected_at": "2026-10-24T18:09:38Z",
+          "release_tag": "sanctum-infinity-411884877",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/sanctum-infinity-411884877/sanctum-infinity-411884877.so"
+        }
+      ]
+    },
+    {
+      "name": "pump-fun",
+      "program_id": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "type": "bonding-curve",
+      "description": "Pump.fun bonding-curve launchpad",
+      "versions": [
+        {
+          "last_deployed_slot": 458921440,
+          "sha256": "05249b60f8ddf02a53d0f8a43980fde40cce33f73526355b4ef08e292279819f",
+          "size": 1934800,
+          "collected_at": "2026-10-24T18:09:43Z",
+          "release_tag": "pump-fun-458921440",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pump-fun-458921440/pump-fun-458921440.so"
+        }
+      ]
+    },
+    {
+      "name": "pump-swap",
+      "program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "type": "amm",
+      "description": "PumpSwap, constant-product AMM for graduated Pump.fun tokens",
+      "versions": [
+        {
+          "last_deployed_slot": 458921517,
+          "sha256": "51a5f6a7fb5a812de7686e593ce6159f6ee59b15771a3d5d37ab661c46d64586",
+          "size": 1268504,
+          "collected_at": "2026-10-24T18:09:47Z",
+          "release_tag": "pump-swap-458921517",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pump-swap-458921517/pump-swap-458921517.so"
+        }
+      ]
+    },
+    {
+      "name": "boop-fun",
+      "program_id": "boop8hVGQGqehUK2iVEMEnMrL5RbjywRzHKBmBE7ry4",
+      "type": "bonding-curve",
+      "description": "Boop.fun bonding-curve launchpad",
+      "versions": [
+        {
+          "last_deployed_slot": 362618777,
+          "sha256": "3eb1d8e8470d1411c531a2c1d257db8a0cab34d9b97632fad5666ca6f19ce403",
+          "size": 1322784,
+          "collected_at": "2026-10-24T18:09:51Z",
+          "release_tag": "boop-fun-362618777",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/boop-fun-362618777/boop-fun-362618777.so"
+        }
+      ]
+    },
+    {
+      "name": "virtuals",
+      "program_id": "5U3EU2ubXtK84QcRjWVmYt9RaDyA8gKxdUrPFXmZyaki",
+      "type": "bonding-curve",
+      "description": "Virtuals buy/sell program",
+      "versions": [
+        {
+          "last_deployed_slot": 319985732,
+          "sha256": "4fb0c085f7a1afb74e2445c70c46c6744b51acc7879d0e86a61c9460342b3a25",
+          "size": 573976,
+          "collected_at": "2026-10-24T18:09:55Z",
+          "release_tag": "virtuals-319985732",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/virtuals-319985732/virtuals-319985732.so"
+        }
+      ]
+    },
+    {
+      "name": "lifinity-v2",
+      "program_id": "2wT8Yq49kHgDzXuPxZSaeLaH1qbmGXtEyPy64bL7aD3c",
+      "type": "pmm",
+      "description": "Lifinity v2, oracle-driven proactive market maker",
+      "versions": [
+        {
+          "last_deployed_slot": 388386900,
+          "sha256": "4a3ba0c81807f08108c8a933ea3efffac41bbea77c6de630bc4ed356a07dd97e",
+          "size": 530864,
+          "collected_at": "2026-10-24T18:09:59Z",
+          "release_tag": "lifinity-v2-388386900",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/lifinity-v2-388386900/lifinity-v2-388386900.so"
+        }
+      ]
+    },
+    {
+      "name": "lifinity-v1",
+      "program_id": "EewxydAPCCVuNEyrVN68PuSYdQ7wKn27V9Gjeoi8dy3S",
+      "type": "pmm",
+      "description": "Lifinity v1 (legacy, superseded by v2)",
+      "versions": [
+        {
+          "last_deployed_slot": 235161533,
+          "sha256": "897a5b450f22dfa1fed6398e25fb5bfbaabc7d6bbc2ad2411cb840e7601af601",
+          "size": 604832,
+          "collected_at": "2026-10-24T18:10:03Z",
+          "release_tag": "lifinity-v1-235161533",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/lifinity-v1-235161533/lifinity-v1-235161533.so"
+        }
+      ]
+    },
+    {
+      "name": "woofi",
+      "program_id": "WooFif76YGRNjk1pA8wCsN67aQsD9f9iLsz4NcJ1AVb",
+      "type": "pmm",
+      "description": "WOOFi, oracle-priced PMM",
+      "versions": [
+        {
+          "last_deployed_slot": 323166452,
+          "sha256": "7fab739a7f3334fb57f961fc5038081a89f1f0c75452ab43bdf6c9fff68467a0",
+          "size": 612592,
+          "collected_at": "2026-10-24T18:10:07Z",
+          "release_tag": "woofi-323166452",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/woofi-323166452/woofi-323166452.so"
+        }
+      ]
+    },
+    {
+      "name": "humidifi",
+      "program_id": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
+      "type": "pmm",
+      "description": "HumidiFi, closed-source oracle-priced prop AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 458946555,
+          "sha256": "7a012f408fee971c9ec66486eecd8715a8bbbab998d4394fb0aac0a00714282e",
+          "size": 391200,
+          "collected_at": "2026-10-24T18:10:11Z",
+          "release_tag": "humidifi-458946555",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/humidifi-458946555/humidifi-458946555.so"
+        }
+      ]
+    },
+    {
+      "name": "spl-token-swap",
+      "program_id": "SwaPpA9LAaLfeLi3a68M4DjnLqgtticKg6CnyNwgAC8",
+      "type": "amm",
+      "description": "SPL Token Swap reference program",
+      "versions": [
+        {
+          "last_deployed_slot": 73737036,
+          "sha256": "f61de0a846ac6b08a418c1818109f611ea10cfeebd81b096119ec3ab57aad26c",
+          "size": 290504,
+          "collected_at": "2026-10-24T18:10:15Z",
+          "release_tag": "spl-token-swap-73737036",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/spl-token-swap-73737036/spl-token-swap-73737036.so"
+        }
+      ]
+    },
+    {
+      "name": "orca-v1",
+      "program_id": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "type": "amm",
+      "description": "Orca v1 (SPL token-swap based)",
+      "versions": [
+        {
+          "last_deployed_slot": null,
+          "sha256": "4f316b5d1eb435105dc8166e77e9dc44569e9a30ed0d8ec8636f6a14e74b2739",
+          "size": 310464,
+          "collected_at": "2026-10-24T18:10:18Z",
+          "release_tag": "orca-v1-sha256-4f316b5d1eb4",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-v1-sha256-4f316b5d1eb4/orca-v1-sha256-4f316b5d1eb4.so"
+        }
+      ]
+    },
+    {
+      "name": "orca-v2",
+      "program_id": "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP",
+      "type": "amm",
+      "description": "Orca v2 (SPL token-swap based)",
+      "versions": [
+        {
+          "last_deployed_slot": 161177892,
+          "sha256": "b20e8a4bbc619e68d041b29e1060754cd24b352a49d043216c5415c90bef5996",
+          "size": 203312,
+          "collected_at": "2026-10-24T18:10:22Z",
+          "release_tag": "orca-v2-161177892",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-v2-161177892/orca-v2-161177892.so"
+        }
+      ]
+    },
+    {
+      "name": "stepn",
+      "program_id": "Dooar9JkhdZ7J3LHN3A7YCuoGRUggXhQaG4kijfLGU2j",
+      "type": "amm",
+      "description": "STEPN swap (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 348857285,
+          "sha256": "f764057f44629d4080e54538263ec8a9df965f09a2cab33a3300bf905eaaf490",
+          "size": 194544,
+          "collected_at": "2026-10-24T18:10:26Z",
+          "release_tag": "stepn-348857285",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stepn-348857285/stepn-348857285.so"
+        }
+      ]
+    },
+    {
+      "name": "penguin",
+      "program_id": "PSwapMdSai8tjrEXcxFeQth87xC4rRsa4VA5mhGhXkP",
+      "type": "amm",
+      "description": "Penguin Finance swap (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 161376048,
+          "sha256": "d11977e133c292901543909e43886a2205bede844600067ffd58283d8e5b4de7",
+          "size": 235528,
+          "collected_at": "2026-10-24T18:10:30Z",
+          "release_tag": "penguin-161376048",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/penguin-161376048/penguin-161376048.so"
+        }
+      ]
+    },
+    {
+      "name": "guacswap",
+      "program_id": "Gswppe6ERWKpUTXvRPfXdzHhiCyJvLadVvXGfdpBqcE1",
+      "type": "amm",
+      "description": "Guacswap (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 263699928,
+          "sha256": "c515824c668741e8f19badde382a06fc5c331119795d9ece02af8d925a2b25ac",
+          "size": 806696,
+          "collected_at": "2026-10-24T18:10:36Z",
+          "release_tag": "guacswap-263699928",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/guacswap-263699928/guacswap-263699928.so"
+        }
+      ]
+    },
+    {
+      "name": "fluxbeam",
+      "program_id": "FLUXubRmkEi2q6K3Y9kBPg9248ggaZVsoSFhtJHSrm1X",
+      "type": "amm",
+      "description": "FluxBeam (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 207458738,
+          "sha256": "8065afdd131ae8a09e2493c6a03fcd1c5ae7a6fb799dc48bd3ab19de05bf134f",
+          "size": 227544,
+          "collected_at": "2026-10-24T18:10:40Z",
+          "release_tag": "fluxbeam-207458738",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/fluxbeam-207458738/fluxbeam-207458738.so"
+        }
+      ]
+    },
+    {
+      "name": "dexlab",
+      "program_id": "DSwpgjMvXhtGn6BsbqmacdBZyfLj6jSWf3HJpdJtmg6N",
+      "type": "amm",
+      "description": "DexLab swap (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 243977673,
+          "sha256": "f120d7e3525ff8734d00dc4c93c176edf728b30c996db673ced5bc2d98f44a8d",
+          "size": 207168,
+          "collected_at": "2026-10-24T18:10:44Z",
+          "release_tag": "dexlab-243977673",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/dexlab-243977673/dexlab-243977673.so"
+        }
+      ]
+    },
+    {
+      "name": "aldrin-v1",
+      "program_id": "AMM55ShdkoGRB5jVYPjWziwk8m5MpwyDgsMWHaMSQWH6",
+      "type": "amm",
+      "description": "Aldrin AMM v1 (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 249613938,
+          "sha256": "fac58719a8f020acc2ef9889cd23df4e1c93dc0be2ed0d57ca3165be7579e85d",
+          "size": 516560,
+          "collected_at": "2026-10-24T18:10:48Z",
+          "release_tag": "aldrin-v1-249613938",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aldrin-v1-249613938/aldrin-v1-249613938.so"
+        }
+      ]
+    },
+    {
+      "name": "aldrin-v2",
+      "program_id": "CURVGoZn8zycx6FXwwevgBTB2gVvdbGTEpvMJDbgs2t4",
+      "type": "amm",
+      "description": "Aldrin AMM v2 (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 441200340,
+          "sha256": "c067c6a981257b7a2550d8ff39e621375c534edee47aeb616131648d118a0df7",
+          "size": 535048,
+          "collected_at": "2026-10-24T18:10:52Z",
+          "release_tag": "aldrin-v2-441200340",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aldrin-v2-441200340/aldrin-v2-441200340.so"
+        }
+      ]
+    },
+    {
+      "name": "mercurial",
+      "program_id": "MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky",
+      "type": "stable-swap",
+      "description": "Mercurial multi-token stable-swap (merged into Meteora)",
+      "versions": [
+        {
+          "last_deployed_slot": 100141975,
+          "sha256": "44bae35cb7e8c5bd829145fd29f7433651ea26956cef9799082074fdbd510305",
+          "size": 199592,
+          "collected_at": "2026-10-24T18:10:55Z",
+          "release_tag": "mercurial-100141975",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/mercurial-100141975/mercurial-100141975.so"
+        }
+      ]
+    },
+    {
+      "name": "bonkswap",
+      "program_id": "BSwp6bEBihVLdqJRKGgzjcGLHkcTuzmSo1TQkHepzH8p",
+      "type": "amm",
+      "description": "BonkSwap (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 394615657,
+          "sha256": "5ecb6bf90adc074a4ac1a1769e71801856dfc2927c3f31746d51d2bee6f0ddcc",
+          "size": 885176,
+          "collected_at": "2026-10-24T18:11:00Z",
+          "release_tag": "bonkswap-394615657",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/bonkswap-394615657/bonkswap-394615657.so"
+        }
+      ]
+    },
+    {
+      "name": "cropper",
+      "program_id": "H8W3ctz92svYg6mkn1UtGfu2aQr2fnUFHM1RhScEtQDt",
+      "type": "amm",
+      "description": "Cropper Finance (SPL token-swap fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 264411854,
+          "sha256": "600da789e452e9af90ee78bc8be1d1313220cd114f4a2f9c71bd1add47d01261",
+          "size": 992488,
+          "collected_at": "2026-10-24T18:11:03Z",
+          "release_tag": "cropper-264411854",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/cropper-264411854/cropper-264411854.so"
+        }
+      ]
+    },
+    {
+      "name": "pancakeswap",
+      "program_id": "HpNfyc2Saw7RKkQd8nEL4khUcuPhQ7WwY1B2qjx8jxFq",
+      "type": "clmm",
+      "description": "PancakeSwap on Solana (CLMM fork)",
+      "versions": [
+        {
+          "last_deployed_slot": 432564695,
+          "sha256": "9ce4a4342cc1bf1dbc7f94da433811593ebd8bcb3ae47487c74421726c0d1978",
+          "size": 1292056,
+          "collected_at": "2026-10-24T18:11:08Z",
+          "release_tag": "pancakeswap-432564695",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pancakeswap-432564695/pancakeswap-432564695.so"
+        }
+      ]
+    },
+    {
+      "name": "goosefx-gamma",
+      "program_id": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+      "type": "amm",
+      "description": "GooseFX GAMMA AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 365080322,
+          "sha256": "90a39fa741d4ecdf99f1ffae41f0395aba74c95769d2545620e088c71a2fdf50",
+          "size": 875912,
+          "collected_at": "2026-10-24T18:11:12Z",
+          "release_tag": "goosefx-gamma-365080322",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/goosefx-gamma-365080322/goosefx-gamma-365080322.so"
+        }
+      ]
+    },
+    {
+      "name": "stabble-stable",
+      "program_id": "swapNyd8XiQwJ6ianp9snpu4brUqFxadzvHebnAXjJZ",
+      "type": "stable-swap",
+      "description": "Stabble Stable Swap",
+      "versions": [
+        {
+          "last_deployed_slot": 395407721,
+          "sha256": "f878f7aa22ff190348863b4316e7facda04b2f1078f317c4cdc1818a1ce7c526",
+          "size": 561632,
+          "collected_at": "2026-10-24T18:11:17Z",
+          "release_tag": "stabble-stable-395407721",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-stable-395407721/stabble-stable-395407721.so"
+        }
+      ]
+    },
+    {
+      "name": "stabble-weighted",
+      "program_id": "swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW",
+      "type": "amm",
+      "description": "Stabble Weighted Swap, Balancer-style weighted pools",
+      "versions": [
+        {
+          "last_deployed_slot": 460237949,
+          "sha256": "fd4703de8422f6b828c8b63311299ea94a285c281c1b8bd4189e6948064b923c",
+          "size": 482496,
+          "collected_at": "2026-10-24T18:11:20Z",
+          "release_tag": "stabble-weighted-460237949",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-weighted-460237949/stabble-weighted-460237949.so"
+        }
+      ]
+    },
+    {
+      "name": "stabble-clmm",
+      "program_id": "6dMXqGZ3ga2dikrYS9ovDXgHGh5RUsb2RTUj6hrQXhk6",
+      "type": "clmm",
+      "description": "Stabble CLMM",
+      "versions": [
+        {
+          "last_deployed_slot": 377879224,
+          "sha256": "263abe7bbb595b779e7be3be7a230758f7469740dfab31ddd985d49dccf41e82",
+          "size": 1105112,
+          "collected_at": "2026-10-24T18:11:25Z",
+          "release_tag": "stabble-clmm-377879224",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-clmm-377879224/stabble-clmm-377879224.so"
+        }
+      ]
+    },
+    {
+      "name": "drift-v2",
+      "program_id": "dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH",
+      "type": "perp",
+      "description": "Drift v2, perpetuals and spot DEX with AMM-backed liquidity",
+      "versions": [
+        {
+          "last_deployed_slot": 429731225,
+          "sha256": "a1e3e0edce6f3ef14bf9e0f8fc1501e88c5f8bb991100b2bf3f181d28fbb5177",
+          "size": 193728,
+          "collected_at": "2026-10-24T18:11:29Z",
+          "release_tag": "drift-v2-429731225",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/drift-v2-429731225/drift-v2-429731225.so"
+        }
+      ]
+    },
+    {
+      "name": "jupiter-perps",
+      "program_id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+      "type": "perp",
+      "description": "Jupiter Perpetuals, LP-pool backed perps",
+      "versions": [
+        {
+          "last_deployed_slot": 413092478,
+          "sha256": "256407815a16b7a647c80962391ce8374c1230579b072ea61b37967efaf9262c",
+          "size": 2602920,
+          "collected_at": "2026-10-24T18:11:33Z",
+          "release_tag": "jupiter-perps-413092478",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/jupiter-perps-413092478/jupiter-perps-413092478.so"
+        }
+      ]
+    },
+    {
+      "name": "solfi",
+      "program_id": "SoLFiHG9TfgtdUXUjWAxi3LtvYuFyDLVhBWxdMZxyCe",
+      "type": "pmm",
+      "description": "SolFi v1, proprietary oracle-priced AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 343329392,
+          "sha256": "bef6297be33312a49c80cf855b9881f873511cd57f5b6c548d967490ffe5bce1",
+          "size": 243848,
+          "collected_at": "2026-10-24T18:11:37Z",
+          "release_tag": "solfi-343329392",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/solfi-343329392/solfi-343329392.so"
+        }
+      ]
+    },
+    {
+      "name": "solfi-v2",
+      "program_id": "SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF",
+      "type": "pmm",
+      "description": "SolFi v2, proprietary oracle-priced AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 406030591,
+          "sha256": "8ab9b7a51db873fe7ce24fb83c5cb2c57e2afecf1a66239605e5eb901371c939",
+          "size": 236288,
+          "collected_at": "2026-10-24T18:11:41Z",
+          "release_tag": "solfi-v2-406030591",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/solfi-v2-406030591/solfi-v2-406030591.so"
+        }
+      ]
+    },
+    {
+      "name": "tessera-v",
+      "program_id": "TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH",
+      "type": "pmm",
+      "description": "TesseraV, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 446053401,
+          "sha256": "d7709524ab16022f59521b3b44df1476572b5109afce0515ac86c1e44430763f",
+          "size": 347936,
+          "collected_at": "2026-10-24T18:11:45Z",
+          "release_tag": "tessera-v-446053401",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/tessera-v-446053401/tessera-v-446053401.so"
+        }
+      ]
+    },
+    {
+      "name": "goonfi",
+      "program_id": "goonERTdGsjnkZqWuVjs73BZ3Pb9qoCUdBUL17BnS5j",
+      "type": "pmm",
+      "description": "GoonFi v1, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 389267056,
+          "sha256": "323b4e45f737f2e569ee9dcc24f64ea6f58b4fcebd09c7ca44f26da42c7520bf",
+          "size": 111120,
+          "collected_at": "2026-10-24T18:11:49Z",
+          "release_tag": "goonfi-389267056",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/goonfi-389267056/goonfi-389267056.so"
+        }
+      ]
+    },
+    {
+      "name": "goonfi-v2",
+      "program_id": "goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE",
+      "type": "pmm",
+      "description": "GoonFi v2, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 459591958,
+          "sha256": "51414d61a66a3fc161841e23a4fb7e04c85f51d35e14bc59d8ca74bb4a1896c4",
+          "size": 262104,
+          "collected_at": "2026-10-24T18:11:53Z",
+          "release_tag": "goonfi-v2-459591958",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/goonfi-v2-459591958/goonfi-v2-459591958.so"
+        }
+      ]
+    },
+    {
+      "name": "zerofi",
+      "program_id": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
+      "type": "pmm",
+      "description": "ZeroFi, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 460280271,
+          "sha256": "07a2b095875550edd723767b6bdb7321d0e40015452089e2ec81e36ad4865229",
+          "size": 380448,
+          "collected_at": "2026-10-24T18:11:57Z",
+          "release_tag": "zerofi-460280271",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/zerofi-460280271/zerofi-460280271.so"
+        }
+      ]
+    },
+    {
+      "name": "bisonfi",
+      "program_id": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi",
+      "type": "pmm",
+      "description": "BisonFi, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 456982351,
+          "sha256": "1c461b296ea80deb845b5019243e0807cb50ea97a0f8e7e7b5d02cdf2a9ded0b",
+          "size": 209480,
+          "collected_at": "2026-10-24T18:12:01Z",
+          "release_tag": "bisonfi-456982351",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/bisonfi-456982351/bisonfi-456982351.so"
+        }
+      ]
+    },
+    {
+      "name": "obric-v2",
+      "program_id": "obriQD1zbpyLz95G5n7nJe6a4DPjpFwa5XYPoNm113y",
+      "type": "pmm",
+      "description": "Obric v2, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 368947712,
+          "sha256": "7a9bf245119465baf22991e9edf0d215a6b2cc515ab4e246d24cb2b295e0669c",
+          "size": 694352,
+          "collected_at": "2026-10-24T18:12:05Z",
+          "release_tag": "obric-v2-368947712",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/obric-v2-368947712/obric-v2-368947712.so"
+        }
+      ]
+    },
+    {
+      "name": "aquifer",
+      "program_id": "AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45",
+      "type": "pmm",
+      "description": "Aquifer, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 459979090,
+          "sha256": "eee40542e99b2debef3860afe98b08e2bf7d293deefa712ee9453898ab903d2d",
+          "size": 618944,
+          "collected_at": "2026-10-24T18:12:09Z",
+          "release_tag": "aquifer-459979090",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aquifer-459979090/aquifer-459979090.so"
+        }
+      ]
+    },
+    {
+      "name": "alphaq",
+      "program_id": "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA",
+      "type": "pmm",
+      "description": "AlphaQ, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 422791798,
+          "sha256": "3192a190b0aa4ade360844924118cebd47a5479b26658764ae285362f2ede6d0",
+          "size": 277976,
+          "collected_at": "2026-10-24T18:12:14Z",
+          "release_tag": "alphaq-422791798",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/alphaq-422791798/alphaq-422791798.so"
+        }
+      ]
+    },
+    {
+      "name": "quantum",
+      "program_id": "QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv",
+      "type": "pmm",
+      "description": "Quantum, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 460086125,
+          "sha256": "54aaea3c137c3fb996e3b8804f2206fc85320ca357184046d14562b57a5b7482",
+          "size": 162088,
+          "collected_at": "2026-10-24T18:12:18Z",
+          "release_tag": "quantum-460086125",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/quantum-460086125/quantum-460086125.so"
+        }
+      ]
+    },
+    {
+      "name": "scorch",
+      "program_id": "ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch",
+      "type": "pmm",
+      "description": "Scorch, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 460477573,
+          "sha256": "6a2397cb06fe96f178b901d34204be29783e0d8e1ef742d45d4b1e5688249c73",
+          "size": 129712,
+          "collected_at": "2026-10-24T18:12:22Z",
+          "release_tag": "scorch-460477573",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/scorch-460477573/scorch-460477573.so"
+        }
+      ]
+    },
+    {
+      "name": "obsidian",
+      "program_id": "HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
+      "type": "pmm",
+      "description": "Obsidian, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 459988613,
+          "sha256": "ae9105b3537df3de56d8636b16a56e5c5480cc0af0fd8f88337509e5f3cdc0b0",
+          "size": 194520,
+          "collected_at": "2026-10-24T18:12:26Z",
+          "release_tag": "obsidian-459988613",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/obsidian-459988613/obsidian-459988613.so"
+        }
+      ]
+    },
+    {
+      "name": "heaven",
+      "program_id": "HEAVENoP2qxoeuF8Dj2oT1GHEnu49U5mJYkdeC8BAX2o",
+      "type": "pmm",
+      "description": "Heaven, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 410580266,
+          "sha256": "0e18c5af66c10c7f8ccadfa915203303895c0fd977f11f8e57b44331cb0720f1",
+          "size": 1382968,
+          "collected_at": "2026-10-24T18:12:30Z",
+          "release_tag": "heaven-410580266",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/heaven-410580266/heaven-410580266.so"
+        }
+      ]
+    },
+    {
+      "name": "taurusfi",
+      "program_id": "9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc",
+      "type": "pmm",
+      "description": "TaurusFi, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 459497904,
+          "sha256": "aca1671bfdd54fe1de2b7afb977c7687ef14ff3ecbe58a718e8e1ad1a9a50044",
+          "size": 205952,
+          "collected_at": "2026-10-24T18:12:35Z",
+          "release_tag": "taurusfi-459497904",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/taurusfi-459497904/taurusfi-459497904.so"
+        }
+      ]
+    },
+    {
+      "name": "gavel",
+      "program_id": "srAMMzfVHVAtgSJc8iH6CfKzuWuUTzLHVCE81QU1rgi",
+      "type": "pmm",
+      "description": "Gavel, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 363331997,
+          "sha256": "aaed24eabdb2292129a86bcbc77fe31c1474bcb887260a535d1aeb844fd019fa",
+          "size": 255112,
+          "collected_at": "2026-10-24T18:12:39Z",
+          "release_tag": "gavel-363331997",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/gavel-363331997/gavel-363331997.so"
+        }
+      ]
+    },
+    {
+      "name": "whalestreet",
+      "program_id": "FW6zUqn4iKRaeopwwhwsquTY6ABWLLgjxtrC3VPnaWBf",
+      "type": "pmm",
+      "description": "WhaleStreet, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 457600812,
+          "sha256": "60b61bba2a4ede7698002553bd92b534d5aae2581a7e73578a41cf7faf1ae7be",
+          "size": 670888,
+          "collected_at": "2026-10-24T18:12:43Z",
+          "release_tag": "whalestreet-457600812",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/whalestreet-457600812/whalestreet-457600812.so"
+        }
+      ]
+    },
+    {
+      "name": "marco-polo",
+      "program_id": "9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H",
+      "type": "pmm",
+      "description": "Marco Polo, proprietary AMM",
+      "versions": [
+        {
+          "last_deployed_slot": 232074629,
+          "sha256": "26b54f5b4737f66c6af33d0744262d58db4dec10ca5a599c6555c54abd26b059",
+          "size": 806712,
+          "collected_at": "2026-10-24T18:12:46Z",
+          "release_tag": "marco-polo-232074629",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/marco-polo-232074629/marco-polo-232074629.so"
+        }
+      ]
+    }
+  ]
+}

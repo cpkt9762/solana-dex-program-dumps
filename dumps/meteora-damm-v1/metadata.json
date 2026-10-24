@@ -1,0 +1,16 @@
+{
+  "name": "meteora-damm-v1",
+  "program_id": "Eo7WjKq67rjJQSZxS6z3YkapzY3eMj6Xy8X5EQVn5UaB",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "36CvGf4Db6N8ApGkh1F6PLGXK1SYFFBUiEDkJjPEvDL7",
+  "sha256": "f4f830919517d0d452faad436ace949507759b4bf08120709ecd71858beec6b1",
+  "size": 1429984,
+  "onchain_sha256": "0856d35fa348f8d3570194ff9fe36095f34f0fa64c4286c0de5e207b1a788b22",
+  "onchain_size": 1924896,
+  "last_deployed_slot": 457247107,
+  "upgrade_authority": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+  "collected_at": "2026-10-24T18:08:23Z",
+  "previous_slot": null,
+  "release_tag": "meteora-damm-v1-457247107",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-damm-v1-457247107/meteora-damm-v1-457247107.so"
+}

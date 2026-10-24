@@ -1,0 +1,16 @@
+{
+  "name": "meteora-dlmm",
+  "program_id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "HZcJwcJ2njPDxZtpPoKnF8v2w9QAx2rS7TdJPSRkbEhu",
+  "sha256": "7a03a1465ca5f2ed1331188adb8feb024d6663b78f00f1f3f5346909946083b5",
+  "size": 2198032,
+  "onchain_sha256": "d296c6771cec945601027613ca637c1be6721044c5859009d41c453477844c1f",
+  "onchain_size": 2229776,
+  "last_deployed_slot": 423977638,
+  "upgrade_authority": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+  "collected_at": "2026-10-24T18:08:13Z",
+  "previous_slot": null,
+  "release_tag": "meteora-dlmm-423977638",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-dlmm-423977638/meteora-dlmm-423977638.so"
+}

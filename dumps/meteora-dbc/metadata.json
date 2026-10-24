@@ -1,0 +1,16 @@
+{
+  "name": "meteora-dbc",
+  "program_id": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "HUfnSSiJxgspQm6C1rkqv6L3XgVtn7AESApgCQpCXCYh",
+  "sha256": "c9f45da65b0c87ca76c1ed5ad0d1ef2ead7c3392e8e41f194d50296820a22bb9",
+  "size": 1693328,
+  "onchain_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+  "onchain_size": 2326577,
+  "last_deployed_slot": 457502600,
+  "upgrade_authority": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+  "collected_at": "2026-10-24T18:08:27Z",
+  "previous_slot": null,
+  "release_tag": "meteora-dbc-457502600",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-dbc-457502600/meteora-dbc-457502600.so"
+}

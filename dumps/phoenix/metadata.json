@@ -1,0 +1,16 @@
+{
+  "name": "phoenix",
+  "program_id": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "2myyNegEA6pjAHmmEsJC6JdYhW51gwxQW7ZCTWvwaKTk",
+  "sha256": "6241abb8524488e6dfc5d368f00e26d294745d319d4e3dd34ca8a8b20579db0d",
+  "size": 1344472,
+  "onchain_sha256": "e3d76e5f479989823847fd77b4f96a9c8ce4255dafefcacf920a99643e15420f",
+  "onchain_size": 5000000,
+  "last_deployed_slot": 231433470,
+  "upgrade_authority": "8mv7G3fJq5a5ej7E14vgcSGeQKH79emjU9fVfuhyitEq",
+  "collected_at": "2026-10-24T18:08:32Z",
+  "previous_slot": null,
+  "release_tag": "phoenix-231433470",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/phoenix-231433470/phoenix-231433470.so"
+}

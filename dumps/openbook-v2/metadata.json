@@ -1,0 +1,16 @@
+{
+  "name": "openbook-v2",
+  "program_id": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "DktN5HJ9uHKVRZ7FXGap4PEGVnEdc2VNBCXTt1AqJQYB",
+  "sha256": "a3eb0fad20778b31a20c6b98e4e61b8e9425ccbfb27a96f8165f70c0381bafa8",
+  "size": 1035960,
+  "onchain_sha256": "9f724b3d9c207307c3bcb4ed308900af33a325f081126ea1b740fbb74a9f3642",
+  "onchain_size": 2059776,
+  "last_deployed_slot": 250859864,
+  "upgrade_authority": "CZoAmQErbMwhSNA5WtbWLcwGE1mhXEv4hTvyvvHXGkrr",
+  "collected_at": "2026-10-24T18:08:36Z",
+  "previous_slot": null,
+  "release_tag": "openbook-v2-250859864",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/openbook-v2-250859864/openbook-v2-250859864.so"
+}

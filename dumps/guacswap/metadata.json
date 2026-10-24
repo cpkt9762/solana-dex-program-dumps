@@ -1,0 +1,16 @@
+{
+  "name": "guacswap",
+  "program_id": "Gswppe6ERWKpUTXvRPfXdzHhiCyJvLadVvXGfdpBqcE1",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "64hHwKva4ZrL5NhYJptH5wP6k2rK1dCyQ9TuHJ5brPbH",
+  "sha256": "c515824c668741e8f19badde382a06fc5c331119795d9ece02af8d925a2b25ac",
+  "size": 806696,
+  "onchain_sha256": "127f070b4c2b3ed764721b0946a0c33d926de62ba4b6b1872c5e8d315d202d48",
+  "onchain_size": 1613392,
+  "last_deployed_slot": 263699928,
+  "upgrade_authority": "4kJq6MpbqrNkatatuwCauyhkGYpPY3wnn6hGbV7kvbhv",
+  "collected_at": "2026-10-24T18:10:36Z",
+  "previous_slot": null,
+  "release_tag": "guacswap-263699928",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/guacswap-263699928/guacswap-263699928.so"
+}

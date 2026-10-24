@@ -1,0 +1,16 @@
+{
+  "name": "dexlab",
+  "program_id": "DSwpgjMvXhtGn6BsbqmacdBZyfLj6jSWf3HJpdJtmg6N",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "5LsjnuksuYALgDmhw1c8wfsPwRCJ2PtaEFYi47GwhxnL",
+  "sha256": "f120d7e3525ff8734d00dc4c93c176edf728b30c996db673ced5bc2d98f44a8d",
+  "size": 207168,
+  "onchain_sha256": "a5c7ba060b2b50ed4b3ad9cb049f877178f9be1a2808e3010e5dd0188349f428",
+  "onchain_size": 414336,
+  "last_deployed_slot": 243977673,
+  "upgrade_authority": "2bgmacLfdpoMiACF1gyt11hJm1wUDL5rgeeQTRZuQgo3",
+  "collected_at": "2026-10-24T18:10:44Z",
+  "previous_slot": null,
+  "release_tag": "dexlab-243977673",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/dexlab-243977673/dexlab-243977673.so"
+}

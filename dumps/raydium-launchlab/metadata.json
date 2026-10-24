@@ -1,0 +1,16 @@
+{
+  "name": "raydium-launchlab",
+  "program_id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "D2QX47Tv2uhNNwFcnLCyJtLMZ4WGmc7eXxvyEmD6zNUh",
+  "sha256": "30985f5e1f232840adc006befacd95cac2bf09f33e467c3b1cbc4a0ff4a8d00b",
+  "size": 1151544,
+  "onchain_sha256": "4c87da8e9fdeda6daf9d141e409577733d6248ae78f694557176fe2709a09657",
+  "onchain_size": 2560000,
+  "last_deployed_slot": 446221802,
+  "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
+  "collected_at": "2026-10-24T18:08:04Z",
+  "previous_slot": null,
+  "release_tag": "raydium-launchlab-446221802",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-launchlab-446221802/raydium-launchlab-446221802.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pancakeswap",
+  "program_id": "HpNfyc2Saw7RKkQd8nEL4khUcuPhQ7WwY1B2qjx8jxFq",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "66S4Bs8HVyaPdQ5JGfKixEZMf5CczcfnLGgGYEKnvi3Z",
+  "sha256": "9ce4a4342cc1bf1dbc7f94da433811593ebd8bcb3ae47487c74421726c0d1978",
+  "size": 1292056,
+  "onchain_sha256": "5227d6ae48e15c1703aa2fc341b8184a56499ed9695edcd5d2550ee6a61da84f",
+  "onchain_size": 1330256,
+  "last_deployed_slot": 432564695,
+  "upgrade_authority": "Em3wKQYD83ph9LmSt6xBZeB9DpozT55AcGa61EYxHRVh",
+  "collected_at": "2026-10-24T18:11:08Z",
+  "previous_slot": null,
+  "release_tag": "pancakeswap-432564695",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pancakeswap-432564695/pancakeswap-432564695.so"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "orca-v2",
+  "program_id": "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "DrrJDyBzyuyYAzkkjd6Vu9ZzaDLsKRf4RPXyRE7Uk2A8",
+  "sha256": "b20e8a4bbc619e68d041b29e1060754cd24b352a49d043216c5415c90bef5996",
+  "size": 203312,
+  "onchain_sha256": "930a47e23fe7f8185557c1b5acabf658f97ca0f4c6cdd1f0d0510a897a9322e6",
+  "onchain_size": 691104,
+  "last_deployed_slot": 161177892,
+  "upgrade_authority": "23zF9Azpe9CN4iPeTsQndD1mQpcb5Gz1qFREL5gPTZvG",
+  "collected_at": "2026-10-24T18:10:22Z",
+  "previous_slot": null,
+  "release_tag": "orca-v2-161177892",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-v2-161177892/orca-v2-161177892.so"
+}

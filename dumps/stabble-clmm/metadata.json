@@ -1,0 +1,16 @@
+{
+  "name": "stabble-clmm",
+  "program_id": "6dMXqGZ3ga2dikrYS9ovDXgHGh5RUsb2RTUj6hrQXhk6",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "9fv3MPkmJPZACbjisNkyKAZ2HJeXYUJnZPYHqUZBx7xp",
+  "sha256": "263abe7bbb595b779e7be3be7a230758f7469740dfab31ddd985d49dccf41e82",
+  "size": 1105112,
+  "onchain_sha256": "263abe7bbb595b779e7be3be7a230758f7469740dfab31ddd985d49dccf41e82",
+  "onchain_size": 1105112,
+  "last_deployed_slot": 377879224,
+  "upgrade_authority": "3kXrf8w8Z6EjLJU4S8dAkpRL2von8z7Eh3kJnFrmo7Z2",
+  "collected_at": "2026-10-24T18:11:25Z",
+  "previous_slot": null,
+  "release_tag": "stabble-clmm-377879224",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-clmm-377879224/stabble-clmm-377879224.so"
+}

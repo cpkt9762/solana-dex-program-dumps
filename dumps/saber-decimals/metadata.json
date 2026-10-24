@@ -1,0 +1,16 @@
+{
+  "name": "saber-decimals",
+  "program_id": "DecZY86MU5Gj7kppfUCEmd4LbXXuyZH1yHaP2NTqdiZB",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "9dPfCMk7LKTg14ViNa9rsn9JAcJDzi6qRyhC34TdjDeU",
+  "sha256": "2d0f6e341290fba2df6f2225183e7826bd9a386c80344d0f756b24e48e7cce30",
+  "size": 264816,
+  "onchain_sha256": "1ade3ebbb7cab4c415e98c49ff936641ef7f5f295d1724a3d8bb8d659fba61f8",
+  "onchain_size": 599760,
+  "last_deployed_slot": 114149094,
+  "upgrade_authority": "EVmbDJCTGeExFGUKxmZwrfnzw4zpf7SPhPgfiLDJkUEV",
+  "collected_at": "2026-10-24T18:08:51Z",
+  "previous_slot": null,
+  "release_tag": "saber-decimals-114149094",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/saber-decimals-114149094/saber-decimals-114149094.so"
+}

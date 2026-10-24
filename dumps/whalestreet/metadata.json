@@ -1,0 +1,16 @@
+{
+  "name": "whalestreet",
+  "program_id": "FW6zUqn4iKRaeopwwhwsquTY6ABWLLgjxtrC3VPnaWBf",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "xQU4hyE3Lv6cu3CZxjLHrfaKUM11y3RXrBpgArpCiGS",
+  "sha256": "60b61bba2a4ede7698002553bd92b534d5aae2581a7e73578a41cf7faf1ae7be",
+  "size": 670888,
+  "onchain_sha256": "d8eabb6d307774cf0eb34b103daf78727c58f2b965df410b7f62f6262858880f",
+  "onchain_size": 676872,
+  "last_deployed_slot": 457600812,
+  "upgrade_authority": "DYAK4jpwhbScSpU9wCmDnUdWrK3zeNzefGYLqHQPzwEe",
+  "collected_at": "2026-10-24T18:12:43Z",
+  "previous_slot": null,
+  "release_tag": "whalestreet-457600812",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/whalestreet-457600812/whalestreet-457600812.so"
+}

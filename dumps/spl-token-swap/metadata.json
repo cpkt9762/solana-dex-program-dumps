@@ -1,0 +1,16 @@
+{
+  "name": "spl-token-swap",
+  "program_id": "SwaPpA9LAaLfeLi3a68M4DjnLqgtticKg6CnyNwgAC8",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "FV9WWFWYzWHDpAc8oxiFKV1LmFUyWw7HGdo4GK19MiZW",
+  "sha256": "f61de0a846ac6b08a418c1818109f611ea10cfeebd81b096119ec3ab57aad26c",
+  "size": 290504,
+  "onchain_sha256": "f86b866c8717f4a052bd61b36bfd1dee203d32673a0bb5cb1fbd8b99f8e65719",
+  "onchain_size": 619584,
+  "last_deployed_slot": 73737036,
+  "upgrade_authority": "DpWjxjJE2SCsraeZqKqLtvdPjiaABmcmNAZSP9iUaGrn",
+  "collected_at": "2026-10-24T18:10:15Z",
+  "previous_slot": null,
+  "release_tag": "spl-token-swap-73737036",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/spl-token-swap-73737036/spl-token-swap-73737036.so"
+}

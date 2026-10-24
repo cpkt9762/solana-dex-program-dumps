@@ -1,0 +1,16 @@
+{
+  "name": "scorch",
+  "program_id": "ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "2LG7p9rfwyLPYN1Sisv9oVzu2pmAX4kqbXFceG7PgUuE",
+  "sha256": "6a2397cb06fe96f178b901d34204be29783e0d8e1ef742d45d4b1e5688249c73",
+  "size": 129712,
+  "onchain_sha256": "f88983ea398e459a71a4f64a86a0e5cb2ff7d71b34270527653afb7fb39babc2",
+  "onchain_size": 139728,
+  "last_deployed_slot": 460477573,
+  "upgrade_authority": "F6qazjHEsMwHowDpLEVbwyJrtczPBecgYtFFTeptz862",
+  "collected_at": "2026-10-24T18:12:22Z",
+  "previous_slot": null,
+  "release_tag": "scorch-460477573",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/scorch-460477573/scorch-460477573.so"
+}

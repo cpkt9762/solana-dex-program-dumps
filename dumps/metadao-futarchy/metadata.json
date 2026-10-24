@@ -1,0 +1,16 @@
+{
+  "name": "metadao-futarchy",
+  "program_id": "FUTARELBfJfQ8RDGhg1wdhddq1odMAJUePHFuBYfUxKq",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "CRg8Tgn3N6StCd7fy8hrWodXVZUX4qNiJkcTRa2CRq1T",
+  "sha256": "3784a4566a3b53f37cef18857d98820ee373c0f237b8888c1caf27cd25d06a1d",
+  "size": 1512568,
+  "onchain_sha256": "7fbec573921093f421d90c283c52cb842020f219b39316c4d501c4fb8ec3070e",
+  "onchain_size": 1522800,
+  "last_deployed_slot": 459399315,
+  "upgrade_authority": "6awyHMshBGVjJ3ozdSJdyyDE1CTAXUwrpNMaRGMsb4sf",
+  "collected_at": "2026-10-24T18:09:21Z",
+  "previous_slot": null,
+  "release_tag": "metadao-futarchy-459399315",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/metadao-futarchy-459399315/metadao-futarchy-459399315.so"
+}

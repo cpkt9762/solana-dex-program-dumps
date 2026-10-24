@@ -1,0 +1,16 @@
+{
+  "name": "fluxbeam",
+  "program_id": "FLUXubRmkEi2q6K3Y9kBPg9248ggaZVsoSFhtJHSrm1X",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "2VQTR8x92Bz547atLZakCZJ6c8eCrAJBu4ZqMdZbrvfJ",
+  "sha256": "8065afdd131ae8a09e2493c6a03fcd1c5ae7a6fb799dc48bd3ab19de05bf134f",
+  "size": 227544,
+  "onchain_sha256": "cb734530a4689c2e14e8fcdd2c4e4b36c3871cb3d7d62ac2e752439ac5f24f6f",
+  "onchain_size": 458144,
+  "last_deployed_slot": 207458738,
+  "upgrade_authority": "AGmRsqwk1ShBGveWPd6Tdcmu7nQmm1EcWGXozBDLvSTq",
+  "collected_at": "2026-10-24T18:10:40Z",
+  "previous_slot": null,
+  "release_tag": "fluxbeam-207458738",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/fluxbeam-207458738/fluxbeam-207458738.so"
+}
