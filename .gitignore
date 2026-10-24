@@ -1,0 +1,30 @@
+# Binaries live in GitHub Releases, never in git
+*.so
+/dry-run/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Temporary files produced while collecting
+*.tmp
+.collect-*
+
+# Secrets and keys: never commit these
+.env
+.env.*
+id.json
+*keypair*.json
+*.pem
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
