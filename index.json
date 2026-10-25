@@ -59,7 +59,7 @@
       "program_id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
       "type": "bonding-curve",
       "description": "Raydium LaunchLab, token launchpad with bonding curve",
-      "github": "https://github.com/raydium-io",
+      "github": "https://github.com/raydium-io/raydium-idl",
       "website": null,
       "versions": [
         {
@@ -293,7 +293,7 @@
       "program_id": "CLMM9tUoggJu2wagPkkqs9eFG4BWhVBZWkP1qv3Sp7tR",
       "type": "clmm",
       "description": "Crema Finance CLMM",
-      "github": "https://github.com/jup-ag/crema-clmm-sdk-v2",
+      "github": "https://github.com/CremaFinance",
       "website": null,
       "versions": [
         {
@@ -419,8 +419,8 @@
       "program_id": "omnixgS8fnqHfCcTGKWj6JtKjzpJZ1Y5y9pyFkQDkYE",
       "type": "amm",
       "description": "Omnipair, constant-product AMM combined with lending",
-      "github": null,
-      "website": "https://www.omnipair.fi/",
+      "github": "https://github.com/omnipair/omnipair-rs",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 439721901,
@@ -437,7 +437,7 @@
       "program_id": "stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq",
       "type": "lst-swap",
       "description": "Sanctum Router, cross-LST swap router (CPI wrapper over Sanctum pools)",
-      "github": "https://github.com/igneous-labs",
+      "github": "https://github.com/igneous-labs/sanctum-router-sdk",
       "website": null,
       "versions": [
         {
@@ -509,8 +509,8 @@
       "program_id": "boop8hVGQGqehUK2iVEMEnMrL5RbjywRzHKBmBE7ry4",
       "type": "bonding-curve",
       "description": "Boop.fun bonding-curve launchpad",
-      "github": null,
-      "website": "https://boop.fun/",
+      "github": "https://github.com/Boop-fun/idls",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 362618777,
@@ -527,8 +527,8 @@
       "program_id": "5U3EU2ubXtK84QcRjWVmYt9RaDyA8gKxdUrPFXmZyaki",
       "type": "bonding-curve",
       "description": "Virtuals buy/sell program",
-      "github": null,
-      "website": "https://www.virtuals.io/",
+      "github": "https://github.com/Virtual-Protocol",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 319985732,
@@ -545,8 +545,8 @@
       "program_id": "2wT8Yq49kHgDzXuPxZSaeLaH1qbmGXtEyPy64bL7aD3c",
       "type": "pmm",
       "description": "Lifinity v2, oracle-driven proactive market maker",
-      "github": null,
-      "website": "https://lifinity.io/",
+      "github": "https://github.com/Lifinity-Labs",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 388386900,
@@ -563,8 +563,8 @@
       "program_id": "EewxydAPCCVuNEyrVN68PuSYdQ7wKn27V9Gjeoi8dy3S",
       "type": "pmm",
       "description": "Lifinity v1 (legacy, superseded by v2)",
-      "github": null,
-      "website": "https://lifinity.io/",
+      "github": "https://github.com/Lifinity-Labs",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 235161533,
@@ -581,7 +581,7 @@
       "program_id": "WooFif76YGRNjk1pA8wCsN67aQsD9f9iLsz4NcJ1AVb",
       "type": "pmm",
       "description": "WOOFi, oracle-priced PMM",
-      "github": "https://github.com/sherlock-audit/2024-08-woofi-solana-deployment",
+      "github": "https://github.com/woonetwork/woofi-jupiter-integration",
       "website": null,
       "versions": [
         {
@@ -689,7 +689,7 @@
       "program_id": "PSwapMdSai8tjrEXcxFeQth87xC4rRsa4VA5mhGhXkP",
       "type": "amm",
       "description": "Penguin Finance swap (SPL token-swap fork)",
-      "github": null,
+      "github": "https://github.com/pngfi/typescript-sdk",
       "website": null,
       "versions": [
         {
@@ -707,8 +707,8 @@
       "program_id": "Gswppe6ERWKpUTXvRPfXdzHhiCyJvLadVvXGfdpBqcE1",
       "type": "amm",
       "description": "Guacswap (SPL token-swap fork)",
-      "github": null,
-      "website": "https://www.guacamole.gg/",
+      "github": "https://github.com/Guacgg",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 263699928,
@@ -743,8 +743,8 @@
       "program_id": "DSwpgjMvXhtGn6BsbqmacdBZyfLj6jSWf3HJpdJtmg6N",
       "type": "amm",
       "description": "DexLab swap (SPL token-swap fork)",
-      "github": null,
-      "website": "https://www.dexlab.space/",
+      "github": "https://github.com/dexlab-protocol/dexlab-token-swap",
+      "website": null,
       "versions": [
         {
           "last_deployed_slot": 243977673,
@@ -833,7 +833,7 @@
       "program_id": "H8W3ctz92svYg6mkn1UtGfu2aQr2fnUFHM1RhScEtQDt",
       "type": "amm",
       "description": "Cropper Finance (SPL token-swap fork)",
-      "github": null,
+      "github": "https://github.com/CropperFinance/cropper_instructions",
       "website": null,
       "versions": [
         {
@@ -887,7 +887,7 @@
       "program_id": "swapNyd8XiQwJ6ianp9snpu4brUqFxadzvHebnAXjJZ",
       "type": "stable-swap",
       "description": "Stabble Stable Swap",
-      "github": "https://github.com/stabbleorg",
+      "github": "https://github.com/stabbleorg/amm_v1",
       "website": null,
       "versions": [
         {
@@ -905,7 +905,7 @@
       "program_id": "swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW",
       "type": "amm",
       "description": "Stabble Weighted Swap, Balancer-style weighted pools",
-      "github": "https://github.com/stabbleorg",
+      "github": "https://github.com/stabbleorg/amm_v1",
       "website": null,
       "versions": [
         {

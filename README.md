@@ -237,7 +237,7 @@ The `Link` column is the project's GitHub when one is known, otherwise its offic
 empty when neither could be confirmed (several closed-source prop AMMs have no public site or
 repository). The link text shows what the GitHub link points to: `owner/repo` is a repository, which
 is the program source when that is public and otherwise an SDK, IDL, docs or audit repository, and a
-bare name is the developer's GitHub organisation. Links were checked on 2026-10-25 and can go stale;
+bare name is the developer's GitHub organisation or account. Links were checked on 2026-10-25 and can go stale;
 they are also available as `github` / `website` per program in [`index.json`](index.json).
 
 | Name | Program ID | Type | Description | Link |
@@ -245,7 +245,7 @@ they are also available as `github` / `website` per program in [`index.json`](in
 | `raydium-amm-v4` | `675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8` | amm | Raydium AMM v4, constant-product AMM | [raydium-io/raydium-amm](https://github.com/raydium-io/raydium-amm) |
 | `raydium-cpmm` | `CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C` | amm | Raydium CPMM, constant-product market maker (new architecture) | [raydium-io/raydium-cp-swap](https://github.com/raydium-io/raydium-cp-swap) |
 | `raydium-clmm` | `CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK` | clmm | Raydium CLMM, tick-based concentrated liquidity | [raydium-io/raydium-clmm](https://github.com/raydium-io/raydium-clmm) |
-| `raydium-launchlab` | `LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj` | bonding-curve | Raydium LaunchLab, token launchpad with bonding curve | [raydium-io](https://github.com/raydium-io) |
+| `raydium-launchlab` | `LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj` | bonding-curve | Raydium LaunchLab, token launchpad with bonding curve | [raydium-io/raydium-idl](https://github.com/raydium-io/raydium-idl) |
 | `orca-whirlpool` | `whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc` | clmm | Orca Whirlpools, concentrated liquidity AMM | [orca-so/whirlpools](https://github.com/orca-so/whirlpools) |
 | `meteora-dlmm` | `LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo` | dlmm | Meteora DLMM, bin-based dynamic liquidity market maker | [MeteoraAg/dlmm-sdk](https://github.com/MeteoraAg/dlmm-sdk) |
 | `meteora-damm-v2` | `cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG` | amm | Meteora DAMM v2 (Dynamic AMM v2), constant product with optional price range and dynamic fees | [MeteoraAg/damm-v2](https://github.com/MeteoraAg/damm-v2) |
@@ -258,41 +258,41 @@ they are also available as `github` / `website` per program in [`index.json`](in
 | `saber` | `SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ` | stable-swap | Saber StableSwap | [saber-hq/stable-swap](https://github.com/saber-hq/stable-swap) |
 | `saber-decimals` | `DecZY86MU5Gj7kppfUCEmd4LbXXuyZH1yHaP2NTqdiZB` | stable-swap | Saber Decimals, decimal-wrapper pools on top of StableSwap | [saber-hq/saber-periphery](https://github.com/saber-hq/saber-periphery) |
 | `byreal` | `REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2` | clmm | Byreal CLMM (Raydium CLMM fork) | [byreal-git/byreal-clmm](https://github.com/byreal-git/byreal-clmm) |
-| `crema` | `CLMM9tUoggJu2wagPkkqs9eFG4BWhVBZWkP1qv3Sp7tR` | clmm | Crema Finance CLMM | [jup-ag/crema-clmm-sdk-v2](https://github.com/jup-ag/crema-clmm-sdk-v2) |
+| `crema` | `CLMM9tUoggJu2wagPkkqs9eFG4BWhVBZWkP1qv3Sp7tR` | clmm | Crema Finance CLMM | [CremaFinance](https://github.com/CremaFinance) |
 | `invariant` | `HyaB3W9q6XdA5xwpU4XnSZV94htfmbmqJXZcEbRaJutt` | clmm | Invariant concentrated liquidity AMM | [invariant-labs/protocol](https://github.com/invariant-labs/protocol) |
 | `saros-dlmm` | `1qbkdrr3z4ryLA7pZykqxvxWPoeifcVKo6ZG9CfkvVE` | dlmm | Saros DLMM, bin-based liquidity | [saros-xyz/saros-dlmm-sdk-rs](https://github.com/saros-xyz/saros-dlmm-sdk-rs) |
 | `saros-amm` | `SSwapUtytfBdBn1b9NUGG6foMVPtcWgpRU32HToDUZr` | amm | Saros AMM (SPL token-swap fork) | [saros-xyz/saros-swap](https://github.com/saros-xyz/saros-swap) |
 | `perena` | `NUMERUNsFCP3kuNmWZuXtm1AaQCPj9uw6Guv2Ekoi5P` | stable-swap | Perena Numeraire, stable-swap AMM | [quineco/numeraire-sdk](https://github.com/quineco/numeraire-sdk) |
 | `metadao-futarchy` | `FUTARELBfJfQ8RDGhg1wdhddq1odMAJUePHFuBYfUxKq` | amm | MetaDAO futarchy, conditional-market AMM | [metaDAOproject/programs](https://github.com/metaDAOproject/programs) |
 | `moonit` | `MoonCVVNZFSYkqNXP6bxHLPL6QQJiMagDL3qcqUQTrG` | bonding-curve | Moonit bonding-curve launchpad | [gomoonit/moonit-sdk](https://github.com/gomoonit/moonit-sdk) |
-| `omnipair` | `omnixgS8fnqHfCcTGKWj6JtKjzpJZ1Y5y9pyFkQDkYE` | amm | Omnipair, constant-product AMM combined with lending | [omnipair.fi](https://www.omnipair.fi/) |
-| `sanctum-lst-swap` | `stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq` | lst-swap | Sanctum Router, cross-LST swap router (CPI wrapper over Sanctum pools) | [igneous-labs](https://github.com/igneous-labs) |
+| `omnipair` | `omnixgS8fnqHfCcTGKWj6JtKjzpJZ1Y5y9pyFkQDkYE` | amm | Omnipair, constant-product AMM combined with lending | [omnipair/omnipair-rs](https://github.com/omnipair/omnipair-rs) |
+| `sanctum-lst-swap` | `stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq` | lst-swap | Sanctum Router, cross-LST swap router (CPI wrapper over Sanctum pools) | [igneous-labs/sanctum-router-sdk](https://github.com/igneous-labs/sanctum-router-sdk) |
 | `sanctum-infinity` | `5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx` | lst-swap | Sanctum Infinity, multi-LST liquidity pool | [igneous-labs/inf-1.5](https://github.com/igneous-labs/inf-1.5) |
 | `pump-fun` | `6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P` | bonding-curve | Pump.fun bonding-curve launchpad | [pump-fun/pump-public-docs](https://github.com/pump-fun/pump-public-docs) |
 | `pump-swap` | `pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA` | amm | PumpSwap, constant-product AMM for graduated Pump.fun tokens | [pump-fun/pump-public-docs](https://github.com/pump-fun/pump-public-docs) |
-| `boop-fun` | `boop8hVGQGqehUK2iVEMEnMrL5RbjywRzHKBmBE7ry4` | bonding-curve | Boop.fun bonding-curve launchpad | [boop.fun](https://boop.fun/) |
-| `virtuals` | `5U3EU2ubXtK84QcRjWVmYt9RaDyA8gKxdUrPFXmZyaki` | bonding-curve | Virtuals buy/sell program | [virtuals.io](https://www.virtuals.io/) |
-| `lifinity-v2` | `2wT8Yq49kHgDzXuPxZSaeLaH1qbmGXtEyPy64bL7aD3c` | pmm | Lifinity v2, oracle-driven proactive market maker | [lifinity.io](https://lifinity.io/) |
-| `lifinity-v1` | `EewxydAPCCVuNEyrVN68PuSYdQ7wKn27V9Gjeoi8dy3S` | pmm | Lifinity v1 (legacy, superseded by v2) | [lifinity.io](https://lifinity.io/) |
-| `woofi` | `WooFif76YGRNjk1pA8wCsN67aQsD9f9iLsz4NcJ1AVb` | pmm | WOOFi, oracle-priced PMM | [sherlock-audit/2024-08-woofi-solana-deployment](https://github.com/sherlock-audit/2024-08-woofi-solana-deployment) |
+| `boop-fun` | `boop8hVGQGqehUK2iVEMEnMrL5RbjywRzHKBmBE7ry4` | bonding-curve | Boop.fun bonding-curve launchpad | [Boop-fun/idls](https://github.com/Boop-fun/idls) |
+| `virtuals` | `5U3EU2ubXtK84QcRjWVmYt9RaDyA8gKxdUrPFXmZyaki` | bonding-curve | Virtuals buy/sell program | [Virtual-Protocol](https://github.com/Virtual-Protocol) |
+| `lifinity-v2` | `2wT8Yq49kHgDzXuPxZSaeLaH1qbmGXtEyPy64bL7aD3c` | pmm | Lifinity v2, oracle-driven proactive market maker | [Lifinity-Labs](https://github.com/Lifinity-Labs) |
+| `lifinity-v1` | `EewxydAPCCVuNEyrVN68PuSYdQ7wKn27V9Gjeoi8dy3S` | pmm | Lifinity v1 (legacy, superseded by v2) | [Lifinity-Labs](https://github.com/Lifinity-Labs) |
+| `woofi` | `WooFif76YGRNjk1pA8wCsN67aQsD9f9iLsz4NcJ1AVb` | pmm | WOOFi, oracle-priced PMM | [woonetwork/woofi-jupiter-integration](https://github.com/woonetwork/woofi-jupiter-integration) |
 | `humidifi` | `9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp` | pmm | HumidiFi, closed-source oracle-priced prop AMM | [humidifi.xyz](https://www.humidifi.xyz/) |
 | `spl-token-swap` | `SwaPpA9LAaLfeLi3a68M4DjnLqgtticKg6CnyNwgAC8` | amm | SPL Token Swap reference program | [solana-labs/solana-program-library](https://github.com/solana-labs/solana-program-library/tree/master/token-swap) |
 | `orca-v1` | `DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1` | amm | Orca v1 (SPL token-swap based) | [orca-so](https://github.com/orca-so) |
 | `orca-v2` | `9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP` | amm | Orca v2 (SPL token-swap based) | [orca-so](https://github.com/orca-so) |
 | `stepn` | `Dooar9JkhdZ7J3LHN3A7YCuoGRUggXhQaG4kijfLGU2j` | amm | STEPN swap (SPL token-swap fork) | [stepn.com](https://www.stepn.com/) |
-| `penguin` | `PSwapMdSai8tjrEXcxFeQth87xC4rRsa4VA5mhGhXkP` | amm | Penguin Finance swap (SPL token-swap fork) |  |
-| `guacswap` | `Gswppe6ERWKpUTXvRPfXdzHhiCyJvLadVvXGfdpBqcE1` | amm | Guacswap (SPL token-swap fork) | [guacamole.gg](https://www.guacamole.gg/) |
+| `penguin` | `PSwapMdSai8tjrEXcxFeQth87xC4rRsa4VA5mhGhXkP` | amm | Penguin Finance swap (SPL token-swap fork) | [pngfi/typescript-sdk](https://github.com/pngfi/typescript-sdk) |
+| `guacswap` | `Gswppe6ERWKpUTXvRPfXdzHhiCyJvLadVvXGfdpBqcE1` | amm | Guacswap (SPL token-swap fork) | [Guacgg](https://github.com/Guacgg) |
 | `fluxbeam` | `FLUXubRmkEi2q6K3Y9kBPg9248ggaZVsoSFhtJHSrm1X` | amm | FluxBeam (SPL token-swap fork) | [fluxbeam.xyz](https://fluxbeam.xyz/) |
-| `dexlab` | `DSwpgjMvXhtGn6BsbqmacdBZyfLj6jSWf3HJpdJtmg6N` | amm | DexLab swap (SPL token-swap fork) | [dexlab.space](https://www.dexlab.space/) |
+| `dexlab` | `DSwpgjMvXhtGn6BsbqmacdBZyfLj6jSWf3HJpdJtmg6N` | amm | DexLab swap (SPL token-swap fork) | [dexlab-protocol/dexlab-token-swap](https://github.com/dexlab-protocol/dexlab-token-swap) |
 | `aldrin-v1` | `AMM55ShdkoGRB5jVYPjWziwk8m5MpwyDgsMWHaMSQWH6` | amm | Aldrin AMM v1 (SPL token-swap fork) | [aldrin-labs](https://github.com/aldrin-labs) |
 | `aldrin-v2` | `CURVGoZn8zycx6FXwwevgBTB2gVvdbGTEpvMJDbgs2t4` | amm | Aldrin AMM v2 (SPL token-swap fork) | [aldrin-labs](https://github.com/aldrin-labs) |
 | `mercurial` | `MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky` | stable-swap | Mercurial multi-token stable-swap (merged into Meteora) | [mercurial-finance/stable-swap-n-pool-instructions](https://github.com/mercurial-finance/stable-swap-n-pool-instructions) |
 | `bonkswap` | `BSwp6bEBihVLdqJRKGgzjcGLHkcTuzmSo1TQkHepzH8p` | amm | BonkSwap (SPL token-swap fork) | [bonkswap.io](https://www.bonkswap.io/) |
-| `cropper` | `H8W3ctz92svYg6mkn1UtGfu2aQr2fnUFHM1RhScEtQDt` | amm | Cropper Finance (SPL token-swap fork) |  |
+| `cropper` | `H8W3ctz92svYg6mkn1UtGfu2aQr2fnUFHM1RhScEtQDt` | amm | Cropper Finance (SPL token-swap fork) | [CropperFinance/cropper_instructions](https://github.com/CropperFinance/cropper_instructions) |
 | `pancakeswap` | `HpNfyc2Saw7RKkQd8nEL4khUcuPhQ7WwY1B2qjx8jxFq` | clmm | PancakeSwap on Solana (CLMM fork) | [pancakeswap](https://github.com/pancakeswap) |
 | `goosefx-gamma` | `GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT` | amm | GooseFX GAMMA AMM | [GooseFX1/gamma-swap](https://github.com/GooseFX1/gamma-swap) |
-| `stabble-stable` | `swapNyd8XiQwJ6ianp9snpu4brUqFxadzvHebnAXjJZ` | stable-swap | Stabble Stable Swap | [stabbleorg](https://github.com/stabbleorg) |
-| `stabble-weighted` | `swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW` | amm | Stabble Weighted Swap, Balancer-style weighted pools | [stabbleorg](https://github.com/stabbleorg) |
+| `stabble-stable` | `swapNyd8XiQwJ6ianp9snpu4brUqFxadzvHebnAXjJZ` | stable-swap | Stabble Stable Swap | [stabbleorg/amm_v1](https://github.com/stabbleorg/amm_v1) |
+| `stabble-weighted` | `swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW` | amm | Stabble Weighted Swap, Balancer-style weighted pools | [stabbleorg/amm_v1](https://github.com/stabbleorg/amm_v1) |
 | `stabble-clmm` | `6dMXqGZ3ga2dikrYS9ovDXgHGh5RUsb2RTUj6hrQXhk6` | clmm | Stabble CLMM | [stabbleorg/clmm](https://github.com/stabbleorg/clmm) |
 | `drift-v2` | `dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH` | perp | Drift v2, perpetuals and spot DEX with AMM-backed liquidity (GitHub and docs now under the Velocity Exchange name) | [velocity-exchange/protocol-v2](https://github.com/velocity-exchange/protocol-v2) |
 | `jupiter-perps` | `PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu` | perp | Jupiter Perpetuals, LP-pool backed perps | [jup-ag](https://github.com/jup-ag) |
