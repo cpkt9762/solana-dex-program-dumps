@@ -11,6 +11,6 @@
   "upgrade_authority": "GXCSMdWB19seZ8ZjELFfkzkfSjgdY1FnatzXGbYahMbv",
   "collected_at": "2026-10-24T18:11:03Z",
   "previous_slot": null,
-  "release_tag": "cropper-264411854",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/cropper-264411854/cropper-264411854.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/cropper-264411854.so"
 }

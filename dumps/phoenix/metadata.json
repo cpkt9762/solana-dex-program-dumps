@@ -11,6 +11,6 @@
   "upgrade_authority": "8mv7G3fJq5a5ej7E14vgcSGeQKH79emjU9fVfuhyitEq",
   "collected_at": "2026-10-24T18:08:32Z",
   "previous_slot": null,
-  "release_tag": "phoenix-231433470",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/phoenix-231433470/phoenix-231433470.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/phoenix-231433470.so"
 }

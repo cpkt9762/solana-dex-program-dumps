@@ -11,6 +11,6 @@
   "upgrade_authority": "CPJo7euWKrEETLmGJsctRnrXxbikFsb6KLN59moNN88K",
   "collected_at": "2026-10-24T18:09:17Z",
   "previous_slot": null,
-  "release_tag": "perena-329553166",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/perena-329553166/perena-329553166.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/perena-329553166.so"
 }

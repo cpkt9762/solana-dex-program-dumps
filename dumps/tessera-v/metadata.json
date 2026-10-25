@@ -11,6 +11,6 @@
   "upgrade_authority": "7bJ9xu9UGVZPtYzH1fMwdaKdvfhqeSJtoFc2eGrXBPhK",
   "collected_at": "2026-10-24T18:11:45Z",
   "previous_slot": null,
-  "release_tag": "tessera-v-446053401",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/tessera-v-446053401/tessera-v-446053401.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/tessera-v-446053401.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
   "collected_at": "2026-10-24T18:10:55Z",
   "previous_slot": null,
-  "release_tag": "mercurial-100141975",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/mercurial-100141975/mercurial-100141975.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/mercurial-100141975.so"
 }

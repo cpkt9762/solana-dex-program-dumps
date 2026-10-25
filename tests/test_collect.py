@@ -21,6 +21,7 @@ OTHER_ID = "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
 LOADER_V3 = "BPFLoaderUpgradeab1e11111111111111111111111"
 LOADER_V2 = "BPFLoader2111111111111111111111111111111111"
 NAME = "raydium-amm-v4"
+TAG = "snapshot-2026-01-01"
 
 
 def elf(payload: bytes, *, sh_off: int = 0, sh_num: int = 0) -> bytes:
@@ -63,17 +64,21 @@ class FakeSource:
 
 
 class FakeStore:
-    """Records published assets in memory."""
+    """Records published assets (by file name) and release notes in memory."""
 
     def __init__(self) -> None:
         self.published: dict[str, tuple[str, bytes]] = {}
+        self.notes: dict[str, collect.ReleaseSpec] = {}
         self.fail = False
 
     def publish(self, spec: collect.ReleaseSpec, asset: Path) -> str:
         if self.fail:
             raise collect.CollectError("github down")
-        self.published[spec.tag] = (asset.name, asset.read_bytes())
+        self.published[asset.name] = (spec.tag, asset.read_bytes())
         return f"https://example.invalid/{spec.tag}/{asset.name}"
+
+    def set_notes(self, spec: collect.ReleaseSpec) -> None:
+        self.notes[spec.tag] = spec
 
 
 def entry(name: str = NAME, program_id: str = PROGRAM_ID) -> collect.RegistryEntry:
@@ -95,6 +100,7 @@ class CollectorTest(unittest.TestCase):
             collect.Layout(self.root),
             self.source,
             self.store,
+            release_tag=TAG,
             sleep=lambda _s: None,
             now=lambda: self.clock,
             **kwargs,  # type: ignore[arg-type]
@@ -107,10 +113,10 @@ class CollectorTest(unittest.TestCase):
         self.source.deploy(PROGRAM_ID, 100, elf(b"v1"))
         result = self.collector.collect_one(entry())
         self.assertEqual(result.outcome, collect.Outcome.NEW)
-        self.assertEqual(self.store.published, {f"{NAME}-100": (f"{NAME}-100.so", elf(b"v1"))})
+        self.assertEqual(self.store.published, {f"{NAME}-100.so": (TAG, elf(b"v1"))})
         meta = self.read_meta("dumps", NAME)
-        self.assertEqual(meta["release_tag"], f"{NAME}-100")
-        self.assertEqual(meta["download_url"], f"https://example.invalid/{NAME}-100/{NAME}-100.so")
+        self.assertEqual(meta["release_tag"], TAG)
+        self.assertEqual(meta["download_url"], f"https://example.invalid/{TAG}/{NAME}-100.so")
         self.assertEqual((meta["last_deployed_slot"], meta["upgrade_authority"]), (100, "AUTH"))
         self.assertEqual(meta["collected_at"], self.clock)
         self.assertIsNone(meta["previous_slot"])
@@ -121,7 +127,7 @@ class CollectorTest(unittest.TestCase):
         raw = elf(b"v1") + b"\x00" * 500
         self.source.deploy(PROGRAM_ID, 100, raw)
         self.collector.collect_one(entry())
-        _, stored = self.store.published[f"{NAME}-100"]
+        _, stored = self.store.published[f"{NAME}-100.so"]
         self.assertEqual(stored, elf(b"v1"))
         meta = self.read_meta("dumps", NAME)
         self.assertEqual((meta["size"], meta["sha256"]), (len(stored), hashlib.sha256(stored).hexdigest()))
@@ -151,12 +157,12 @@ class CollectorTest(unittest.TestCase):
         self.clock = "2026-01-02T00:00:00Z"
         self.source.deploy(PROGRAM_ID, 250, elf(b"v2"))
         result = self.collector.collect_one(entry())
-        self.assertEqual((result.outcome, result.release_tag), (collect.Outcome.UPDATED, f"{NAME}-250"))
+        self.assertEqual((result.outcome, result.asset), (collect.Outcome.UPDATED, f"{NAME}-250.so"))
         archived = self.read_meta("archives", NAME, "100")
-        self.assertEqual((archived["last_deployed_slot"], archived["release_tag"]), (100, f"{NAME}-100"))
+        self.assertEqual((archived["last_deployed_slot"], archived["download_url"]), (100, f"https://example.invalid/{TAG}/{NAME}-100.so"))
         meta = self.read_meta("dumps", NAME)
         self.assertEqual((meta["last_deployed_slot"], meta["previous_slot"]), (250, 100))
-        self.assertEqual(sorted(self.store.published), [f"{NAME}-100", f"{NAME}-250"])
+        self.assertEqual(sorted(self.store.published), [f"{NAME}-100.so", f"{NAME}-250.so"])
 
     def test_slotless_program_uses_sha256_for_detection_and_names(self) -> None:
         self.source.deploy(PROGRAM_ID, None, elf(b"v1"))
@@ -167,7 +173,7 @@ class CollectorTest(unittest.TestCase):
         result = self.collector.collect_one(entry())
         self.assertEqual(result.outcome, collect.Outcome.UPDATED)
         new_sha = str(self.read_meta("dumps", NAME)["sha256"])
-        self.assertEqual(result.release_tag, f"{NAME}-sha256-{new_sha[:12]}")
+        self.assertEqual(result.asset, f"{NAME}-sha256-{new_sha[:12]}.so")
         self.assertTrue((self.root / "archives" / NAME / f"sha256-{old_sha[:12]}" / "metadata.json").is_file())
 
     def test_same_slot_with_different_bytes_gets_a_distinct_tag(self) -> None:
@@ -176,8 +182,8 @@ class CollectorTest(unittest.TestCase):
         self.source.deploy(PROGRAM_ID, 100, elf(b"v1-changed"))
         result = self.make_collector(verify_hash=True).collect_one(entry())
         self.assertEqual(result.outcome, collect.Outcome.UPDATED)
-        self.assertNotEqual(result.release_tag, f"{NAME}-100")
-        self.assertTrue(str(result.release_tag).startswith(f"{NAME}-100-"))
+        self.assertNotEqual(result.asset, f"{NAME}-100.so")
+        self.assertTrue(str(result.asset).startswith(f"{NAME}-100-"))
 
     def test_redeploy_during_dump_triggers_redump(self) -> None:
         self.source.deploy(PROGRAM_ID, 100, elf(b"v1"))
@@ -186,7 +192,7 @@ class CollectorTest(unittest.TestCase):
         self.source.show_queue[PROGRAM_ID] = [self.source.infos[PROGRAM_ID], moved, moved]
         result = self.collector.collect_one(entry())
         self.assertEqual((result.slot, len(self.source.dump_calls)), (101, 2))
-        self.assertIn(f"{NAME}-101", self.store.published)
+        self.assertIn(f"{NAME}-101.so", self.store.published)
 
     def test_non_elf_dump_is_rejected(self) -> None:
         self.source.deploy(PROGRAM_ID, 100, b"<html>rate limited</html>")
@@ -246,7 +252,9 @@ class IndexTest(unittest.TestCase):
             root = Path(tmp)
             source, store = FakeSource(), FakeStore()
             clock = ["2026-01-01T00:00:00Z"]
-            collector = collect.Collector(collect.Layout(root), source, store, sleep=lambda _s: None, now=lambda: clock[0])
+            collector = collect.Collector(
+                collect.Layout(root), source, store, release_tag=TAG, sleep=lambda _s: None, now=lambda: clock[0]
+            )
             for slot, day in ((100, "01"), (200, "02"), (300, "03")):
                 clock[0] = f"2026-01-{day}T00:00:00Z"
                 source.deploy(PROGRAM_ID, slot, elf(str(slot).encode()))
@@ -255,7 +263,7 @@ class IndexTest(unittest.TestCase):
             programs = index["programs"]
             assert isinstance(programs, list)
             self.assertEqual([v["last_deployed_slot"] for v in programs[0]["versions"]], [300, 200, 100])
-            self.assertEqual(programs[0]["versions"][0]["release_tag"], f"{NAME}-300")
+            self.assertEqual(programs[0]["versions"][0]["download_url"], f"https://example.invalid/{TAG}/{NAME}-300.so")
             self.assertEqual(programs[1]["versions"], [])
 
 
@@ -312,6 +320,12 @@ class GhReleaseStoreTest(unittest.TestCase):
             self.store().publish(self.spec, self.asset)
         self.assertEqual(self.actions(), ["view"])
 
+    def test_set_notes_edits_the_release(self) -> None:
+        self.store().set_notes(collect.ReleaseSpec("prog-100", "Snapshot x", "body"))
+        edit = self.calls[0]
+        self.assertEqual(edit[1:4], ["release", "edit", "prog-100"])
+        self.assertEqual(edit[edit.index("--notes") + 1], "body")
+
 
 class LocalStoreTest(unittest.TestCase):
     def test_copies_asset_and_returns_file_url(self) -> None:
@@ -321,6 +335,32 @@ class LocalStoreTest(unittest.TestCase):
             url = collect.LocalStore(Path(tmp) / "out").publish(collect.ReleaseSpec("prog-1", "t", "n"), asset)
             self.assertTrue(url.startswith("file://"))
             self.assertEqual((Path(tmp) / "out" / "prog-1" / "prog-1.so").read_bytes(), b"abc")
+
+    def test_set_notes_writes_a_notes_file(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            collect.LocalStore(Path(tmp)).set_notes(collect.ReleaseSpec("snap", "Snapshot", "body"))
+            self.assertIn("body", (Path(tmp) / "snap" / collect.LocalStore.NOTES_FILE).read_text(encoding="utf-8"))
+
+
+class SnapshotNotesTest(unittest.TestCase):
+    def test_notes_list_only_versions_of_that_snapshot(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source, store = FakeSource(), FakeStore()
+            old = collect.Collector(collect.Layout(root), source, store, release_tag="snapshot-2025-12-31", sleep=lambda _s: None)
+            source.deploy(PROGRAM_ID, 100, elf(b"v1"))
+            old.collect_one(entry())
+            new = collect.Collector(collect.Layout(root), source, store, release_tag=TAG, sleep=lambda _s: None)
+            source.deploy(PROGRAM_ID, 250, elf(b"v2"))
+            source.deploy(OTHER_ID, 7, elf(b"b"))
+            new.run([entry(), entry("raydium-cpmm", OTHER_ID)])
+            notes = collect.snapshot_notes(collect.Layout(root), [entry(), entry("raydium-cpmm", OTHER_ID)], TAG)
+            self.assertIn("[!NOTE]", notes)
+            self.assertIn("2 program version(s)", notes)
+            self.assertIn(f"| {NAME} | `{PROGRAM_ID}` | 250 | 100 |", notes)
+            self.assertIn("`raydium-cpmm-7.so`", notes)
+            self.assertNotIn(f"`{NAME}-100.so`", notes)
+            self.assertEqual(collect.snapshot_spec(TAG).title, "Snapshot 2026-01-01")
 
 
 class ElfPaddingTest(unittest.TestCase):
@@ -387,22 +427,22 @@ class ParsingTest(unittest.TestCase):
 
     def test_commit_message_lists_changes(self) -> None:
         results = [
-            collect.Result("a", collect.Outcome.UPDATED, slot=2, previous_slot=1, release_tag="a-2"),
-            collect.Result("b", collect.Outcome.NEW, slot=3, release_tag="b-3"),
+            collect.Result("a", collect.Outcome.UPDATED, slot=2, previous_slot=1, asset="a-2.so"),
+            collect.Result("b", collect.Outcome.NEW, slot=3, asset="b-3.so"),
             collect.Result("c", collect.Outcome.UNCHANGED, slot=4),
         ]
-        message = collect.format_commit_message(results)
+        message = collect.format_commit_message(results, TAG)
         assert message is not None
-        self.assertTrue(message.startswith("chore(dumps): 1 upgraded, 1 new"))
-        self.assertIn("- a: slot 1 -> 2 (a-2)", message)
+        self.assertTrue(message.startswith(f"chore(dumps): 1 upgraded, 1 new ({TAG})"))
+        self.assertIn("- a: slot 1 -> 2\n", message)
         self.assertNotIn("- c:", message)
-        self.assertIsNone(collect.format_commit_message(results[2:]))
+        self.assertIsNone(collect.format_commit_message(results[2:], TAG))
 
     def test_commit_message_for_slotless_program_uses_sha256(self) -> None:
-        result = collect.Result("d", collect.Outcome.UPDATED, sha256="b" * 64, previous_sha256="a" * 64, release_tag="d-x")
-        message = collect.format_commit_message([result])
+        result = collect.Result("d", collect.Outcome.UPDATED, sha256="b" * 64, previous_sha256="a" * 64, asset="d-x.so")
+        message = collect.format_commit_message([result], TAG)
         assert message is not None
-        self.assertIn(f"- d: sha256 {'a' * 12} -> {'b' * 12} (d-x)", message)
+        self.assertIn(f"- d: sha256 {'a' * 12} -> {'b' * 12}", message)
 
 
 class DryRunGuardTest(unittest.TestCase):

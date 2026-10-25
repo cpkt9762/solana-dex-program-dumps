@@ -11,6 +11,6 @@
   "upgrade_authority": "9rHUPE2ng7stBuaeAM7heiVHLLGPAqGjYKQ3BBUWxKSP",
   "collected_at": "2026-10-24T18:11:17Z",
   "previous_slot": null,
-  "release_tag": "stabble-stable-395407721",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-stable-395407721/stabble-stable-395407721.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/stabble-stable-395407721.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "9h2weJxwXFG9G8V8Qt6Vo6w2pPEJ1zCt2nDiBHPmY5TL",
   "collected_at": "2026-10-24T18:09:26Z",
   "previous_slot": null,
-  "release_tag": "moonit-350198871",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/moonit-350198871/moonit-350198871.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/moonit-350198871.so"
 }

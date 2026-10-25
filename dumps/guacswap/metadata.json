@@ -11,6 +11,6 @@
   "upgrade_authority": "4kJq6MpbqrNkatatuwCauyhkGYpPY3wnn6hGbV7kvbhv",
   "collected_at": "2026-10-24T18:10:36Z",
   "previous_slot": null,
-  "release_tag": "guacswap-263699928",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/guacswap-263699928/guacswap-263699928.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/guacswap-263699928.so"
 }

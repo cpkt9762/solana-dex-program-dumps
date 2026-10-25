@@ -11,6 +11,6 @@
   "upgrade_authority": "3M1gJoNCxuw6GBMRatHzCvxwbQMiUZ6VoG22UCjubQZq",
   "collected_at": "2026-10-24T18:10:30Z",
   "previous_slot": null,
-  "release_tag": "penguin-161376048",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/penguin-161376048/penguin-161376048.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/penguin-161376048.so"
 }

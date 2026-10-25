@@ -11,6 +11,6 @@
   "upgrade_authority": "6iqLgPtKrpmJaXrAU8HmmcEWk9FVqsTZ2GF3eKD39xew",
   "collected_at": "2026-10-24T18:12:26Z",
   "previous_slot": null,
-  "release_tag": "obsidian-459988613",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/obsidian-459988613/obsidian-459988613.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/obsidian-459988613.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "8vNDGweVTPBDKFSuLnnxPVWT33PgiKdCqFPj7KUSer2w",
   "collected_at": "2026-10-24T18:09:51Z",
   "previous_slot": null,
-  "release_tag": "boop-fun-362618777",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/boop-fun-362618777/boop-fun-362618777.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/boop-fun-362618777.so"
 }

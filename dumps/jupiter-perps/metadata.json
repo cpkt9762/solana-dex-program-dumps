@@ -11,6 +11,6 @@
   "upgrade_authority": "5myNNmEmPm3UAnJ2ggLEpnTFb9t9Gk8369wKw6n3uAKx",
   "collected_at": "2026-10-24T18:11:33Z",
   "previous_slot": null,
-  "release_tag": "jupiter-perps-413092478",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/jupiter-perps-413092478/jupiter-perps-413092478.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/jupiter-perps-413092478.so"
 }

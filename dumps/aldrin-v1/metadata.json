@@ -11,6 +11,6 @@
   "upgrade_authority": "8gXLUDHme93x8Ypiv8vyRVAtVXHNvXssbJs2nV7Np2J7",
   "collected_at": "2026-10-24T18:10:48Z",
   "previous_slot": null,
-  "release_tag": "aldrin-v1-249613938",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aldrin-v1-249613938/aldrin-v1-249613938.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/aldrin-v1-249613938.so"
 }

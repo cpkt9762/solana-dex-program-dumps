@@ -11,6 +11,6 @@
   "upgrade_authority": "3kXrf8w8Z6EjLJU4S8dAkpRL2von8z7Eh3kJnFrmo7Z2",
   "collected_at": "2026-10-24T18:11:25Z",
   "previous_slot": null,
-  "release_tag": "stabble-clmm-377879224",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/stabble-clmm-377879224/stabble-clmm-377879224.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/stabble-clmm-377879224.so"
 }

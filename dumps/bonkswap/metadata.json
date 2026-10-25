@@ -11,6 +11,6 @@
   "upgrade_authority": "fmM4vwDqMyAj5dzgR7AnDtgjSp83GXBbEWC8EEEcfcM",
   "collected_at": "2026-10-24T18:11:00Z",
   "previous_slot": null,
-  "release_tag": "bonkswap-394615657",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/bonkswap-394615657/bonkswap-394615657.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/bonkswap-394615657.so"
 }

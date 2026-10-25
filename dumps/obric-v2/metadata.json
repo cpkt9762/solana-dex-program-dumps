@@ -11,6 +11,6 @@
   "upgrade_authority": "admvs2QG84sZRHaeDrVt4Ax7rewYPrKAhb3byA6QSrA",
   "collected_at": "2026-10-24T18:12:05Z",
   "previous_slot": null,
-  "release_tag": "obric-v2-368947712",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/obric-v2-368947712/obric-v2-368947712.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/obric-v2-368947712.so"
 }

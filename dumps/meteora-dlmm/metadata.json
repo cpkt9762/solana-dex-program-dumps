@@ -11,6 +11,6 @@
   "upgrade_authority": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
   "collected_at": "2026-10-24T18:08:13Z",
   "previous_slot": null,
-  "release_tag": "meteora-dlmm-423977638",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/meteora-dlmm-423977638/meteora-dlmm-423977638.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/meteora-dlmm-423977638.so"
 }

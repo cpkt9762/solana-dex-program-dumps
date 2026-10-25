@@ -11,6 +11,6 @@
   "upgrade_authority": "EmEa9b4yGffixdeFQ9zoyB3V5D9PZAbcE79mfwXb3bhs",
   "collected_at": "2026-10-24T18:08:56Z",
   "previous_slot": null,
-  "release_tag": "byreal-438767271",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/byreal-438767271/byreal-438767271.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/byreal-438767271.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "Em3wKQYD83ph9LmSt6xBZeB9DpozT55AcGa61EYxHRVh",
   "collected_at": "2026-10-24T18:11:08Z",
   "previous_slot": null,
-  "release_tag": "pancakeswap-432564695",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pancakeswap-432564695/pancakeswap-432564695.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/pancakeswap-432564695.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
   "collected_at": "2026-10-24T18:09:47Z",
   "previous_slot": null,
-  "release_tag": "pump-swap-458921517",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/pump-swap-458921517/pump-swap-458921517.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/pump-swap-458921517.so"
 }

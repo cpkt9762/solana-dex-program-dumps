@@ -11,6 +11,6 @@
   "upgrade_authority": "GwH3Hiv5mACLX3ufTw1pFsrhSPon5tdw252DBs4Rx4PV",
   "collected_at": "2026-10-24T18:08:09Z",
   "previous_slot": null,
-  "release_tag": "orca-whirlpool-457152296",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-whirlpool-457152296/orca-whirlpool-457152296.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/orca-whirlpool-457152296.so"
 }

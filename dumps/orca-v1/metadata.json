@@ -11,6 +11,6 @@
   "upgrade_authority": null,
   "collected_at": "2026-10-24T18:10:18Z",
   "previous_slot": null,
-  "release_tag": "orca-v1-sha256-4f316b5d1eb4",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/orca-v1-sha256-4f316b5d1eb4/orca-v1-sha256-4f316b5d1eb4.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/orca-v1-sha256-4f316b5d1eb4.so"
 }

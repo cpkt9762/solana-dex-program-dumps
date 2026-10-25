@@ -11,6 +11,6 @@
   "upgrade_authority": "DR1tLcKEmiNFxF5dxgdWCANdeBMNu9FjuHur2i4vAPHV",
   "collected_at": "2026-10-24T18:09:00Z",
   "previous_slot": null,
-  "release_tag": "crema-169658954",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/crema-169658954/crema-169658954.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/crema-169658954.so"
 }

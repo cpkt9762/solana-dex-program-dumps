@@ -11,6 +11,6 @@
   "upgrade_authority": "CDFU8tEWsVU2ZMiek57Sgk3Huha2yBNcSHLAts3V3Cbf",
   "collected_at": "2026-10-24T18:08:40Z",
   "previous_slot": null,
-  "release_tag": "manifest-459237697",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/manifest-459237697/manifest-459237697.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/manifest-459237697.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "H2mDaMYkYAkZxZy8ByTjU13yputt7ScyGQwVtCyj8TMA",
   "collected_at": "2026-10-24T18:12:14Z",
   "previous_slot": null,
-  "release_tag": "alphaq-422791798",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/alphaq-422791798/alphaq-422791798.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/alphaq-422791798.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "qtSTQb8FwK27pGSJMUXE3vqAN8doEVWAbvSxUPQhCCg",
   "collected_at": "2026-10-24T18:12:18Z",
   "previous_slot": null,
-  "release_tag": "quantum-460086125",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/quantum-460086125/quantum-460086125.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/quantum-460086125.so"
 }

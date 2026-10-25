@@ -11,6 +11,6 @@
   "upgrade_authority": "UPgd1zNpfgYRRcudZyubhKPrrYKL7vKRmw25SR6qto5",
   "collected_at": "2026-10-24T18:11:57Z",
   "previous_slot": null,
-  "release_tag": "zerofi-460280271",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/zerofi-460280271/zerofi-460280271.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/zerofi-460280271.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "8xYs2tGXPayMtgsqs4NuMy7bnWr7DM9tnnkbY2SHVbys",
   "collected_at": "2026-10-24T18:08:44Z",
   "previous_slot": null,
-  "release_tag": "serum-dex-v3-168006653",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/serum-dex-v3-168006653/serum-dex-v3-168006653.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/serum-dex-v3-168006653.so"
 }

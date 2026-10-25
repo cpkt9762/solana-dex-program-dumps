@@ -11,6 +11,6 @@
   "upgrade_authority": "32PdN6orJEgnDWi3zDM3pP9Hm9uEkS7EYxbPYcGEh3Q2",
   "collected_at": "2026-10-24T18:12:39Z",
   "previous_slot": null,
-  "release_tag": "gavel-363331997",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/gavel-363331997/gavel-363331997.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/gavel-363331997.so"
 }

@@ -11,6 +11,6 @@
   "upgrade_authority": "2i4PUSybSF8V7KuYd9EUvj2BKAXMq2LNEax8M6Y9snoj",
   "collected_at": "2026-10-24T18:09:59Z",
   "previous_slot": null,
-  "release_tag": "lifinity-v2-388386900",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/lifinity-v2-388386900/lifinity-v2-388386900.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/lifinity-v2-388386900.so"
 }

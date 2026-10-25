@@ -11,6 +11,6 @@
   "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
   "collected_at": "2026-10-24T18:08:04Z",
   "previous_slot": null,
-  "release_tag": "raydium-launchlab-446221802",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-launchlab-446221802/raydium-launchlab-446221802.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/raydium-launchlab-446221802.so"
 }

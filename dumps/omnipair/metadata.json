@@ -11,6 +11,6 @@
   "upgrade_authority": "4JpPs9Mi11qoj6GthQPiTjUc4gXq8BAoSs3AD6NVjQUZ",
   "collected_at": "2026-10-24T18:09:30Z",
   "previous_slot": null,
-  "release_tag": "omnipair-439721901",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/omnipair-439721901/omnipair-439721901.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/omnipair-439721901.so"
 }

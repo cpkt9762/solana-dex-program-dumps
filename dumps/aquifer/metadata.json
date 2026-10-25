@@ -11,6 +11,6 @@
   "upgrade_authority": "8pJhHxPQRiUGdtVSCNPyP9AH994zeyYEBGb5yZRzheSA",
   "collected_at": "2026-10-24T18:12:09Z",
   "previous_slot": null,
-  "release_tag": "aquifer-459979090",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/aquifer-459979090/aquifer-459979090.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/aquifer-459979090.so"
 }

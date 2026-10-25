@@ -11,6 +11,6 @@
   "upgrade_authority": "3tAwiKReJVi11vG8ME79sog5QtUmuhcoUypR4K2T7Zrc",
   "collected_at": "2026-10-24T18:09:04Z",
   "previous_slot": null,
-  "release_tag": "invariant-343244916",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/invariant-343244916/invariant-343244916.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/invariant-343244916.so"
 }

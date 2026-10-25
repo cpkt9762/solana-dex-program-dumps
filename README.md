@@ -5,7 +5,8 @@ from mainnet with the official Solana CLI by GitHub Actions. Every deployed vers
 observed is kept, named by its `last_deployed_slot`, for reverse engineering, auditing and
 version checks.
 
-- Binaries: one [GitHub release](https://github.com/cpkt9762/solana-dex-program-dumps/releases) per program version, tag `<name>-<last_deployed_slot>`
+- Binaries: [GitHub releases](https://github.com/cpkt9762/solana-dex-program-dumps/releases), one per day with changes (tag `snapshot-YYYY-MM-DD`),
+  each file named `<name>-<last_deployed_slot>.so`
 - Metadata of the latest version: `dumps/<name>/metadata.json`
 - Metadata of superseded versions: `archives/<name>/<last_deployed_slot>/metadata.json`
 - Every version of every program in one file: [`index.json`](index.json)
@@ -24,7 +25,7 @@ archives/<name>/<slot>/metadata.json        superseded versions
 scripts/collect.py                          collector (Python 3.11+, standard library only)
 tests/test_collect.py                       unit tests (no network needed)
 .github/workflows/collect.yml               daily job: collect, publish releases, commit metadata
-release <name>-<slot>  ->  <name>-<slot>.so the binary of that version
+release snapshot-<date> -> <name>-<slot>.so  binaries first collected that day (UTC)
 ```
 
 ## Downloading binaries
@@ -34,7 +35,7 @@ release <name>-<slot>  ->  <name>-<slot>.so the binary of that version
 curl -LO "$(jq -r .download_url dumps/pump-fun/metadata.json)"
 
 # With the GitHub CLI
-gh release download pump-fun-458921440 --repo cpkt9762/solana-dex-program-dumps
+gh release download snapshot-2026-10-24 --pattern 'pump-fun-*.so' --repo cpkt9762/solana-dex-program-dumps
 
 # The latest version of every program
 jq -r '.programs[].versions[0].download_url // empty' index.json | xargs -n1 curl -LO
@@ -49,20 +50,23 @@ For every program in `registry.json`, `scripts/collect.py` does the following:
    skipped without downloading anything.
 3. If the slot changed, or no slot exists (see below), `solana program dump` downloads the binary,
    which is then compared by sha256.
-4. On a real change the binary is published as release `<name>-<slot>` with asset `<name>-<slot>.so`.
-   Only after that succeeds, the old `metadata.json` is moved to `archives/<name>/<old slot>/` and
-   the new one is written. `index.json` is regenerated at the end of every run.
+4. On a real change the binary is uploaded as `<name>-<slot>.so` to the release of the day,
+   `snapshot-YYYY-MM-DD` (UTC; the first change of the day creates it). Only after that succeeds,
+   the old `metadata.json` is moved to `archives/<name>/<old slot>/` and the new one is written.
+   `index.json` is regenerated at the end of every run.
 
 Change detection uses `last_deployed_slot` first and sha256 second. Programs owned by the
 non-upgradeable loader (for example `orca-v1`) report no slot, so they are compared by sha256 only and
-named `sha256-<first 12 hex chars>` instead of a slot (release `orca-v1-sha256-4f316b5d1eb4`).
+named `sha256-<first 12 hex chars>` instead of a slot (file `orca-v1-sha256-4f316b5d1eb4.so`).
+At the end of a run with changes, the release notes are rewritten to list every program in that
+snapshot, so a second run on the same day only adds to it.
 
 A failure for one program (RPC error, timeout, malformed binary, GitHub API error) is logged and
 retried with backoff and never stops the run. The script exits with 1 if any program failed, so the
 workflow turns red while still committing the programs that did update. If a program is redeployed
 while it is being downloaded, it is downloaded again, so the slot always matches the bytes.
-Publishing is idempotent: if a run created a release but failed before pushing the metadata, the
-next run finds the release and reuses it.
+Publishing is idempotent: if a run uploaded a file but failed before pushing the metadata, the
+next run finds the file in the release and reuses it.
 
 ### Version rules
 
@@ -70,7 +74,7 @@ next run finds the release and reuses it.
 |---|---|
 | `dumps/<name>/metadata.json` | always the newest version seen |
 | `archives/<name>/<slot>/metadata.json` | the version that was live at `last_deployed_slot = <slot>` before it was replaced |
-| release `<name>-<slot>` | the binary of that version, kept after it is superseded |
+| `<name>-<slot>.so` in release `snapshot-<date>` | the binary of that version, kept after it is superseded |
 | `previous_slot` | slot of the version that this one replaced (null for the first one) |
 | `collected_at` | UTC time at which this version was first observed, not the deploy time |
 
@@ -93,8 +97,8 @@ as long as the RPC node still has that block.
   "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
   "collected_at": "2026-10-24T18:05:25Z",
   "previous_slot": null,
-  "release_tag": "raydium-amm-v4-445763204",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/raydium-amm-v4-445763204/raydium-amm-v4-445763204.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/raydium-amm-v4-445763204.so"
 }
 ```
 
@@ -171,7 +175,7 @@ The RPC URL is never logged, and URLs in CLI error output are redacted.
    {"name": "my-dex", "program_id": "<base58 program id>", "type": "amm", "description": "My DEX"}
    ```
 
-   `name` becomes a directory name and part of the release tags, so it must be lowercase letters,
+   `name` becomes a directory name and part of the file names, so it must be lowercase letters,
    digits and single hyphens, and both `name` and `program_id` must be unique.
 2. Try it: `python3 scripts/collect.py --dry-run dry-run --only my-dex`
 3. Refresh the table below with `python3 scripts/collect.py --print-registry-table`.
@@ -184,8 +188,8 @@ Do not rename an existing `name`: its history lives under that name.
 For example after a takedown request:
 
 ```bash
-gh release list --limit 1000 --json tagName --jq '.[].tagName' | grep '^<name>-'   # its releases
-gh release delete <name>-<slot> --cleanup-tag --yes          # delete one version (binary and tag)
+jq -r '.programs[] | select(.name == "<name>") | .versions[] | "\(.release_tag) \(.download_url)"' index.json   # its files
+gh release delete-asset snapshot-<date> <name>-<slot>.so --yes                                          # delete one version
 ```
 
 To stop tracking a program, also remove it from `registry.json` and delete `dumps/<name>/` and
@@ -207,8 +211,10 @@ Things worth knowing:
   repository owner's quota, and once it is exhausted cloners only get pointer files. Release assets
   have no bandwidth or total size limit (each file must be under 2 GiB; the largest program here is
   about 2.6 MB), and git history only grows by small JSON files.
-- **First run.** The first run publishes one release per program (about 52 MB in total). It takes a
-  few minutes because programs are fetched one after another.
+- **First run.** The first run publishes one release with every program (about 52 MB in total). It
+  takes a few minutes because programs are fetched one after another.
+- **"Source code" archives.** GitHub attaches them to every release and offers no way to hide them;
+  they only contain this repository's scripts and metadata. One release per day keeps them rare.
 - **Idle repositories.** GitHub disables scheduled workflows after 60 days without repository
   activity. If nothing was committed for 45 days the job adds an empty keepalive commit.
 - **No overlapping runs.** A concurrency group serialises runs.

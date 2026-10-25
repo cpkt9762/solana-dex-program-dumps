@@ -11,6 +11,6 @@
   "upgrade_authority": "DpWjxjJE2SCsraeZqKqLtvdPjiaABmcmNAZSP9iUaGrn",
   "collected_at": "2026-10-24T18:10:15Z",
   "previous_slot": null,
-  "release_tag": "spl-token-swap-73737036",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/spl-token-swap-73737036/spl-token-swap-73737036.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/spl-token-swap-73737036.so"
 }

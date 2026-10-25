@@ -7,11 +7,11 @@ For every program in ``registry.json`` the script:
 2. compares ``last_deployed_slot`` with ``dumps/<name>/metadata.json``
    (programs without a slot, e.g. non-upgradeable loaders, are compared by sha256),
 3. on change dumps the binary (``solana program dump``), strips the account padding,
-   publishes it as a GitHub release asset (tag ``<name>-<slot>``), moves the previous
-   metadata to ``archives/<name>/<slot>/`` and writes the new ``metadata.json``.
+   uploads it as ``<name>-<slot>.so`` to the release of the day (tag ``snapshot-YYYY-MM-DD``),
+   moves the previous metadata to ``archives/<name>/<slot>/`` and writes the new ``metadata.json``.
 
-Only metadata lives in git, binaries live in GitHub Releases, and ``index.json``
-lists every known version. Failures are logged per program and never abort the run.
+Only metadata lives in git, binaries live in GitHub Releases (one release per day with
+changes), and ``index.json`` lists every known version. Failures are logged per program and never abort the run.
 Exit codes: 0 = all programs processed, 1 = at least one failure, 2 = fatal setup error.
 """
 
@@ -88,7 +88,7 @@ class RegistryEntry:
             if not isinstance(value, str) or not value.strip():
                 raise CollectError(f"registry entry {raw!r}: missing or empty '{key}'")
             fields[key] = value.strip()
-        # The name becomes a directory name and part of a git tag, so keep it a strict slug.
+        # The name becomes a directory name and part of asset file names, so keep it a strict slug.
         if not NAME_RE.fullmatch(fields["name"]):
             raise CollectError(f"invalid name {fields['name']!r}: use lowercase letters, digits and '-'")
         if not PUBKEY_RE.fullmatch(fields["program_id"]):
@@ -229,12 +229,12 @@ class Result:
     previous_slot: int | None = None
     sha256: str | None = None
     previous_sha256: str | None = None
-    release_tag: str | None = None
+    asset: str | None = None
     message: str = ""
 
 
 def version_key(slot: int | None, sha256: str) -> str:
-    """Name of a version (archive directory, release tag suffix): the slot, else a sha256 prefix."""
+    """Name of a version (archive directory, asset file name suffix): the slot, else a sha256 prefix."""
     return str(slot) if slot is not None else f"sha256-{sha256[:12]}"
 
 
@@ -351,12 +351,17 @@ class BinaryStore(Protocol):
         """Make ``asset`` available under release ``spec.tag``; return its download URL."""
         ...
 
+    def set_notes(self, spec: ReleaseSpec) -> None:
+        """Replace the title and notes of an existing release."""
+        ...
+
 
 class GhReleaseStore:
-    """Publishes each version as one GitHub release with one asset, via the ``gh`` CLI.
+    """Publishes binaries as assets of GitHub releases, via the ``gh`` CLI.
 
-    Publishing is idempotent: an existing release whose asset has the same name and size
-    is reused, so a run that uploaded but failed to push can simply be repeated.
+    The first asset of a release creates it, later ones are uploaded into it. Publishing is
+    idempotent: an asset with the same name and size is reused, so a run that uploaded but
+    failed to push can simply be repeated.
     """
 
     def __init__(self, repo: str, gh_bin: str = "gh", run: Runner = run_command) -> None:
@@ -379,6 +384,9 @@ class GhReleaseStore:
         else:
             LOG.info("REUSED    release %s already holds %s", spec.tag, asset.name)
         return url
+
+    def set_notes(self, spec: ReleaseSpec) -> None:
+        self._gh(["release", "edit", spec.tag, "--title", spec.title, "--notes", spec.notes])
 
     def _existing_assets(self, tag: str) -> dict[str, int] | None:
         """Asset name -> size of an existing release, or None if the release does not exist."""
@@ -405,6 +413,8 @@ class GhReleaseStore:
 class LocalStore:
     """Dry-run store: copies assets to ``<directory>/<tag>/`` and returns a file:// URL."""
 
+    NOTES_FILE = "RELEASE_NOTES.md"
+
     def __init__(self, directory: Path) -> None:
         self._dir = directory
 
@@ -413,6 +423,9 @@ class LocalStore:
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(asset, dest)
         return dest.resolve().as_uri()
+
+    def set_notes(self, spec: ReleaseSpec) -> None:
+        write_text_atomic(self._dir / spec.tag / self.NOTES_FILE, f"# {spec.title}\n\n{spec.notes}")
 
 
 # ---------------------------------------------------------------------------
@@ -503,20 +516,52 @@ class Layout:
         return self.root / "archives" / name
 
 
-def release_notes(meta: Metadata) -> str:
+SNAPSHOT_PREFIX = "snapshot-"
+PENDING_NOTES = "Collection in progress; the list of programs is added when the run finishes.\n"
+SOURCE_CODE_NOTE = (
+    "> [!NOTE]\n"
+    "> Download the `.so` files below. The two \"Source code\" archives are added to every release by\n"
+    "> GitHub automatically and only contain this repository's scripts and metadata.\n"
+)
+
+
+def snapshot_tag(day: str) -> str:
+    """Release that holds every version first collected on ``day`` (YYYY-MM-DD, UTC)."""
+    return f"{SNAPSHOT_PREFIX}{day}"
+
+
+def snapshot_spec(tag: str, notes: str = PENDING_NOTES) -> ReleaseSpec:
+    return ReleaseSpec(tag=tag, title=f"Snapshot {tag.removeprefix(SNAPSHOT_PREFIX)}", notes=notes)
+
+
+def program_versions(layout: Layout, entry: RegistryEntry) -> list[Metadata]:
+    """All stored versions of a program, newest first."""
+    latest_path = layout.dump_dir(entry.name) / METADATA_FILE
+    versions = [Metadata.from_file(latest_path)] if latest_path.is_file() else []
+    archived = [Metadata.from_file(p) for p in layout.archive_root(entry.name).glob(f"*/{METADATA_FILE}")]
+    versions += sorted(archived, key=lambda m: (m.collected_at, m.last_deployed_slot or 0), reverse=True)
+    return versions
+
+
+def asset_name(meta: Metadata) -> str:
+    return (meta.download_url or "").rsplit("/", 1)[-1]
+
+
+def snapshot_notes(layout: Layout, entries: Sequence[RegistryEntry], tag: str) -> str:
+    """Release notes listing every version stored in release ``tag``, built from the metadata."""
+    versions = [m for e in entries for m in program_versions(layout, e) if m.release_tag == tag]
     rows = [
-        ("Program", f"`{meta.program_id}`"),
-        ("Loader", f"`{meta.loader}`"),
-        ("last_deployed_slot", str(meta.last_deployed_slot)),
-        ("Upgrade authority", f"`{meta.upgrade_authority}`" if meta.upgrade_authority else "none"),
-        ("sha256 (asset, padding stripped)", f"`{meta.sha256}`"),
-        ("size", str(meta.size)),
-        ("sha256 (raw `solana program dump`)", f"`{meta.onchain_sha256}`"),
-        ("size (raw)", str(meta.onchain_size)),
-        ("First seen", meta.collected_at),
+        f"| {m.name} | `{m.program_id}` | {m.last_deployed_slot if m.last_deployed_slot is not None else '-'} "
+        f"| {m.previous_slot if m.previous_slot is not None else '-'} | `{m.sha256[:12]}` | {m.size} | `{asset_name(m)}` |"
+        for m in versions
     ]
-    table = "\n".join(f"| {key} | {value} |" for key, value in rows)
-    return f"{meta.name} at slot {meta.last_deployed_slot}\n\n| Field | Value |\n|---|---|\n{table}\n"
+    return (
+        f"{SOURCE_CODE_NOTE}\n"
+        f"{len(versions)} program version(s) first collected in this snapshot. The binaries have the\n"
+        "ProgramData zero padding stripped; each program's `metadata.json` records the hashes of both forms.\n\n"
+        "| Program | Program ID | last_deployed_slot | Previous slot | sha256 | Size | File |\n"
+        "|---|---|---|---|---|---|---|\n" + "\n".join(rows) + "\n"
+    )
 
 
 class Collector:
@@ -526,6 +571,7 @@ class Collector:
         source: ProgramSource,
         store: BinaryStore,
         *,
+        release_tag: str,
         verify_hash: bool = False,
         retries: int = 3,
         backoff_secs: float = 2.0,
@@ -536,6 +582,7 @@ class Collector:
         self._layout = layout
         self._source = source
         self._store = store
+        self._release_tag = release_tag
         self._verify_hash = verify_hash
         self._retries = max(1, retries)
         self._backoff = backoff_secs
@@ -577,8 +624,8 @@ class Collector:
 
             key = version_key(slot, binary.sha256)
             if prev is not None and slot is not None and prev.last_deployed_slot == slot:
-                key = f"{key}-{binary.sha256[:12]}"  # same slot, different bytes: keep tags unique
-            tag = f"{entry.name}-{key}"
+                key = f"{key}-{binary.sha256[:12]}"  # same slot, different bytes: keep file names unique
+            asset = Path(tmp) / f"{entry.name}-{key}.so"
             meta = Metadata(
                 name=entry.name,
                 program_id=entry.program_id,
@@ -592,20 +639,19 @@ class Collector:
                 upgrade_authority=info.upgrade_authority,
                 collected_at=self._now(),
                 previous_slot=prev.last_deployed_slot if prev else None,
-                release_tag=tag,
+                release_tag=self._release_tag,
                 download_url=None,
             )
-            asset = Path(tmp) / f"{tag}.so"
             asset.write_bytes(binary.data)
-            spec = ReleaseSpec(tag=tag, title=f"{entry.name} @ {key}", notes=release_notes(meta))
+            spec = snapshot_spec(self._release_tag)
             url = self._retry(f"publish {entry.name}", lambda: self._store.publish(spec, asset))
             meta = dataclasses.replace(meta, download_url=url)
             self._install(entry.name, prev, meta)
 
         outcome = Outcome.UPDATED if prev is not None else Outcome.NEW
         LOG.info(
-            "%-9s %-20s slot %s sha256 %s size %d -> %s",
-            outcome.name, entry.name, slot, binary.sha256[:12], binary.size, tag,
+            "%-9s %-20s slot %s sha256 %s size %d -> %s/%s",
+            outcome.name, entry.name, slot, binary.sha256[:12], binary.size, self._release_tag, asset.name,
         )
         return Result(
             entry.name,
@@ -614,7 +660,7 @@ class Collector:
             previous_slot=meta.previous_slot,
             sha256=binary.sha256,
             previous_sha256=prev.sha256 if prev else None,
-            release_tag=tag,
+            asset=asset.name,
         )
 
     def _load_previous(self, entry: RegistryEntry) -> Metadata | None:
@@ -726,25 +772,20 @@ def _version_summary(meta: Metadata) -> dict[str, object]:
 
 def build_index(layout: Layout, entries: Sequence[RegistryEntry]) -> dict[str, object]:
     """Every known version per registry program, newest first."""
-    programs: list[dict[str, object]] = []
-    for entry in entries:
-        latest_path = layout.dump_dir(entry.name) / METADATA_FILE
-        versions = [Metadata.from_file(latest_path)] if latest_path.is_file() else []
-        archived = [Metadata.from_file(p) for p in layout.archive_root(entry.name).glob(f"*/{METADATA_FILE}")]
-        versions += sorted(archived, key=lambda m: (m.collected_at, m.last_deployed_slot or 0), reverse=True)
-        programs.append(
-            {
-                "name": entry.name,
-                "program_id": entry.program_id,
-                "type": entry.type,
-                "description": entry.description,
-                "versions": [_version_summary(v) for v in versions],
-            }
-        )
+    programs: list[dict[str, object]] = [
+        {
+            "name": entry.name,
+            "program_id": entry.program_id,
+            "type": entry.type,
+            "description": entry.description,
+            "versions": [_version_summary(v) for v in program_versions(layout, entry)],
+        }
+        for entry in entries
+    ]
     return {"programs": programs}
 
 
-def format_commit_message(results: Sequence[Result]) -> str | None:
+def format_commit_message(results: Sequence[Result], release_tag: str) -> str | None:
     changed = [r for r in results if r.outcome in (Outcome.NEW, Outcome.UPDATED)]
     if not changed:
         return None
@@ -753,15 +794,15 @@ def format_commit_message(results: Sequence[Result]) -> str | None:
     parts = [f"{upgraded} upgraded"] if upgraded else []
     if new:
         parts.append(f"{new} new")
-    lines = [f"chore(dumps): {', '.join(parts)}", ""]
+    lines = [f"chore(dumps): {', '.join(parts)} ({release_tag})", ""]
     for r in changed:
         if r.outcome is Outcome.NEW:
             where = f"slot {r.slot}" if r.slot is not None else f"sha256 {(r.sha256 or '')[:12]}"
-            lines.append(f"- {r.name}: first dump at {where} ({r.release_tag})")
+            lines.append(f"- {r.name}: first dump at {where}")
         elif r.slot is None:
-            lines.append(f"- {r.name}: sha256 {(r.previous_sha256 or '')[:12]} -> {(r.sha256 or '')[:12]} ({r.release_tag})")
+            lines.append(f"- {r.name}: sha256 {(r.previous_sha256 or '')[:12]} -> {(r.sha256 or '')[:12]}")
         else:
-            lines.append(f"- {r.name}: slot {r.previous_slot} -> {r.slot} ({r.release_tag})")
+            lines.append(f"- {r.name}: slot {r.previous_slot} -> {r.slot}")
     return "\n".join(lines) + "\n"
 
 
@@ -844,6 +885,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     repo = Layout(args.root.resolve())
     # An unset GitHub secret expands to an empty string, so treat "" as unset.
     rpc_url = os.environ.get("RPC_URL", "").strip() or DEFAULT_RPC_URL
+    release_tag = snapshot_tag(datetime.now(timezone.utc).strftime("%Y-%m-%d"))
 
     try:
         registry = load_registry(repo.registry)
@@ -860,6 +902,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 layout,
                 SolanaCli(rpc_url, keypair, args.solana_bin),
                 store,
+                release_tag=release_tag,
                 verify_hash=args.verify_hash,
                 retries=args.retries,
                 delay_secs=args.delay,
@@ -870,6 +913,13 @@ def main(argv: Sequence[str] | None = None) -> int:
         return 2
 
     failed = [r for r in results if r.outcome is Outcome.FAILED]
+    if any(r.outcome in (Outcome.NEW, Outcome.UPDATED) for r in results):
+        # Rebuilt from all metadata, so a second run on the same day keeps the full list.
+        try:
+            store.set_notes(snapshot_spec(release_tag, snapshot_notes(layout, registry, release_tag)))
+        except (CollectError, OSError) as exc:
+            LOG.error("failed to write notes of release %s: %s", release_tag, exc)
+            failed.append(Result(release_tag, Outcome.FAILED, message=str(exc)))
     try:
         write_text_atomic(layout.index, json.dumps(build_index(layout, registry), indent=2, ensure_ascii=False) + "\n")
     except (CollectError, OSError) as exc:
@@ -884,7 +934,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     for r in failed:
         LOG.error("  failed: %s: %s", r.name, r.message)
 
-    message = format_commit_message(results)
+    message = format_commit_message(results, release_tag)
     if message and args.commit_message_file:
         args.commit_message_file.write_text(message, encoding="utf-8")
     return 1 if failed else 0

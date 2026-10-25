@@ -11,6 +11,6 @@
   "upgrade_authority": "8VE2uJkoheDbJd9rCyKzfXmiMqAS4o1B3XGshEh86BGk",
   "collected_at": "2026-10-24T18:09:34Z",
   "previous_slot": null,
-  "release_tag": "sanctum-lst-swap-341718242",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/sanctum-lst-swap-341718242/sanctum-lst-swap-341718242.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/sanctum-lst-swap-341718242.so"
 }

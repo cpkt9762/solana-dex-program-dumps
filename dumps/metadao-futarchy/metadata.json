@@ -11,6 +11,6 @@
   "upgrade_authority": "6awyHMshBGVjJ3ozdSJdyyDE1CTAXUwrpNMaRGMsb4sf",
   "collected_at": "2026-10-24T18:09:21Z",
   "previous_slot": null,
-  "release_tag": "metadao-futarchy-459399315",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/metadao-futarchy-459399315/metadao-futarchy-459399315.so"
+  "release_tag": "snapshot-2026-10-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/metadao-futarchy-459399315.so"
 }
