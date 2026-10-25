@@ -51,6 +51,8 @@ NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUBKEY_RE = re.compile(r"^[1-9A-HJ-NP-Za-km-z]{32,44}$")
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 URL_RE = re.compile(r"https?://[^\s'\"]+")
+GITHUB_URL_RE = re.compile(r"^https://github\.com/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_./-]+)?)?$")
+WEBSITE_URL_RE = re.compile(r"^https://[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?::\d+)?(?:/[^\s<>\"'`()\[\]|]*)?$")
 
 T = TypeVar("T")
 
@@ -77,6 +79,8 @@ class RegistryEntry:
     program_id: str
     type: str
     description: str
+    github: str | None = None
+    website: str | None = None
 
     @classmethod
     def from_json(cls, raw: object) -> RegistryEntry:
@@ -93,7 +97,20 @@ class RegistryEntry:
             raise CollectError(f"invalid name {fields['name']!r}: use lowercase letters, digits and '-'")
         if not PUBKEY_RE.fullmatch(fields["program_id"]):
             raise CollectError(f"{fields['name']}: invalid program_id {fields['program_id']!r}")
-        return cls(**fields)
+        links = {
+            "github": cls._optional_link(raw, "github", GITHUB_URL_RE, fields["name"]),
+            "website": cls._optional_link(raw, "website", WEBSITE_URL_RE, fields["name"]),
+        }
+        return cls(**fields, **links)
+
+    @staticmethod
+    def _optional_link(raw: dict[object, object], key: str, pattern: re.Pattern[str], name: str) -> str | None:
+        value = raw.get(key)
+        if value is None:
+            return None
+        if not isinstance(value, str) or not pattern.fullmatch(value):
+            raise CollectError(f"{name}: invalid {key} URL {value!r}")
+        return value
 
 
 def load_registry(path: Path) -> list[RegistryEntry]:
@@ -778,6 +795,8 @@ def build_index(layout: Layout, entries: Sequence[RegistryEntry]) -> dict[str, o
             "program_id": entry.program_id,
             "type": entry.type,
             "description": entry.description,
+            "github": entry.github,
+            "website": entry.website,
             "versions": [_version_summary(v) for v in program_versions(layout, entry)],
         }
         for entry in entries
@@ -806,9 +825,23 @@ def format_commit_message(results: Sequence[Result], release_tag: str) -> str | 
     return "\n".join(lines) + "\n"
 
 
+def link_cell(entry: RegistryEntry) -> str:
+    """GitHub link if there is one (text: owner/repo, or the organisation), else the website (text: host)."""
+    if entry.github:
+        path = entry.github.removeprefix("https://github.com/")
+        owner_repo = "/".join(path.split("/")[:2])
+        return f"[{owner_repo}]({entry.github})"
+    if entry.website:
+        host = entry.website.removeprefix("https://").split("/")[0].removeprefix("www.")
+        return f"[{host}]({entry.website})"
+    return ""
+
+
 def registry_table(entries: Sequence[RegistryEntry]) -> str:
-    rows = ["| Name | Program ID | Type | Description |", "|---|---|---|---|"]
-    rows += [f"| `{e.name}` | `{e.program_id}` | {e.type} | {e.description} |" for e in entries]
+    rows = ["| Name | Program ID | Type | Description | Link |", "|---|---|---|---|---|"]
+    rows += [
+        f"| `{e.name}` | `{e.program_id}` | {e.type} | {e.description} | {link_cell(e)} |" for e in entries
+    ]
     return "\n".join(rows) + "\n"
 
 

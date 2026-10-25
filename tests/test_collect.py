@@ -445,6 +445,70 @@ class ParsingTest(unittest.TestCase):
         self.assertIn(f"- d: sha256 {'a' * 12} -> {'b' * 12}", message)
 
 
+class RegistryLinksTest(unittest.TestCase):
+    BASE = {"name": "my-dex", "program_id": PROGRAM_ID, "type": "amm", "description": "d"}
+
+    def parse(self, **extra: object) -> collect.RegistryEntry:
+        return collect.RegistryEntry.from_json({**self.BASE, **extra})
+
+    def test_links_are_optional(self) -> None:
+        entry_without = self.parse()
+        self.assertEqual((entry_without.github, entry_without.website), (None, None))
+        with_links = self.parse(github="https://github.com/owner/repo", website="https://example.org/")
+        self.assertEqual((with_links.github, with_links.website), ("https://github.com/owner/repo", "https://example.org/"))
+
+    def test_invalid_links_are_rejected(self) -> None:
+        bad_github = ("https://gitlab.com/owner/repo", "http://github.com/owner/repo", "https://github.com/", "https://github.com/a b", "javascript:alert(1)", 5)
+        for value in bad_github:
+            with self.assertRaises(collect.CollectError, msg=str(value)):
+                self.parse(github=value)
+        bad_website = ("http://example.org", "javascript:alert(1)", "https://example", "https://exa mple.org", "https://example.org/a b", "example.org", 5)
+        for value in bad_website:
+            with self.assertRaises(collect.CollectError, msg=str(value)):
+                self.parse(website=value)
+
+    def test_github_links_may_point_to_orgs_repos_and_subfolders(self) -> None:
+        for value in (
+            "https://github.com/orca-so",
+            "https://github.com/orca-so/whirlpools",
+            "https://github.com/solana-labs/solana-program-library/tree/master/token-swap",
+        ):
+            self.assertEqual(self.parse(github=value).github, value)
+
+    def test_link_cell_prefers_github_then_website(self) -> None:
+        cell = collect.link_cell
+        self.assertEqual(cell(self.parse(github="https://github.com/orca-so/whirlpools")), "[orca-so/whirlpools](https://github.com/orca-so/whirlpools)")
+        self.assertEqual(cell(self.parse(github="https://github.com/orca-so")), "[orca-so](https://github.com/orca-so)")
+        deep = "https://github.com/solana-labs/solana-program-library/tree/master/token-swap"
+        self.assertEqual(cell(self.parse(github=deep)), f"[solana-labs/solana-program-library]({deep})")
+        self.assertEqual(cell(self.parse(website="https://www.humidifi.xyz/")), "[humidifi.xyz](https://www.humidifi.xyz/)")
+        both = self.parse(github="https://github.com/a/b", website="https://example.org/")
+        self.assertTrue(cell(both).startswith("[a/b]"))
+        self.assertEqual(cell(self.parse()), "")
+
+    def test_table_has_link_column(self) -> None:
+        table = collect.registry_table([self.parse(website="https://example.org/"), self.parse()])
+        lines = table.splitlines()
+        self.assertEqual(lines[0], "| Name | Program ID | Type | Description | Link |")
+        self.assertTrue(lines[2].endswith("| [example.org](https://example.org/) |"))
+        self.assertTrue(lines[3].endswith("| d |  |"))
+
+    def test_index_carries_links(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            index = collect.build_index(
+                collect.Layout(Path(tmp)), [self.parse(github="https://github.com/a/b"), self.parse(name="other", program_id=OTHER_ID)]
+            )
+        programs = index["programs"]
+        assert isinstance(programs, list)
+        self.assertEqual((programs[0]["github"], programs[0]["website"]), ("https://github.com/a/b", None))
+        self.assertEqual((programs[1]["github"], programs[1]["website"]), (None, None))
+
+    def test_shipped_registry_links_are_wellformed_and_exclusive_by_convention(self) -> None:
+        entries = collect.load_registry(ROOT / "registry.json")
+        self.assertTrue(all(not (e.github and e.website) for e in entries), "website is only a fallback for entries without GitHub")
+        self.assertGreater(sum(bool(e.github or e.website) for e in entries), len(entries) // 2)
+
+
 class DryRunGuardTest(unittest.TestCase):
     def test_dry_run_refuses_repo_and_non_empty_directories(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
