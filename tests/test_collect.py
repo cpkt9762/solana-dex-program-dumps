@@ -453,9 +453,14 @@ class RegistryLinksTest(unittest.TestCase):
 
     def test_links_are_optional(self) -> None:
         entry_without = self.parse()
-        self.assertEqual((entry_without.github, entry_without.website), (None, None))
-        with_links = self.parse(github="https://github.com/owner/repo", website="https://example.org/")
-        self.assertEqual((with_links.github, with_links.website), ("https://github.com/owner/repo", "https://example.org/"))
+        self.assertEqual((entry_without.github, entry_without.website, entry_without.reference), (None, None, None))
+        with_links = self.parse(
+            github="https://github.com/owner/repo", website="https://example.org/", reference="https://defillama.com/protocol/x"
+        )
+        self.assertEqual(
+            (with_links.github, with_links.website, with_links.reference),
+            ("https://github.com/owner/repo", "https://example.org/", "https://defillama.com/protocol/x"),
+        )
 
     def test_invalid_links_are_rejected(self) -> None:
         bad_github = ("https://gitlab.com/owner/repo", "http://github.com/owner/repo", "https://github.com/", "https://github.com/a b", "javascript:alert(1)", 5)
@@ -466,6 +471,8 @@ class RegistryLinksTest(unittest.TestCase):
         for value in bad_website:
             with self.assertRaises(collect.CollectError, msg=str(value)):
                 self.parse(website=value)
+            with self.assertRaises(collect.CollectError, msg=f"reference {value}"):
+                self.parse(reference=value)
 
     def test_github_links_may_point_to_orgs_repos_and_subfolders(self) -> None:
         for value in (
@@ -475,7 +482,7 @@ class RegistryLinksTest(unittest.TestCase):
         ):
             self.assertEqual(self.parse(github=value).github, value)
 
-    def test_link_cell_prefers_github_then_website(self) -> None:
+    def test_link_cell_prefers_github_then_website_then_reference(self) -> None:
         cell = collect.link_cell
         self.assertEqual(cell(self.parse(github="https://github.com/orca-so/whirlpools")), "[orca-so/whirlpools](https://github.com/orca-so/whirlpools)")
         self.assertEqual(cell(self.parse(github="https://github.com/orca-so")), "[orca-so](https://github.com/orca-so)")
@@ -484,6 +491,10 @@ class RegistryLinksTest(unittest.TestCase):
         self.assertEqual(cell(self.parse(website="https://www.humidifi.xyz/")), "[humidifi.xyz](https://www.humidifi.xyz/)")
         both = self.parse(github="https://github.com/a/b", website="https://example.org/")
         self.assertTrue(cell(both).startswith("[a/b]"))
+        ref = "https://defillama.com/protocol/zerofi"
+        self.assertEqual(cell(self.parse(reference=ref)), f"[defillama.com]({ref})")
+        site_and_ref = self.parse(website="https://example.org/", reference=ref)
+        self.assertTrue(cell(site_and_ref).startswith("[example.org]"))
         self.assertEqual(cell(self.parse()), "")
 
     def test_table_has_link_column(self) -> None:
@@ -500,13 +511,19 @@ class RegistryLinksTest(unittest.TestCase):
             )
         programs = index["programs"]
         assert isinstance(programs, list)
-        self.assertEqual((programs[0]["github"], programs[0]["website"]), ("https://github.com/a/b", None))
-        self.assertEqual((programs[1]["github"], programs[1]["website"]), (None, None))
+        self.assertEqual(
+            (programs[0]["github"], programs[0]["website"], programs[0]["reference"]), ("https://github.com/a/b", None, None)
+        )
+        self.assertEqual((programs[1]["github"], programs[1]["website"], programs[1]["reference"]), (None, None, None))
 
-    def test_shipped_registry_links_are_wellformed_and_exclusive_by_convention(self) -> None:
+    def test_shipped_registry_has_exactly_one_link_per_entry(self) -> None:
         entries = collect.load_registry(ROOT / "registry.json")
-        self.assertTrue(all(not (e.github and e.website) for e in entries), "website is only a fallback for entries without GitHub")
-        self.assertGreater(sum(bool(e.github or e.website) for e in entries), len(entries) // 2)
+        for e in entries:
+            kinds = [k for k in ("github", "website", "reference") if getattr(e, k)]
+            self.assertEqual(len(kinds), 1, f"{e.name}: store only the best link (GitHub, else website, else reference), got {kinds}")
+        for e in entries:
+            if e.reference:
+                self.assertTrue(e.reference.startswith(("https://defillama.com/protocol/", "https://solscan.io/account/")), e.name)
 
 
 class DryRunGuardTest(unittest.TestCase):

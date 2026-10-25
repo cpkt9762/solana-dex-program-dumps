@@ -156,8 +156,10 @@ signed or sent.
 ## Configure the RPC endpoint
 
 The collector reads the `RPC_URL` environment variable and falls back to the public
-`https://api.mainnet-beta.solana.com`. The public endpoint is rate limited; for reliable daily runs
-use your own provider.
+`https://api.mainnet-beta.solana.com`. The public endpoint is rate limited, but this job is light: one
+`program show` per program and run, plus a download only when a program changed. It runs fine on the
+public endpoint, so no secret is required. If runs start failing with rate-limit or timeout errors,
+add your own endpoint as the secret below.
 
 - Locally: `RPC_URL=https://your-rpc.example python3 scripts/collect.py ...`
 - GitHub Actions: add a repository secret named `SOLANA_RPC_URL`
@@ -178,8 +180,9 @@ The RPC URL is never logged, and URLs in CLI error output are redacted.
 
    `name` becomes a directory name and part of the file names, so it must be lowercase letters,
    digits and single hyphens, and both `name` and `program_id` must be unique. `github`
-   (`https://github.com/...`) and `website` (`https://...`) are optional; give `website` only when
-   there is no GitHub link.
+   (`https://github.com/...`), `website` and `reference` (`https://...`) are optional and
+   exclusive: store only the best one, GitHub first, then the official website, and a third-party
+   page such as DefiLlama as `reference` only when there is neither.
 2. Try it: `python3 scripts/collect.py --dry-run dry-run --only my-dex`
 3. Refresh the table below with `python3 scripts/collect.py --print-registry-table`.
 4. Commit. The next scheduled run (or a manual run of the workflow) publishes it.
@@ -233,12 +236,15 @@ product or SPL-token-swap style, `clmm` / `dlmm` concentrated or bin liquidity, 
 `stable-swap`, `pmm` oracle-priced or proprietary market makers (mostly closed source),
 `bonding-curve` launchpads, `perp` perpetuals, `lst-swap` liquid staking token swaps.
 
-The `Link` column is the project's GitHub when one is known, otherwise its official website; it is
-empty when neither could be confirmed (several closed-source prop AMMs have no public site or
-repository). The link text shows what the GitHub link points to: `owner/repo` is a repository, which
-is the program source when that is public and otherwise an SDK, IDL, docs or audit repository, and a
-bare name is the developer's GitHub organisation or account. Links were checked on 2026-10-25 and can go stale;
-they are also available as `github` / `website` per program in [`index.json`](index.json).
+The `Link` column is the project's GitHub when one is known, otherwise its official website. A few
+closed-source prop AMMs have neither (they have no public site or repository), so their link is a
+third-party reference page instead: the DefiLlama protocol page, or the Solscan page of the program
+when DefiLlama does not list the protocol. The link text tells the kinds apart: a GitHub link shows
+`owner/repo` (a repository: the program source when that is public, otherwise an SDK, IDL, docs or
+audit repository) or just a name (the developer's GitHub organisation or account), and every other
+link shows its host, so `defillama.com` and `solscan.io` mean that no official link is known. Links
+were checked on 2026-10-25 and can go stale; they are also available as `github`, `website` and
+`reference` per program in [`index.json`](index.json).
 
 | Name | Program ID | Type | Description | Link |
 |---|---|---|---|---|
@@ -298,22 +304,22 @@ they are also available as `github` / `website` per program in [`index.json`](in
 | `jupiter-perps` | `PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu` | perp | Jupiter Perpetuals, LP-pool backed perps | [jup-ag](https://github.com/jup-ag) |
 | `solfi` | `SoLFiHG9TfgtdUXUjWAxi3LtvYuFyDLVhBWxdMZxyCe` | pmm | SolFi v1, proprietary oracle-priced AMM by Ellipsis Labs | [Ellipsis-Labs](https://github.com/Ellipsis-Labs) |
 | `solfi-v2` | `SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF` | pmm | SolFi v2, proprietary oracle-priced AMM by Ellipsis Labs | [Ellipsis-Labs](https://github.com/Ellipsis-Labs) |
-| `tessera-v` | `TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH` | pmm | TesseraV, proprietary AMM by Wintermute |  |
-| `goonfi` | `goonERTdGsjnkZqWuVjs73BZ3Pb9qoCUdBUL17BnS5j` | pmm | GoonFi v1, proprietary AMM |  |
-| `goonfi-v2` | `goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE` | pmm | GoonFi v2, proprietary AMM |  |
-| `zerofi` | `ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY` | pmm | ZeroFi, proprietary AMM |  |
-| `bisonfi` | `BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi` | pmm | BisonFi, proprietary AMM |  |
+| `tessera-v` | `TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH` | pmm | TesseraV, proprietary AMM by Wintermute | [defillama.com](https://defillama.com/protocol/tessera-v) |
+| `goonfi` | `goonERTdGsjnkZqWuVjs73BZ3Pb9qoCUdBUL17BnS5j` | pmm | GoonFi v1, proprietary AMM | [defillama.com](https://defillama.com/protocol/goonfi) |
+| `goonfi-v2` | `goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE` | pmm | GoonFi v2, proprietary AMM | [defillama.com](https://defillama.com/protocol/goonfi) |
+| `zerofi` | `ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY` | pmm | ZeroFi, proprietary AMM | [defillama.com](https://defillama.com/protocol/zerofi) |
+| `bisonfi` | `BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi` | pmm | BisonFi, proprietary AMM | [defillama.com](https://defillama.com/protocol/bisonfi) |
 | `obric-v2` | `obriQD1zbpyLz95G5n7nJe6a4DPjpFwa5XYPoNm113y` | pmm | Obric v2, proprietary AMM | [obric.xyz](https://obric.xyz/) |
 | `aquifer` | `AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45` | pmm | Aquifer, proprietary AMM | [aquiferdex.io](https://aquiferdex.io/) |
 | `alphaq` | `ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA` | pmm | AlphaQ, proprietary AMM | [alphaq.xyz](https://www.alphaq.xyz/) |
-| `quantum` | `QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv` | pmm | Quantum, proprietary AMM |  |
-| `scorch` | `ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch` | pmm | Scorch, proprietary AMM |  |
-| `obsidian` | `HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z` | pmm | Obsidian, proprietary AMM |  |
+| `quantum` | `QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv` | pmm | Quantum, proprietary AMM | [defillama.com](https://defillama.com/protocol/quantumamm) |
+| `scorch` | `ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch` | pmm | Scorch, proprietary AMM | [defillama.com](https://defillama.com/protocol/scorch) |
+| `obsidian` | `HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z` | pmm | Obsidian, proprietary AMM | [solscan.io](https://solscan.io/account/HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z) |
 | `heaven` | `HEAVENoP2qxoeuF8Dj2oT1GHEnu49U5mJYkdeC8BAX2o` | pmm | Heaven, proprietary AMM | [heavenxyz](https://github.com/heavenxyz) |
-| `taurusfi` | `9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc` | pmm | TaurusFi, proprietary AMM |  |
+| `taurusfi` | `9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc` | pmm | TaurusFi, proprietary AMM | [solscan.io](https://solscan.io/account/9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc) |
 | `gavel` | `srAMMzfVHVAtgSJc8iH6CfKzuWuUTzLHVCE81QU1rgi` | amm | Gavel (Plasma), sandwich-resistant AMM by Ellipsis Labs, source available (BUSL-1.1) | [Ellipsis-Labs/plasma](https://github.com/Ellipsis-Labs/plasma) |
-| `whalestreet` | `FW6zUqn4iKRaeopwwhwsquTY6ABWLLgjxtrC3VPnaWBf` | pmm | WhaleStreet, proprietary AMM |  |
-| `marco-polo` | `9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H` | pmm | Marco Polo, proprietary AMM |  |
+| `whalestreet` | `FW6zUqn4iKRaeopwwhwsquTY6ABWLLgjxtrC3VPnaWBf` | pmm | WhaleStreet, proprietary AMM | [defillama.com](https://defillama.com/protocol/whalestreet) |
+| `marco-polo` | `9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H` | pmm | Marco Polo, proprietary AMM | [solscan.io](https://solscan.io/account/9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H) |
 
 ## Notes and limitations
 
@@ -328,3 +334,9 @@ they are also available as `github` / `website` per program in [`index.json`](in
   exercised so far. Programs owned by other loaders (for example loader v4) are untested.
 - The collector sees one snapshot per day. If a program is upgraded twice between two runs, only the
   last deployment is recorded. History starts with the first run of this repository.
+
+## License
+
+The code, tests, registry and metadata in this repository are released under the [MIT License](LICENSE).
+The program binaries attached to the releases are not covered by it: they are third-party works and
+their copyright stays with their authors (see Notes and limitations).

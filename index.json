@@ -7,6 +7,7 @@
       "description": "Raydium AMM v4, constant-product AMM",
       "github": "https://github.com/raydium-io/raydium-amm",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 445763204,
@@ -25,6 +26,7 @@
       "description": "Raydium CPMM, constant-product market maker (new architecture)",
       "github": "https://github.com/raydium-io/raydium-cp-swap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 452376460,
@@ -43,6 +45,7 @@
       "description": "Raydium CLMM, tick-based concentrated liquidity",
       "github": "https://github.com/raydium-io/raydium-clmm",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 459932378,
@@ -61,6 +64,7 @@
       "description": "Raydium LaunchLab, token launchpad with bonding curve",
       "github": "https://github.com/raydium-io/raydium-idl",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 446221802,
@@ -79,6 +83,7 @@
       "description": "Orca Whirlpools, concentrated liquidity AMM",
       "github": "https://github.com/orca-so/whirlpools",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 457152296,
@@ -97,6 +102,7 @@
       "description": "Meteora DLMM, bin-based dynamic liquidity market maker",
       "github": "https://github.com/MeteoraAg/dlmm-sdk",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 423977638,
@@ -115,6 +121,7 @@
       "description": "Meteora DAMM v2 (Dynamic AMM v2), constant product with optional price range and dynamic fees",
       "github": "https://github.com/MeteoraAg/damm-v2",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 457080014,
@@ -133,6 +140,7 @@
       "description": "Meteora Dynamic AMM v1 (legacy)",
       "github": "https://github.com/MeteoraAg/damm-v1-sdk",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 457247107,
@@ -151,6 +159,7 @@
       "description": "Meteora Dynamic Bonding Curve",
       "github": "https://github.com/MeteoraAg/dynamic-bonding-curve",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 457502600,
@@ -169,6 +178,7 @@
       "description": "Phoenix, on-chain central limit order book",
       "github": "https://github.com/Ellipsis-Labs/phoenix-v1",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 231433470,
@@ -187,6 +197,7 @@
       "description": "OpenBook v2, on-chain central limit order book",
       "github": "https://github.com/openbook-dex/openbook-v2",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 250859864,
@@ -205,6 +216,7 @@
       "description": "Manifest, on-chain order book",
       "github": "https://github.com/Bonasa-Tech/manifest",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 459237697,
@@ -223,6 +235,7 @@
       "description": "Serum DEX v3 (legacy order book, still referenced by Raydium AMM v4 pools)",
       "github": "https://github.com/project-serum/serum-dex",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 168006653,
@@ -241,6 +254,7 @@
       "description": "Saber StableSwap",
       "github": "https://github.com/saber-hq/stable-swap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 119721738,
@@ -259,6 +273,7 @@
       "description": "Saber Decimals, decimal-wrapper pools on top of StableSwap",
       "github": "https://github.com/saber-hq/saber-periphery",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 114149094,
@@ -277,6 +292,7 @@
       "description": "Byreal CLMM (Raydium CLMM fork)",
       "github": "https://github.com/byreal-git/byreal-clmm",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 438767271,
@@ -295,6 +311,7 @@
       "description": "Crema Finance CLMM",
       "github": "https://github.com/CremaFinance",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 169658954,
@@ -313,6 +330,7 @@
       "description": "Invariant concentrated liquidity AMM",
       "github": "https://github.com/invariant-labs/protocol",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 343244916,
@@ -331,6 +349,7 @@
       "description": "Saros DLMM, bin-based liquidity",
       "github": "https://github.com/saros-xyz/saros-dlmm-sdk-rs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 376317878,
@@ -349,6 +368,7 @@
       "description": "Saros AMM (SPL token-swap fork)",
       "github": "https://github.com/saros-xyz/saros-swap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 379101676,
@@ -367,6 +387,7 @@
       "description": "Perena Numeraire, stable-swap AMM",
       "github": "https://github.com/quineco/numeraire-sdk",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 329553166,
@@ -385,6 +406,7 @@
       "description": "MetaDAO futarchy, conditional-market AMM",
       "github": "https://github.com/metaDAOproject/programs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 459399315,
@@ -403,6 +425,7 @@
       "description": "Moonit bonding-curve launchpad",
       "github": "https://github.com/gomoonit/moonit-sdk",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 350198871,
@@ -421,6 +444,7 @@
       "description": "Omnipair, constant-product AMM combined with lending",
       "github": "https://github.com/omnipair/omnipair-rs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 439721901,
@@ -439,6 +463,7 @@
       "description": "Sanctum Router, cross-LST swap router (CPI wrapper over Sanctum pools)",
       "github": "https://github.com/igneous-labs/sanctum-router-sdk",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 341718242,
@@ -457,6 +482,7 @@
       "description": "Sanctum Infinity, multi-LST liquidity pool",
       "github": "https://github.com/igneous-labs/inf-1.5",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 411884877,
@@ -475,6 +501,7 @@
       "description": "Pump.fun bonding-curve launchpad",
       "github": "https://github.com/pump-fun/pump-public-docs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 458921440,
@@ -493,6 +520,7 @@
       "description": "PumpSwap, constant-product AMM for graduated Pump.fun tokens",
       "github": "https://github.com/pump-fun/pump-public-docs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 458921517,
@@ -511,6 +539,7 @@
       "description": "Boop.fun bonding-curve launchpad",
       "github": "https://github.com/Boop-fun/idls",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 362618777,
@@ -529,6 +558,7 @@
       "description": "Virtuals buy/sell program",
       "github": "https://github.com/Virtual-Protocol",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 319985732,
@@ -547,6 +577,7 @@
       "description": "Lifinity v2, oracle-driven proactive market maker",
       "github": "https://github.com/Lifinity-Labs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 388386900,
@@ -565,6 +596,7 @@
       "description": "Lifinity v1 (legacy, superseded by v2)",
       "github": "https://github.com/Lifinity-Labs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 235161533,
@@ -583,6 +615,7 @@
       "description": "WOOFi, oracle-priced PMM",
       "github": "https://github.com/woonetwork/woofi-jupiter-integration",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 323166452,
@@ -601,6 +634,7 @@
       "description": "HumidiFi, closed-source oracle-priced prop AMM",
       "github": null,
       "website": "https://www.humidifi.xyz/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 458946555,
@@ -619,6 +653,7 @@
       "description": "SPL Token Swap reference program",
       "github": "https://github.com/solana-labs/solana-program-library/tree/master/token-swap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 73737036,
@@ -637,6 +672,7 @@
       "description": "Orca v1 (SPL token-swap based)",
       "github": "https://github.com/orca-so",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": null,
@@ -655,6 +691,7 @@
       "description": "Orca v2 (SPL token-swap based)",
       "github": "https://github.com/orca-so",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 161177892,
@@ -673,6 +710,7 @@
       "description": "STEPN swap (SPL token-swap fork)",
       "github": null,
       "website": "https://www.stepn.com/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 348857285,
@@ -691,6 +729,7 @@
       "description": "Penguin Finance swap (SPL token-swap fork)",
       "github": "https://github.com/pngfi/typescript-sdk",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 161376048,
@@ -709,6 +748,7 @@
       "description": "Guacswap (SPL token-swap fork)",
       "github": "https://github.com/Guacgg",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 263699928,
@@ -727,6 +767,7 @@
       "description": "FluxBeam (SPL token-swap fork)",
       "github": null,
       "website": "https://fluxbeam.xyz/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 207458738,
@@ -745,6 +786,7 @@
       "description": "DexLab swap (SPL token-swap fork)",
       "github": "https://github.com/dexlab-protocol/dexlab-token-swap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 243977673,
@@ -763,6 +805,7 @@
       "description": "Aldrin AMM v1 (SPL token-swap fork)",
       "github": "https://github.com/aldrin-labs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 249613938,
@@ -781,6 +824,7 @@
       "description": "Aldrin AMM v2 (SPL token-swap fork)",
       "github": "https://github.com/aldrin-labs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 441200340,
@@ -799,6 +843,7 @@
       "description": "Mercurial multi-token stable-swap (merged into Meteora)",
       "github": "https://github.com/mercurial-finance/stable-swap-n-pool-instructions",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 100141975,
@@ -817,6 +862,7 @@
       "description": "BonkSwap (SPL token-swap fork)",
       "github": null,
       "website": "https://www.bonkswap.io/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 394615657,
@@ -835,6 +881,7 @@
       "description": "Cropper Finance (SPL token-swap fork)",
       "github": "https://github.com/CropperFinance/cropper_instructions",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 264411854,
@@ -853,6 +900,7 @@
       "description": "PancakeSwap on Solana (CLMM fork)",
       "github": "https://github.com/pancakeswap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 432564695,
@@ -871,6 +919,7 @@
       "description": "GooseFX GAMMA AMM",
       "github": "https://github.com/GooseFX1/gamma-swap",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 365080322,
@@ -889,6 +938,7 @@
       "description": "Stabble Stable Swap",
       "github": "https://github.com/stabbleorg/amm_v1",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 395407721,
@@ -907,6 +957,7 @@
       "description": "Stabble Weighted Swap, Balancer-style weighted pools",
       "github": "https://github.com/stabbleorg/amm_v1",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 460237949,
@@ -925,6 +976,7 @@
       "description": "Stabble CLMM",
       "github": "https://github.com/stabbleorg/clmm",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 377879224,
@@ -943,6 +995,7 @@
       "description": "Drift v2, perpetuals and spot DEX with AMM-backed liquidity (GitHub and docs now under the Velocity Exchange name)",
       "github": "https://github.com/velocity-exchange/protocol-v2",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 429731225,
@@ -961,6 +1014,7 @@
       "description": "Jupiter Perpetuals, LP-pool backed perps",
       "github": "https://github.com/jup-ag",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 413092478,
@@ -979,6 +1033,7 @@
       "description": "SolFi v1, proprietary oracle-priced AMM by Ellipsis Labs",
       "github": "https://github.com/Ellipsis-Labs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 343329392,
@@ -997,6 +1052,7 @@
       "description": "SolFi v2, proprietary oracle-priced AMM by Ellipsis Labs",
       "github": "https://github.com/Ellipsis-Labs",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 406030591,
@@ -1015,6 +1071,7 @@
       "description": "TesseraV, proprietary AMM by Wintermute",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/tessera-v",
       "versions": [
         {
           "last_deployed_slot": 446053401,
@@ -1033,6 +1090,7 @@
       "description": "GoonFi v1, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
         {
           "last_deployed_slot": 389267056,
@@ -1051,6 +1109,7 @@
       "description": "GoonFi v2, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
         {
           "last_deployed_slot": 459591958,
@@ -1069,6 +1128,7 @@
       "description": "ZeroFi, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/zerofi",
       "versions": [
         {
           "last_deployed_slot": 460280271,
@@ -1087,6 +1147,7 @@
       "description": "BisonFi, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
         {
           "last_deployed_slot": 456982351,
@@ -1105,6 +1166,7 @@
       "description": "Obric v2, proprietary AMM",
       "github": null,
       "website": "https://obric.xyz/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 368947712,
@@ -1123,6 +1185,7 @@
       "description": "Aquifer, proprietary AMM",
       "github": null,
       "website": "https://aquiferdex.io/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 459979090,
@@ -1141,6 +1204,7 @@
       "description": "AlphaQ, proprietary AMM",
       "github": null,
       "website": "https://www.alphaq.xyz/",
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 422791798,
@@ -1159,6 +1223,7 @@
       "description": "Quantum, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/quantumamm",
       "versions": [
         {
           "last_deployed_slot": 460086125,
@@ -1177,6 +1242,7 @@
       "description": "Scorch, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/scorch",
       "versions": [
         {
           "last_deployed_slot": 460477573,
@@ -1195,6 +1261,7 @@
       "description": "Obsidian, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://solscan.io/account/HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
       "versions": [
         {
           "last_deployed_slot": 459988613,
@@ -1213,6 +1280,7 @@
       "description": "Heaven, proprietary AMM",
       "github": "https://github.com/heavenxyz",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 410580266,
@@ -1231,6 +1299,7 @@
       "description": "TaurusFi, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://solscan.io/account/9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc",
       "versions": [
         {
           "last_deployed_slot": 459497904,
@@ -1249,6 +1318,7 @@
       "description": "Gavel (Plasma), sandwich-resistant AMM by Ellipsis Labs, source available (BUSL-1.1)",
       "github": "https://github.com/Ellipsis-Labs/plasma",
       "website": null,
+      "reference": null,
       "versions": [
         {
           "last_deployed_slot": 363331997,
@@ -1267,6 +1337,7 @@
       "description": "WhaleStreet, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://defillama.com/protocol/whalestreet",
       "versions": [
         {
           "last_deployed_slot": 457600812,
@@ -1285,6 +1356,7 @@
       "description": "Marco Polo, proprietary AMM",
       "github": null,
       "website": null,
+      "reference": "https://solscan.io/account/9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H",
       "versions": [
         {
           "last_deployed_slot": 232074629,

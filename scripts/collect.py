@@ -81,6 +81,8 @@ class RegistryEntry:
     description: str
     github: str | None = None
     website: str | None = None
+    # Third-party page (DefiLlama, block explorer) for projects with neither GitHub nor a website.
+    reference: str | None = None
 
     @classmethod
     def from_json(cls, raw: object) -> RegistryEntry:
@@ -100,6 +102,7 @@ class RegistryEntry:
         links = {
             "github": cls._optional_link(raw, "github", GITHUB_URL_RE, fields["name"]),
             "website": cls._optional_link(raw, "website", WEBSITE_URL_RE, fields["name"]),
+            "reference": cls._optional_link(raw, "reference", WEBSITE_URL_RE, fields["name"]),
         }
         return cls(**fields, **links)
 
@@ -797,6 +800,7 @@ def build_index(layout: Layout, entries: Sequence[RegistryEntry]) -> dict[str, o
             "description": entry.description,
             "github": entry.github,
             "website": entry.website,
+            "reference": entry.reference,
             "versions": [_version_summary(v) for v in program_versions(layout, entry)],
         }
         for entry in entries
@@ -825,15 +829,19 @@ def format_commit_message(results: Sequence[Result], release_tag: str) -> str | 
     return "\n".join(lines) + "\n"
 
 
+def _host(url: str) -> str:
+    return url.removeprefix("https://").split("/")[0].removeprefix("www.")
+
+
 def link_cell(entry: RegistryEntry) -> str:
-    """GitHub link if there is one (text: owner/repo, or the organisation), else the website (text: host)."""
+    """GitHub link (text: owner/repo or the account), else the website, else the reference page (text: host)."""
     if entry.github:
         path = entry.github.removeprefix("https://github.com/")
         owner_repo = "/".join(path.split("/")[:2])
         return f"[{owner_repo}]({entry.github})"
-    if entry.website:
-        host = entry.website.removeprefix("https://").split("/")[0].removeprefix("www.")
-        return f"[{host}]({entry.website})"
+    for url in (entry.website, entry.reference):
+        if url:
+            return f"[{_host(url)}]({url})"
     return ""
 
 
