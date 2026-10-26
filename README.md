@@ -1,6 +1,6 @@
 # solana-dex-program-dumps
 
-Daily snapshots of the on-chain program binaries (`.so`) of the major Solana DEXs, collected
+Daily snapshots of the on-chain program binaries (`.so`) of the major Solana DEXs and swap routers, collected
 from mainnet with the official Solana CLI by GitHub Actions. Every deployed version that was
 observed is kept, named by its `last_deployed_slot`, for reverse engineering, auditing and
 version checks.
@@ -229,12 +229,17 @@ Things worth knowing:
 
 ## Tracked programs
 
-Program IDs come from the [Jupiter program-id-to-label list](https://lite-api.jup.ag/swap/v1/program-id-to-label)
-plus manual additions. Every ID below was dumped successfully from mainnet; names, types and
+DEX program IDs come from the [Jupiter program-id-to-label list](https://lite-api.jup.ag/swap/v1/program-id-to-label)
+plus manual additions. Router and aggregator programs (type `router`) were picked from public label
+lists (Helius Orb, the aggregator list in the Manifest client, DefiLlama's aggregator adapters, the
+projects' own docs) and are only included when at least two sources agree on the operator and the
+program exists on chain; sibling programs also share an upgrade authority where that could be checked.
+Every ID below was dumped successfully from mainnet; names, types and
 descriptions are best effort. The `type` column is a rough classification: `amm` constant
 product or SPL-token-swap style, `clmm` / `dlmm` concentrated or bin liquidity, `clob` order book,
 `stable-swap`, `pmm` oracle-priced or proprietary market makers (mostly closed source),
-`bonding-curve` launchpads, `perp` perpetuals, `lst-swap` liquid staking token swaps.
+`bonding-curve` launchpads, `perp` perpetuals, `lst-swap` liquid staking token swaps, `router`
+swap routers and aggregators (including wallet and trading-bot routers) that route through other programs.
 
 The `Link` column is the project's GitHub when one is known, otherwise its official website. A few
 closed-source prop AMMs have neither (they have no public site or repository), so their link is a
@@ -320,6 +325,28 @@ were checked on 2026-10-25 and can go stale; they are also available as `github`
 | `gavel` | `srAMMzfVHVAtgSJc8iH6CfKzuWuUTzLHVCE81QU1rgi` | amm | Gavel (Plasma), sandwich-resistant AMM by Ellipsis Labs, source available (BUSL-1.1) | [Ellipsis-Labs/plasma](https://github.com/Ellipsis-Labs/plasma) |
 | `whalestreet` | `FW6zUqn4iKRaeopwwhwsquTY6ABWLLgjxtrC3VPnaWBf` | pmm | WhaleStreet, proprietary AMM | [defillama.com](https://defillama.com/protocol/whalestreet) |
 | `marco-polo` | `9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H` | pmm | Marco Polo, proprietary AMM | [solscan.io](https://solscan.io/account/9tKE7Mbmj4mxDjWatikzGAtkoWosiiZX9y6J4Hfm2R8H) |
+| `jupiter-v6` | `JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4` | router | Jupiter Aggregator v6, the current Jupiter swap router | [jup-ag](https://github.com/jup-ag) |
+| `jupiter-v5-2` | `JUP5cHjnnCx2DppVsufsLrXs8EBZeEZzGtEK9Gdz6ow` | router | Jupiter Aggregator v5.2 (legacy router) | [jup-ag](https://github.com/jup-ag) |
+| `jupiter-v5-1` | `JUP5pEAZeHdHrLxh5UCwAbpjGwYKKoquCpda2hfP4u8` | router | Jupiter Aggregator v5.1 (legacy router) | [jup-ag](https://github.com/jup-ag) |
+| `jupiter-v4` | `JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB` | router | Jupiter Aggregator v4 (legacy router) | [jup-ag](https://github.com/jup-ag) |
+| `jupiter-v3` | `JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph` | router | Jupiter Aggregator v3 (legacy router) | [jup-ag](https://github.com/jup-ag) |
+| `okx-dex-router-v3` | `proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u` | router | OKX DEX router v3, the program behind the OKX Web3 swap API | [okx/dex-solana-binary](https://github.com/okx/dex-solana-binary) |
+| `dflow-aggregator-v4` | `DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH` | router | DFlow Aggregator v4, swap router | [DFlowProtocol](https://github.com/DFlowProtocol) |
+| `titan` | `T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT` | router | Titan Exchange swap router | [titan.exchange](https://titan.exchange/) |
+| `binance-wallet` | `B3111yJCeHBcA1bizdJjUFPALfhAfSRnAbJzGUtnt56A` | router | Binance Wallet swap router | [binance](https://github.com/binance) |
+| `binance-wallet-2` | `BN111AnCthcdPVNJ6jkir9TDaS7xqXT8EhetAmYpNqFt` | router | Binance Wallet swap router (second program) | [binance](https://github.com/binance) |
+| `binance-alpha-2` | `BN111JnbLtbmQqqiCh7h2pDKhAhMx4wi77Mj7jJFbyp8` | router | Binance Alpha 2.0 swap router (Binance Wallet) | [binance](https://github.com/binance) |
+| `bitget-dex-aggregator` | `s7SunwrPG5SbViEKiViaDThPRJxkkTrNx2iRPN3exNC` | router | Bitget Wallet DEX aggregator | [bitgetwallet](https://github.com/bitgetwallet) |
+| `bitget-swap-2` | `2UUgGySTVXmKFatH7pGQo84ZrzdSYF5zw9iqrGwBMuuj` | router | Bitget Wallet swap router (second program) | [bitgetwallet](https://github.com/bitgetwallet) |
+| `liquidmesh-router` | `HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ` | router | LiquidMesh router, DEX aggregator | [liquidmesh.io](https://liquidmesh.io/) |
+| `0x-settler` | `Sett1erwx2eqT5A8uvu8GBxDFT2W5TNnhirL7hLmb8m` | router | 0x Swap API Settler program on Solana | [0xProject](https://github.com/0xProject) |
+| `bungee` | `bung5E8oYryGA7d2ivgoe1spoZRS88cvcwoK23TtExg` | router | Bungee (Socket) swap and bridge aggregator program | [SocketDotTech/bungee-contracts-public](https://github.com/SocketDotTech/bungee-contracts-public) |
+| `autobahn-executor` | `bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D` | router | Autobahn executor, open-source DEX aggregator by Blockworks Foundation (Mango) | [blockworks-foundation/autobahn](https://github.com/blockworks-foundation/autobahn) |
+| `raydium-route-swap` | `93BgeoLHo5AdNbpqy9bD12dtfxtA5M2fh3rj72bE35Y3` | router | Raydium Route Swap program | [raydium-io](https://github.com/raydium-io) |
+| `raydium-amm-route` | `routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS` | router | Raydium AMM Route program | [raydium-io](https://github.com/raydium-io) |
+| `banana-gun-router` | `BANANAjs7FJiPQqJTGFzkZJndT9o7UmKiYYGaJz6frGu` | router | Banana Gun trading bot router | [bananagun.io](https://bananagun.io/) |
+| `bloom-router` | `b1oomGGqPKGD6errbyfbVMBuzSC8WtAAYo8MwNafWW1` | router | Bloom trading bot router | [bloombot.app](https://www.bloombot.app/) |
+| `bonkbot-router` | `BBRouter1cVunVXvkcqeKkZQcBK7ruan37PPm3xzWaXD` | router | BONKbot trading bot router | [bonkbot.io](https://www.bonkbot.io/) |
 
 ## Notes and limitations
 
@@ -328,6 +355,10 @@ were checked on 2026-10-25 and can go stale; they are also available as `github`
   want it removed, open an issue.
 - Nothing here is a statement about who controls a program; that is only what the chain says
   (`upgrade_authority`).
+- Not every router is tracked. Known gaps: the first OKX DEX router (`6m2CDdhRgxpH4WjvdzxAYbGxwdGUz5MziiL5jek2kBma`)
+  has been closed on chain and cannot be dumped; OKX's vault program (`va1t8sdG...`) is not a router; routers
+  that only one source labels (for example Gate.io Web3, Magpie, Spur) are left out until a second source
+  confirms them. Add them to `registry.json` if you need them.
 - Programs can be closed or become immutable; a program that disappears shows up as a failure in
   the logs, and its published versions stay available.
 - Only programs owned by the upgradeable loader and the non-upgradeable `BPFLoader2` have been

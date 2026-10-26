@@ -1367,6 +1367,226 @@
           "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/marco-polo-232074629.so"
         }
       ]
+    },
+    {
+      "name": "jupiter-v6",
+      "program_id": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "type": "router",
+      "description": "Jupiter Aggregator v6, the current Jupiter swap router",
+      "github": "https://github.com/jup-ag",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "jupiter-v5-2",
+      "program_id": "JUP5cHjnnCx2DppVsufsLrXs8EBZeEZzGtEK9Gdz6ow",
+      "type": "router",
+      "description": "Jupiter Aggregator v5.2 (legacy router)",
+      "github": "https://github.com/jup-ag",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "jupiter-v5-1",
+      "program_id": "JUP5pEAZeHdHrLxh5UCwAbpjGwYKKoquCpda2hfP4u8",
+      "type": "router",
+      "description": "Jupiter Aggregator v5.1 (legacy router)",
+      "github": "https://github.com/jup-ag",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "jupiter-v4",
+      "program_id": "JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB",
+      "type": "router",
+      "description": "Jupiter Aggregator v4 (legacy router)",
+      "github": "https://github.com/jup-ag",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "jupiter-v3",
+      "program_id": "JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph",
+      "type": "router",
+      "description": "Jupiter Aggregator v3 (legacy router)",
+      "github": "https://github.com/jup-ag",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "okx-dex-router-v3",
+      "program_id": "proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u",
+      "type": "router",
+      "description": "OKX DEX router v3, the program behind the OKX Web3 swap API",
+      "github": "https://github.com/okx/dex-solana-binary",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "dflow-aggregator-v4",
+      "program_id": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+      "type": "router",
+      "description": "DFlow Aggregator v4, swap router",
+      "github": "https://github.com/DFlowProtocol",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "titan",
+      "program_id": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
+      "type": "router",
+      "description": "Titan Exchange swap router",
+      "github": null,
+      "website": "https://titan.exchange/",
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "binance-wallet",
+      "program_id": "B3111yJCeHBcA1bizdJjUFPALfhAfSRnAbJzGUtnt56A",
+      "type": "router",
+      "description": "Binance Wallet swap router",
+      "github": "https://github.com/binance",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "binance-wallet-2",
+      "program_id": "BN111AnCthcdPVNJ6jkir9TDaS7xqXT8EhetAmYpNqFt",
+      "type": "router",
+      "description": "Binance Wallet swap router (second program)",
+      "github": "https://github.com/binance",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "binance-alpha-2",
+      "program_id": "BN111JnbLtbmQqqiCh7h2pDKhAhMx4wi77Mj7jJFbyp8",
+      "type": "router",
+      "description": "Binance Alpha 2.0 swap router (Binance Wallet)",
+      "github": "https://github.com/binance",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "bitget-dex-aggregator",
+      "program_id": "s7SunwrPG5SbViEKiViaDThPRJxkkTrNx2iRPN3exNC",
+      "type": "router",
+      "description": "Bitget Wallet DEX aggregator",
+      "github": "https://github.com/bitgetwallet",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "bitget-swap-2",
+      "program_id": "2UUgGySTVXmKFatH7pGQo84ZrzdSYF5zw9iqrGwBMuuj",
+      "type": "router",
+      "description": "Bitget Wallet swap router (second program)",
+      "github": "https://github.com/bitgetwallet",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "liquidmesh-router",
+      "program_id": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+      "type": "router",
+      "description": "LiquidMesh router, DEX aggregator",
+      "github": null,
+      "website": "https://liquidmesh.io/",
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "0x-settler",
+      "program_id": "Sett1erwx2eqT5A8uvu8GBxDFT2W5TNnhirL7hLmb8m",
+      "type": "router",
+      "description": "0x Swap API Settler program on Solana",
+      "github": "https://github.com/0xProject",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "bungee",
+      "program_id": "bung5E8oYryGA7d2ivgoe1spoZRS88cvcwoK23TtExg",
+      "type": "router",
+      "description": "Bungee (Socket) swap and bridge aggregator program",
+      "github": "https://github.com/SocketDotTech/bungee-contracts-public",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "autobahn-executor",
+      "program_id": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+      "type": "router",
+      "description": "Autobahn executor, open-source DEX aggregator by Blockworks Foundation (Mango)",
+      "github": "https://github.com/blockworks-foundation/autobahn",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "raydium-route-swap",
+      "program_id": "93BgeoLHo5AdNbpqy9bD12dtfxtA5M2fh3rj72bE35Y3",
+      "type": "router",
+      "description": "Raydium Route Swap program",
+      "github": "https://github.com/raydium-io",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "raydium-amm-route",
+      "program_id": "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
+      "type": "router",
+      "description": "Raydium AMM Route program",
+      "github": "https://github.com/raydium-io",
+      "website": null,
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "banana-gun-router",
+      "program_id": "BANANAjs7FJiPQqJTGFzkZJndT9o7UmKiYYGaJz6frGu",
+      "type": "router",
+      "description": "Banana Gun trading bot router",
+      "github": null,
+      "website": "https://bananagun.io/",
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "bloom-router",
+      "program_id": "b1oomGGqPKGD6errbyfbVMBuzSC8WtAAYo8MwNafWW1",
+      "type": "router",
+      "description": "Bloom trading bot router",
+      "github": null,
+      "website": "https://www.bloombot.app/",
+      "reference": null,
+      "versions": []
+    },
+    {
+      "name": "bonkbot-router",
+      "program_id": "BBRouter1cVunVXvkcqeKkZQcBK7ruan37PPm3xzWaXD",
+      "type": "router",
+      "description": "BONKbot trading bot router",
+      "github": null,
+      "website": "https://www.bonkbot.io/",
+      "reference": null,
+      "versions": []
     }
   ]
 }

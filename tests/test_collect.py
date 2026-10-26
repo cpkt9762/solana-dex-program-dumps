@@ -553,6 +553,15 @@ class RegistryLinksTest(unittest.TestCase):
                 self.assertTrue(e.reference.startswith(("https://defillama.com/protocol/", "https://solscan.io/account/")), e.name)
 
 
+class RegistryTypesTest(unittest.TestCase):
+    def test_every_registry_type_is_explained_in_the_readme(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        legend = readme[readme.index("## Tracked programs"):readme.index("| Name | Program ID |")]
+        types = {e.type for e in collect.load_registry(ROOT / "registry.json")}
+        missing = sorted(t for t in types if f"`{t}`" not in legend)
+        self.assertEqual(missing, [], "add these types to the legend in the README (Tracked programs)")
+
+
 class DryRunGuardTest(unittest.TestCase):
     def test_dry_run_refuses_repo_and_non_empty_directories(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
