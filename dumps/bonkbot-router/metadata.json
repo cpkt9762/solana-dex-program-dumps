@@ -1,0 +1,16 @@
+{
+  "name": "bonkbot-router",
+  "program_id": "BBRouter1cVunVXvkcqeKkZQcBK7ruan37PPm3xzWaXD",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "3nkeH9mesXP5SHEpyHN8xawf9mYyhg697RABK6q1icLX",
+  "sha256": "98cc0ea7cc180348fa45d8cfa53db32ad39c6f14e98faf376903e046cc0f2604",
+  "size": 375872,
+  "onchain_sha256": "6327e5ca4b6fd09e09d9b9e84a70f10db7141a0c7fec9d2a09cb34f87e571b09",
+  "onchain_size": 380188,
+  "last_deployed_slot": 457629310,
+  "upgrade_authority": "3GLJ4UJFPMkm8WSgEQj3268gM3u7HrN7xVUDwGgrWSnz",
+  "collected_at": "2026-10-26T08:12:17Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bonkbot-router-457629310.so"
+}

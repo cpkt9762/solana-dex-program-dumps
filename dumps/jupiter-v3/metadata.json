@@ -1,0 +1,16 @@
+{
+  "name": "jupiter-v3",
+  "program_id": "JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "9VsuiyU1ZgYL53YFYq1KSiQnGgBJkyTujTNUXwnKcc6d",
+  "sha256": "8e1d0712e7e021fe86be048647c5650909f7b01b31d6ef3b63db9d32d682f20e",
+  "size": 1330096,
+  "onchain_sha256": "f9259cc0c27bf914c692d86e106353a600bc7957025844ffb58aaac705fb86a5",
+  "onchain_size": 1706816,
+  "last_deployed_slot": 137541378,
+  "upgrade_authority": "9u9iZBWqGsp5hXBxkVZtBTuLSGNAG9gEQLgpuVw39ASg",
+  "collected_at": "2026-10-26T08:11:29Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v3-137541378.so"
+}

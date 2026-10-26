@@ -1,0 +1,16 @@
+{
+  "name": "bitget-swap-2",
+  "program_id": "2UUgGySTVXmKFatH7pGQo84ZrzdSYF5zw9iqrGwBMuuj",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "4AzEZMuNWPaF5NGWFVwazkw8fanRmS8dABLfGaJU12Ly",
+  "sha256": "839d0cb0b453658e07a7c77a267f2d9c0f48dfa7f076648f2da403ea7864b91b",
+  "size": 518872,
+  "onchain_sha256": "839d0cb0b453658e07a7c77a267f2d9c0f48dfa7f076648f2da403ea7864b91b",
+  "onchain_size": 518872,
+  "last_deployed_slot": 367630096,
+  "upgrade_authority": "4S8C1yrRZmJYPzCqzEVjZYf6qCYWFoF7hWLRzssTCotX",
+  "collected_at": "2026-10-26T08:11:53Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bitget-swap-2-367630096.so"
+}

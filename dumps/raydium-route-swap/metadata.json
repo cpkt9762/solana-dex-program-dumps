@@ -1,0 +1,16 @@
+{
+  "name": "raydium-route-swap",
+  "program_id": "93BgeoLHo5AdNbpqy9bD12dtfxtA5M2fh3rj72bE35Y3",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "2Mmu1o7DppkzYLVxmPhDvUSoEaKa5zTGNePsnCRH11bT",
+  "sha256": "eb6142af834d3b9d231ce135a8593962ff172b874beb0c2b52335d9e6b9f0c9f",
+  "size": 216408,
+  "onchain_sha256": "1e9cd3f4a418534961d3fcc2a1894bf9a33614d0321df814bce87d54da38e1dc",
+  "onchain_size": 253584,
+  "last_deployed_slot": 100844261,
+  "upgrade_authority": "8aSRiwajnkCP3ZhWTqTGJBy82ELo3Rt1CoEk5Hyjiqiy",
+  "collected_at": "2026-10-26T08:12:06Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/raydium-route-swap-100844261.so"
+}

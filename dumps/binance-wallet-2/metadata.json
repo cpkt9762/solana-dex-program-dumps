@@ -1,0 +1,16 @@
+{
+  "name": "binance-wallet-2",
+  "program_id": "BN111AnCthcdPVNJ6jkir9TDaS7xqXT8EhetAmYpNqFt",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "B1JDBeyE3PpZ6ABegBB6HDVsHpma2AQhFGf2geUf166Y",
+  "sha256": "dc345765bdf1df174ac248536387e9cf22c812b8e8fe2c374c2a314acb8072b2",
+  "size": 532608,
+  "onchain_sha256": "11d83c3084a95e6c7d9b49e88f7b07833ef700450951127939ac25bb94d97320",
+  "onchain_size": 560502,
+  "last_deployed_slot": 393409008,
+  "upgrade_authority": "SqJ8U8uZ7bpN63wwLKJcs1KE3YiGeMTVvJceqZS5E4v",
+  "collected_at": "2026-10-26T08:11:44Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/binance-wallet-2-393409008.so"
+}

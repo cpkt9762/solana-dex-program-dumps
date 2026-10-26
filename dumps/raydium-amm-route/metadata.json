@@ -1,0 +1,16 @@
+{
+  "name": "raydium-amm-route",
+  "program_id": "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "H9vbtL8jBVAdBagXdRAVihGkyWiCuH6RFno5J7GU6sFF",
+  "sha256": "5363e74d6ee924a66101e1f9323af30daa3111aa8c0b7fe21ef3a857a1e4da32",
+  "size": 770480,
+  "onchain_sha256": "8d4c45bdcab706e5e1022e1e1bf28b6d431d76472c5b1751554a8005ab495c41",
+  "onchain_size": 1048576,
+  "last_deployed_slot": 445762877,
+  "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
+  "collected_at": "2026-10-26T08:12:08Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/raydium-amm-route-445762877.so"
+}

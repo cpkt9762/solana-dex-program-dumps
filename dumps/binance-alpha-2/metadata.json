@@ -1,0 +1,16 @@
+{
+  "name": "binance-alpha-2",
+  "program_id": "BN111JnbLtbmQqqiCh7h2pDKhAhMx4wi77Mj7jJFbyp8",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "Df3ssK1ni8GzEoFuQyn4cQfC5mGZykebTERTT6EGQcFc",
+  "sha256": "2d3202a695f1fd91019edbf7269293880667676ab5422a4453193535556cd579",
+  "size": 460192,
+  "onchain_sha256": "abb2c94c541c987a26eba17e7193004e9c0e8b745b8121e2e9bde8256fb67d2c",
+  "onchain_size": 516788,
+  "last_deployed_slot": 334282679,
+  "upgrade_authority": "FYtWDy1MfASNVWsqwC2CSu4xRbVcrd8RSC8Ts8qYJawB",
+  "collected_at": "2026-10-26T08:11:47Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/binance-alpha-2-334282679.so"
+}

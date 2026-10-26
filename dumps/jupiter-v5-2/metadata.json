@@ -1,0 +1,16 @@
+{
+  "name": "jupiter-v5-2",
+  "program_id": "JUP5cHjnnCx2DppVsufsLrXs8EBZeEZzGtEK9Gdz6ow",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "8ucawBv9DM8bDugt5q6XRro9uSfjZspewjgdc3Hk2BaH",
+  "sha256": "050bac8d1596ccf9c48e9e55ffa8ae8ac7aa4479f67b3352913a7eca5ada9e77",
+  "size": 1330056,
+  "onchain_sha256": "3e73b8e69501204ff311fe28e408450ad77874f3243c8ad7897ecd88ff599084",
+  "onchain_size": 2488992,
+  "last_deployed_slot": 206399479,
+  "upgrade_authority": "9hdBK7FUzv4NjZbtYfm39F5utJyFsmCwbF9Mow5Pr1sN",
+  "collected_at": "2026-10-26T08:11:20Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v5-2-206399479.so"
+}

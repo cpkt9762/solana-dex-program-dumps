@@ -1,0 +1,16 @@
+{
+  "name": "bungee",
+  "program_id": "bung5E8oYryGA7d2ivgoe1spoZRS88cvcwoK23TtExg",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "CavafFmNbsubHA5DC6WDtHddo1FN6DTQCPaZHhEoDXDz",
+  "sha256": "a940199acf37b0796cf8272408d1af4244ccffef1f59ac7d16a2ab90460a2ec5",
+  "size": 277472,
+  "onchain_sha256": "a940199acf37b0796cf8272408d1af4244ccffef1f59ac7d16a2ab90460a2ec5",
+  "onchain_size": 277472,
+  "last_deployed_slot": 366332824,
+  "upgrade_authority": "6NSzPr4k3SDrLHEoP2iUosbzRCmApL24hYB15yRJZks5",
+  "collected_at": "2026-10-26T08:12:01Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bungee-366332824.so"
+}

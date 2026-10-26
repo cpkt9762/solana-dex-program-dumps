@@ -1376,7 +1376,16 @@
       "github": "https://github.com/jup-ag",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 459479624,
+          "sha256": "c0c0ce1c15b0eab3c8b81eacb25cb4895d8ba861a1b0125940609ac6ac064ae2",
+          "size": 2036392,
+          "collected_at": "2026-10-26T08:11:13Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v6-459479624.so"
+        }
+      ]
     },
     {
       "name": "jupiter-v5-2",
@@ -1386,7 +1395,16 @@
       "github": "https://github.com/jup-ag",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 206399479,
+          "sha256": "050bac8d1596ccf9c48e9e55ffa8ae8ac7aa4479f67b3352913a7eca5ada9e77",
+          "size": 1330056,
+          "collected_at": "2026-10-26T08:11:20Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v5-2-206399479.so"
+        }
+      ]
     },
     {
       "name": "jupiter-v5-1",
@@ -1396,7 +1414,16 @@
       "github": "https://github.com/jup-ag",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 196779364,
+          "sha256": "24058b03c71c42948d33b67a4d80a18ebea076af2ec1c81daa528cd28e179ae7",
+          "size": 1213760,
+          "collected_at": "2026-10-26T08:11:23Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v5-1-196779364.so"
+        }
+      ]
     },
     {
       "name": "jupiter-v4",
@@ -1406,7 +1433,16 @@
       "github": "https://github.com/jup-ag",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 199472471,
+          "sha256": "9fd795e112897976487aa291e00f55010124b4846b474740b07a3a1be1725445",
+          "size": 1220744,
+          "collected_at": "2026-10-26T08:11:26Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v4-199472471.so"
+        }
+      ]
     },
     {
       "name": "jupiter-v3",
@@ -1416,7 +1452,16 @@
       "github": "https://github.com/jup-ag",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 137541378,
+          "sha256": "8e1d0712e7e021fe86be048647c5650909f7b01b31d6ef3b63db9d32d682f20e",
+          "size": 1330096,
+          "collected_at": "2026-10-26T08:11:29Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v3-137541378.so"
+        }
+      ]
     },
     {
       "name": "okx-dex-router-v3",
@@ -1426,7 +1471,16 @@
       "github": "https://github.com/okx/dex-solana-binary",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 454781973,
+          "sha256": "45f8d0f37b6239580ae68679acadb0e6f7e52b43cb6e3c246aec42026138a815",
+          "size": 2629304,
+          "collected_at": "2026-10-26T08:11:32Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/okx-dex-router-v3-454781973.so"
+        }
+      ]
     },
     {
       "name": "dflow-aggregator-v4",
@@ -1436,7 +1490,16 @@
       "github": "https://github.com/DFlowProtocol",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 457467538,
+          "sha256": "8aae2f56130d127f0394c805c1c7002d3b8ff9602515e92939cac37c0857d218",
+          "size": 2749496,
+          "collected_at": "2026-10-26T08:11:35Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/dflow-aggregator-v4-457467538.so"
+        }
+      ]
     },
     {
       "name": "titan",
@@ -1446,7 +1509,16 @@
       "github": null,
       "website": "https://titan.exchange/",
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 460152423,
+          "sha256": "6620a92b0477f66ac11976cd91aafeebdedfb568fd5ec99772b1b4820b8f4cbd",
+          "size": 2145016,
+          "collected_at": "2026-10-26T08:11:39Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/titan-460152423.so"
+        }
+      ]
     },
     {
       "name": "binance-wallet",
@@ -1456,7 +1528,16 @@
       "github": "https://github.com/binance",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 415118680,
+          "sha256": "cb1df04a6e0652acba96fe4ff4470627ffce757f14b516d923e87ddd81db609f",
+          "size": 300448,
+          "collected_at": "2026-10-26T08:11:41Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/binance-wallet-415118680.so"
+        }
+      ]
     },
     {
       "name": "binance-wallet-2",
@@ -1466,7 +1547,16 @@
       "github": "https://github.com/binance",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 393409008,
+          "sha256": "dc345765bdf1df174ac248536387e9cf22c812b8e8fe2c374c2a314acb8072b2",
+          "size": 532608,
+          "collected_at": "2026-10-26T08:11:44Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/binance-wallet-2-393409008.so"
+        }
+      ]
     },
     {
       "name": "binance-alpha-2",
@@ -1476,7 +1566,16 @@
       "github": "https://github.com/binance",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 334282679,
+          "sha256": "2d3202a695f1fd91019edbf7269293880667676ab5422a4453193535556cd579",
+          "size": 460192,
+          "collected_at": "2026-10-26T08:11:47Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/binance-alpha-2-334282679.so"
+        }
+      ]
     },
     {
       "name": "bitget-dex-aggregator",
@@ -1486,7 +1585,16 @@
       "github": "https://github.com/bitgetwallet",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 455991576,
+          "sha256": "a5b1e6ccf2695dd3f088bd5eb68ee3d4483cecefb4030bc03a3d1b35165fbc06",
+          "size": 2297152,
+          "collected_at": "2026-10-26T08:11:50Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bitget-dex-aggregator-455991576.so"
+        }
+      ]
     },
     {
       "name": "bitget-swap-2",
@@ -1496,7 +1604,16 @@
       "github": "https://github.com/bitgetwallet",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 367630096,
+          "sha256": "839d0cb0b453658e07a7c77a267f2d9c0f48dfa7f076648f2da403ea7864b91b",
+          "size": 518872,
+          "collected_at": "2026-10-26T08:11:53Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bitget-swap-2-367630096.so"
+        }
+      ]
     },
     {
       "name": "liquidmesh-router",
@@ -1506,7 +1623,16 @@
       "github": null,
       "website": "https://liquidmesh.io/",
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 459513437,
+          "sha256": "483a91b648a69855242ba328dd54e7afda5ed57c9c3b1b7cdf3d7fd073ebdb47",
+          "size": 1107800,
+          "collected_at": "2026-10-26T08:11:55Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/liquidmesh-router-459513437.so"
+        }
+      ]
     },
     {
       "name": "0x-settler",
@@ -1516,7 +1642,16 @@
       "github": "https://github.com/0xProject",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 457679884,
+          "sha256": "914076a999c59a24dc1c126c5f5dbb62478814a67ca6b675d9ebd8644c0f5fe3",
+          "size": 157528,
+          "collected_at": "2026-10-26T08:11:58Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/0x-settler-457679884.so"
+        }
+      ]
     },
     {
       "name": "bungee",
@@ -1526,7 +1661,16 @@
       "github": "https://github.com/SocketDotTech/bungee-contracts-public",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 366332824,
+          "sha256": "a940199acf37b0796cf8272408d1af4244ccffef1f59ac7d16a2ab90460a2ec5",
+          "size": 277472,
+          "collected_at": "2026-10-26T08:12:01Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bungee-366332824.so"
+        }
+      ]
     },
     {
       "name": "autobahn-executor",
@@ -1536,7 +1680,16 @@
       "github": "https://github.com/blockworks-foundation/autobahn",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 459828103,
+          "sha256": "b2cab9e59c72e81f40ce68b1ab62071249eb98549e247f716dd30ee3d96493e4",
+          "size": 203136,
+          "collected_at": "2026-10-26T08:12:03Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/autobahn-executor-459828103.so"
+        }
+      ]
     },
     {
       "name": "raydium-route-swap",
@@ -1546,7 +1699,16 @@
       "github": "https://github.com/raydium-io",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 100844261,
+          "sha256": "eb6142af834d3b9d231ce135a8593962ff172b874beb0c2b52335d9e6b9f0c9f",
+          "size": 216408,
+          "collected_at": "2026-10-26T08:12:06Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/raydium-route-swap-100844261.so"
+        }
+      ]
     },
     {
       "name": "raydium-amm-route",
@@ -1556,7 +1718,16 @@
       "github": "https://github.com/raydium-io",
       "website": null,
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 445762877,
+          "sha256": "5363e74d6ee924a66101e1f9323af30daa3111aa8c0b7fe21ef3a857a1e4da32",
+          "size": 770480,
+          "collected_at": "2026-10-26T08:12:08Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/raydium-amm-route-445762877.so"
+        }
+      ]
     },
     {
       "name": "banana-gun-router",
@@ -1566,7 +1737,16 @@
       "github": null,
       "website": "https://bananagun.io/",
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 446414591,
+          "sha256": "1f7d5dc0b96b14372b28e579262f2bcfcfa7607a7aa9a1016b02833b3d33d525",
+          "size": 808528,
+          "collected_at": "2026-10-26T08:12:11Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/banana-gun-router-446414591.so"
+        }
+      ]
     },
     {
       "name": "bloom-router",
@@ -1576,7 +1756,16 @@
       "github": null,
       "website": "https://www.bloombot.app/",
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 453153943,
+          "sha256": "8bafdd9fd0e8841807e829563998b51bf679b201ae79b9c78c6f12d33e26a4af",
+          "size": 201184,
+          "collected_at": "2026-10-26T08:12:14Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bloom-router-453153943.so"
+        }
+      ]
     },
     {
       "name": "bonkbot-router",
@@ -1586,7 +1775,16 @@
       "github": null,
       "website": "https://www.bonkbot.io/",
       "reference": null,
-      "versions": []
+      "versions": [
+        {
+          "last_deployed_slot": 457629310,
+          "sha256": "98cc0ea7cc180348fa45d8cfa53db32ad39c6f14e98faf376903e046cc0f2604",
+          "size": 375872,
+          "collected_at": "2026-10-26T08:12:17Z",
+          "release_tag": "snapshot-2026-10-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bonkbot-router-457629310.so"
+        }
+      ]
     }
   ]
 }
