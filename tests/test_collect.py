@@ -343,24 +343,51 @@ class LocalStoreTest(unittest.TestCase):
 
 
 class SnapshotNotesTest(unittest.TestCase):
+    def build(self, root: Path, repo_url: str | None = None) -> str:
+        source, store = FakeSource(), FakeStore()
+        old = collect.Collector(collect.Layout(root), source, store, release_tag="snapshot-2025-12-31", sleep=lambda _s: None)
+        source.deploy(PROGRAM_ID, 100, elf(b"v1"))
+        old.collect_one(entry())
+        new = collect.Collector(collect.Layout(root), source, store, release_tag=TAG, sleep=lambda _s: None)
+        source.deploy(PROGRAM_ID, 250, elf(b"v2"))
+        source.deploy(OTHER_ID, 7, elf(b"b"))
+        with_link = collect.RegistryEntry(NAME, PROGRAM_ID, "amm", "t", github="https://github.com/raydium-io/raydium-amm")
+        without_link = entry("raydium-cpmm", OTHER_ID)
+        new.run([with_link, without_link])
+        return collect.snapshot_notes(collect.Layout(root), [with_link, without_link], TAG, repo_url)
+
     def test_notes_list_only_versions_of_that_snapshot(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            source, store = FakeSource(), FakeStore()
-            old = collect.Collector(collect.Layout(root), source, store, release_tag="snapshot-2025-12-31", sleep=lambda _s: None)
-            source.deploy(PROGRAM_ID, 100, elf(b"v1"))
-            old.collect_one(entry())
-            new = collect.Collector(collect.Layout(root), source, store, release_tag=TAG, sleep=lambda _s: None)
-            source.deploy(PROGRAM_ID, 250, elf(b"v2"))
-            source.deploy(OTHER_ID, 7, elf(b"b"))
-            new.run([entry(), entry("raydium-cpmm", OTHER_ID)])
-            notes = collect.snapshot_notes(collect.Layout(root), [entry(), entry("raydium-cpmm", OTHER_ID)], TAG)
-            self.assertIn("[!NOTE]", notes)
-            self.assertIn("2 program version(s)", notes)
-            self.assertIn(f"| {NAME} | `{PROGRAM_ID}` | 250 | 100 |", notes)
-            self.assertIn("`raydium-cpmm-7.so`", notes)
-            self.assertNotIn(f"`{NAME}-100.so`", notes)
-            self.assertEqual(collect.snapshot_spec(TAG).title, "Snapshot 2026-01-01")
+            notes = self.build(Path(tmp))
+        self.assertIn("[!NOTE]", notes)
+        self.assertIn("2 program version(s)", notes)
+        self.assertIn("raydium-cpmm-7.so", notes)
+        self.assertNotIn(f"{NAME}-100.so", notes)
+        self.assertEqual(collect.snapshot_spec(TAG).title, "Snapshot 2026-01-01")
+
+    def test_rows_link_the_project_and_the_download(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            notes = self.build(Path(tmp))
+        self.assertIn("| Program | Link | File | Slot | Previous slot | sha256 | Size | Program ID |", notes)
+        file_url = f"https://example.invalid/{TAG}/{NAME}-250.so"
+        row = next(line for line in notes.splitlines() if line.startswith(f"| {NAME} |"))
+        self.assertIn("[raydium-io/raydium-amm](https://github.com/raydium-io/raydium-amm)", row)
+        self.assertIn(f"[{NAME}-250.so]({file_url})", row)
+        self.assertIn(f"| 250 | 100 |", row)
+        self.assertTrue(row.endswith(f"| `{PROGRAM_ID}` |"))
+        other = next(line for line in notes.splitlines() if line.startswith("| raydium-cpmm |"))
+        self.assertTrue(other.startswith("| raydium-cpmm | - |"), "no registry link -> dash, not an empty cell")
+        self.assertIn(f"[raydium-cpmm-7.so](https://example.invalid/{TAG}/raydium-cpmm-7.so)", other)
+
+    def test_repository_links_only_when_a_repo_is_given(self) -> None:
+        repo = "https://github.com/owner/repo"
+        with tempfile.TemporaryDirectory() as tmp:
+            with_repo = self.build(Path(tmp), repo)
+        with tempfile.TemporaryDirectory() as tmp:
+            without_repo = self.build(Path(tmp))
+        self.assertIn(f"[dumps/]({repo}/tree/main/dumps)", with_repo)
+        self.assertIn(f"[index.json]({repo}/blob/main/index.json)", with_repo)
+        self.assertNotIn("github.com/owner/repo", without_repo)
 
 
 class ElfPaddingTest(unittest.TestCase):

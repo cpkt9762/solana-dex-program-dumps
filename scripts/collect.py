@@ -567,20 +567,35 @@ def asset_name(meta: Metadata) -> str:
     return (meta.download_url or "").rsplit("/", 1)[-1]
 
 
-def snapshot_notes(layout: Layout, entries: Sequence[RegistryEntry], tag: str) -> str:
-    """Release notes listing every version stored in release ``tag``, built from the metadata."""
-    versions = [m for e in entries for m in program_versions(layout, e) if m.release_tag == tag]
-    rows = [
-        f"| {m.name} | `{m.program_id}` | {m.last_deployed_slot if m.last_deployed_slot is not None else '-'} "
-        f"| {m.previous_slot if m.previous_slot is not None else '-'} | `{m.sha256[:12]}` | {m.size} | `{asset_name(m)}` |"
-        for m in versions
-    ]
+def snapshot_notes(layout: Layout, entries: Sequence[RegistryEntry], tag: str, repo_url: str | None = None) -> str:
+    """Release notes listing every version stored in release ``tag``, built from the metadata.
+
+    Every row links the project (GitHub, else website, else reference page) and the downloadable file.
+    ``repo_url`` (https://github.com/OWNER/REPO) adds links to the metadata kept in the repository.
+    """
+    rows = []
+    for entry in entries:
+        for meta in program_versions(layout, entry):
+            if meta.release_tag != tag:
+                continue
+            name = asset_name(meta)
+            file_cell = f"[{name}]({meta.download_url})" if name and meta.download_url else "-"
+            slot = meta.last_deployed_slot if meta.last_deployed_slot is not None else "-"
+            previous = meta.previous_slot if meta.previous_slot is not None else "-"
+            rows.append(
+                f"| {meta.name} | {link_cell(entry) or '-'} | {file_cell} | {slot} | {previous} "
+                f"| `{meta.sha256[:12]}` | {meta.size} | `{meta.program_id}` |"
+            )
+    where = (
+        f" ([dumps/]({repo_url}/tree/main/dumps), [index.json]({repo_url}/blob/main/index.json))" if repo_url else ""
+    )
     return (
         f"{SOURCE_CODE_NOTE}\n"
-        f"{len(versions)} program version(s) first collected in this snapshot. The binaries have the\n"
-        "ProgramData zero padding stripped; each program's `metadata.json` records the hashes of both forms.\n\n"
-        "| Program | Program ID | last_deployed_slot | Previous slot | sha256 | Size | File |\n"
-        "|---|---|---|---|---|---|---|\n" + "\n".join(rows) + "\n"
+        f"{len(rows)} program version(s) first collected in this snapshot (Slot is `last_deployed_slot`). The\n"
+        "binaries have the ProgramData zero padding stripped; each program's `metadata.json` records the\n"
+        f"hashes of both forms{where}.\n\n"
+        "| Program | Link | File | Slot | Previous slot | sha256 | Size | Program ID |\n"
+        "|---|---|---|---|---|---|---|---|\n" + "\n".join(rows) + "\n"
     )
 
 
@@ -957,7 +972,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     if any(r.outcome in (Outcome.NEW, Outcome.UPDATED) for r in results):
         # Rebuilt from all metadata, so a second run on the same day keeps the full list.
         try:
-            store.set_notes(snapshot_spec(release_tag, snapshot_notes(layout, registry, release_tag)))
+            repo_url = None if args.dry_run is not None else f"https://github.com/{args.release_repo}"
+            store.set_notes(snapshot_spec(release_tag, snapshot_notes(layout, registry, release_tag, repo_url)))
         except (CollectError, OSError) as exc:
             LOG.error("failed to write notes of release %s: %s", release_tag, exc)
             failed.append(Result(release_tag, Outcome.FAILED, message=str(exc)))
