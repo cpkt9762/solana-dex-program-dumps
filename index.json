@@ -1131,6 +1131,14 @@
       "reference": "https://defillama.com/protocol/zerofi",
       "versions": [
         {
+          "last_deployed_slot": 461839441,
+          "sha256": "d0b3ab3ab4549f2293aadbdfa02fd355739ff892a200be1e7c387b6a2a3dcd30",
+          "size": 380208,
+          "collected_at": "2026-10-27T07:15:09Z",
+          "release_tag": "snapshot-2026-10-27",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-27/zerofi-461839441.so"
+        },
+        {
           "last_deployed_slot": 460280271,
           "sha256": "07a2b095875550edd723767b6bdb7321d0e40015452089e2ec81e36ad4865229",
           "size": 380448,
@@ -1149,6 +1157,14 @@
       "website": null,
       "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
+        {
+          "last_deployed_slot": 461757815,
+          "sha256": "6e6f82c4e140ec187258cd88996d955a0c8ecb25446b15f6ef81c5fdb15a6e58",
+          "size": 222832,
+          "collected_at": "2026-10-27T07:15:15Z",
+          "release_tag": "snapshot-2026-10-27",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-27/bisonfi-461757815.so"
+        },
         {
           "last_deployed_slot": 456982351,
           "sha256": "1c461b296ea80deb845b5019243e0807cb50ea97a0f8e7e7b5d02cdf2a9ded0b",
@@ -1339,6 +1355,14 @@
       "website": null,
       "reference": "https://defillama.com/protocol/whalestreet",
       "versions": [
+        {
+          "last_deployed_slot": 461623288,
+          "sha256": "1aa313add176600bb5d427dc98eeef2e6ba9948e313b1c243d55841aa066de5f",
+          "size": 671120,
+          "collected_at": "2026-10-27T07:15:24Z",
+          "release_tag": "snapshot-2026-10-27",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-27/whalestreet-461623288.so"
+        },
         {
           "last_deployed_slot": 457600812,
           "sha256": "60b61bba2a4ede7698002553bd92b534d5aae2581a7e73578a41cf7faf1ae7be",
@@ -1586,6 +1610,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 461967975,
+          "sha256": "a5b1e6ccf2695dd3f088bd5eb68ee3d4483cecefb4030bc03a3d1b35165fbc06",
+          "size": 2297152,
+          "collected_at": "2026-10-27T07:15:35Z",
+          "release_tag": "snapshot-2026-10-27",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-27/bitget-dex-aggregator-461967975.so"
+        },
         {
           "last_deployed_slot": 455991576,
           "sha256": "a5b1e6ccf2695dd3f088bd5eb68ee3d4483cecefb4030bc03a3d1b35165fbc06",

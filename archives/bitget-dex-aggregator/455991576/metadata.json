@@ -1,0 +1,16 @@
+{
+  "name": "bitget-dex-aggregator",
+  "program_id": "s7SunwrPG5SbViEKiViaDThPRJxkkTrNx2iRPN3exNC",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "DEcSydUJGmtg4SSpvaNfsqSikXnT2evjEwGXmoRPgj8D",
+  "sha256": "a5b1e6ccf2695dd3f088bd5eb68ee3d4483cecefb4030bc03a3d1b35165fbc06",
+  "size": 2297152,
+  "onchain_sha256": "f52e9ea02d09b9a0c4fb3fb7ae28885bd08b6e2c4fee9281d806983a26d09e16",
+  "onchain_size": 2308572,
+  "last_deployed_slot": 455991576,
+  "upgrade_authority": "22WRsfxoB9A6ctwD7735eyYxJidWsVbSvXQKcPAtaywB",
+  "collected_at": "2026-10-26T08:11:50Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bitget-dex-aggregator-455991576.so"
+}

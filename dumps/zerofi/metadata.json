@@ -3,14 +3,14 @@
   "program_id": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "6PFxy3S1LF9juamK4y6bcf3AEdJ47CF9zQV3DbdtMgBm",
-  "sha256": "07a2b095875550edd723767b6bdb7321d0e40015452089e2ec81e36ad4865229",
-  "size": 380448,
-  "onchain_sha256": "6374e05e7310e71ea1ffca7770ab0d019d191cc6443129aca9603cf7a00e7e53",
+  "sha256": "d0b3ab3ab4549f2293aadbdfa02fd355739ff892a200be1e7c387b6a2a3dcd30",
+  "size": 380208,
+  "onchain_sha256": "a82b22ed511d5670c6a38dd5ec64c1203cf2673ba10ba0a5da15e266dc78fa84",
   "onchain_size": 425440,
-  "last_deployed_slot": 460280271,
+  "last_deployed_slot": 461839441,
   "upgrade_authority": "UPgd1zNpfgYRRcudZyubhKPrrYKL7vKRmw25SR6qto5",
-  "collected_at": "2026-10-24T18:11:57Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/zerofi-460280271.so"
+  "collected_at": "2026-10-27T07:15:09Z",
+  "previous_slot": 460280271,
+  "release_tag": "snapshot-2026-10-27",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-27/zerofi-461839441.so"
 }
