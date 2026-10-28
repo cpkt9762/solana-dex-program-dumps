@@ -1112,6 +1112,14 @@
       "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
         {
+          "last_deployed_slot": 461989610,
+          "sha256": "57080072164fa5aedb5365eb5b3605207f9d702f67917fa3472a7e0d3a1d1311",
+          "size": 268928,
+          "collected_at": "2026-10-28T07:53:32Z",
+          "release_tag": "snapshot-2026-10-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/goonfi-v2-461989610.so"
+        },
+        {
           "last_deployed_slot": 459591958,
           "sha256": "51414d61a66a3fc161841e23a4fb7e04c85f51d35e14bc59d8ca74bb4a1896c4",
           "size": 262104,
@@ -1157,6 +1165,14 @@
       "website": null,
       "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
+        {
+          "last_deployed_slot": 462134056,
+          "sha256": "c358a6ce738a109bc0640f4231e9ca799251d5d1289fab4151a9748f7d9c6271",
+          "size": 226984,
+          "collected_at": "2026-10-28T07:53:36Z",
+          "release_tag": "snapshot-2026-10-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/bisonfi-462134056.so"
+        },
         {
           "last_deployed_slot": 461757815,
           "sha256": "6e6f82c4e140ec187258cd88996d955a0c8ecb25446b15f6ef81c5fdb15a6e58",
@@ -1497,6 +1513,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 461997826,
+          "sha256": "83f2694dc350be8408349e665ea0c6c033c5ce7a2470eb8ed11166d60dd60e7e",
+          "size": 2836016,
+          "collected_at": "2026-10-28T07:53:47Z",
+          "release_tag": "snapshot-2026-10-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/okx-dex-router-v3-461997826.so"
+        },
+        {
           "last_deployed_slot": 454781973,
           "sha256": "45f8d0f37b6239580ae68679acadb0e6f7e52b43cb6e3c246aec42026138a815",
           "size": 2629304,
@@ -1611,6 +1635,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 462004686,
+          "sha256": "3421f2c73e8e0a59697d311c86aece030d858ee1f1ca96ae1019f02430ecfcbb",
+          "size": 2326336,
+          "collected_at": "2026-10-28T07:53:53Z",
+          "release_tag": "snapshot-2026-10-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/bitget-dex-aggregator-462004686.so"
+        },
+        {
           "last_deployed_slot": 461967975,
           "sha256": "a5b1e6ccf2695dd3f088bd5eb68ee3d4483cecefb4030bc03a3d1b35165fbc06",
           "size": 2297152,
@@ -1656,6 +1688,14 @@
       "website": "https://liquidmesh.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 462359193,
+          "sha256": "32c95cb1c72c96486c14dd4790ca75e0fbe6ac8567f9b685d3784fec69740f86",
+          "size": 1158256,
+          "collected_at": "2026-10-28T07:53:56Z",
+          "release_tag": "snapshot-2026-10-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/liquidmesh-router-462359193.so"
+        },
         {
           "last_deployed_slot": 459513437,
           "sha256": "483a91b648a69855242ba328dd54e7afda5ed57c9c3b1b7cdf3d7fd073ebdb47",

@@ -3,14 +3,14 @@
   "program_id": "goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "124gUYwjVnJQ4sJsFug9gHPzPLEtwCbAQC5LkbaDgx9s",
-  "sha256": "51414d61a66a3fc161841e23a4fb7e04c85f51d35e14bc59d8ca74bb4a1896c4",
-  "size": 262104,
-  "onchain_sha256": "a82a6d0fceb4c613ba16916f5be1c86f93e9dc0a8d28b644f1c45438a444f1dd",
+  "sha256": "57080072164fa5aedb5365eb5b3605207f9d702f67917fa3472a7e0d3a1d1311",
+  "size": 268928,
+  "onchain_sha256": "cd78ffe66f2ca9068ef03ab7c57e61f5bc693824430a2ca897c2da2661288850",
   "onchain_size": 292384,
-  "last_deployed_slot": 459591958,
+  "last_deployed_slot": 461989610,
   "upgrade_authority": "BBvfpKqYovhzEjS4Ch1xZXFdxkaoUiXsujR9kgN1t8iR",
-  "collected_at": "2026-10-24T18:11:53Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/goonfi-v2-459591958.so"
+  "collected_at": "2026-10-28T07:53:32Z",
+  "previous_slot": 459591958,
+  "release_tag": "snapshot-2026-10-28",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/goonfi-v2-461989610.so"
 }
