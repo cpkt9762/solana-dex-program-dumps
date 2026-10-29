@@ -3,14 +3,14 @@
   "program_id": "QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "7mcuRHpxz7umw9qi11ZybbiDtQu9AjWMb563Yrnam6BW",
-  "sha256": "54aaea3c137c3fb996e3b8804f2206fc85320ca357184046d14562b57a5b7482",
-  "size": 162088,
-  "onchain_sha256": "ffded97d1f6eaa69e3fd1fcd923a7bca97c724fb814a33cb4113a32841613e2b",
+  "sha256": "c38799347abc3ed2ddf9cbfc4f7e7bd79c6d2570c150443d75b8fa865126260f",
+  "size": 161656,
+  "onchain_sha256": "b0af4ec5f8ee13c3b2686da5fb962afa9815bc6f4e7a88215a001856fc756a86",
   "onchain_size": 164992,
-  "last_deployed_slot": 460086125,
+  "last_deployed_slot": 462400514,
   "upgrade_authority": "qtSTQb8FwK27pGSJMUXE3vqAN8doEVWAbvSxUPQhCCg",
-  "collected_at": "2026-10-24T18:12:18Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/quantum-460086125.so"
+  "collected_at": "2026-10-29T07:59:16Z",
+  "previous_slot": 460086125,
+  "release_tag": "snapshot-2026-10-29",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-29/quantum-462400514.so"
 }

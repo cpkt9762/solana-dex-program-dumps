@@ -3,14 +3,14 @@
   "program_id": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "4Ec7ZxZS6Sbdg5UGSLHbAnM7GQHp2eFd4KYWRexAipQT",
-  "sha256": "c0c0ce1c15b0eab3c8b81eacb25cb4895d8ba861a1b0125940609ac6ac064ae2",
-  "size": 2036392,
-  "onchain_sha256": "0394bfa4311fac40dd3d32e431ab2f541227e6c32923715455cfac58e4004d30",
+  "sha256": "03c1327f06030312b3a2f8bc8d2272c65de37fe0d103a71d58d75d66358b17e9",
+  "size": 2047544,
+  "onchain_sha256": "53d53f447f594158a259cbdca1f5e613caf40bc14ce759ffd5953580dc2af8dd",
   "onchain_size": 2892224,
-  "last_deployed_slot": 459479624,
+  "last_deployed_slot": 462802085,
   "upgrade_authority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
-  "collected_at": "2026-10-26T08:11:13Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-26",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/jupiter-v6-459479624.so"
+  "collected_at": "2026-10-29T07:59:27Z",
+  "previous_slot": 459479624,
+  "release_tag": "snapshot-2026-10-29",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-29/jupiter-v6-462802085.so"
 }

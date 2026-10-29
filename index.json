@@ -1258,6 +1258,14 @@
       "reference": "https://defillama.com/protocol/quantumamm",
       "versions": [
         {
+          "last_deployed_slot": 462400514,
+          "sha256": "c38799347abc3ed2ddf9cbfc4f7e7bd79c6d2570c150443d75b8fa865126260f",
+          "size": 161656,
+          "collected_at": "2026-10-29T07:59:16Z",
+          "release_tag": "snapshot-2026-10-29",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-29/quantum-462400514.so"
+        },
+        {
           "last_deployed_slot": 460086125,
           "sha256": "54aaea3c137c3fb996e3b8804f2206fc85320ca357184046d14562b57a5b7482",
           "size": 162088,
@@ -1372,6 +1380,14 @@
       "reference": "https://defillama.com/protocol/whalestreet",
       "versions": [
         {
+          "last_deployed_slot": 462524737,
+          "sha256": "8dee97bbe792c476108baf5248f1deac0fd7584ced77c98f3a6ae0afbedcbf5c",
+          "size": 671624,
+          "collected_at": "2026-10-29T07:59:23Z",
+          "release_tag": "snapshot-2026-10-29",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-29/whalestreet-462524737.so"
+        },
+        {
           "last_deployed_slot": 461623288,
           "sha256": "1aa313add176600bb5d427dc98eeef2e6ba9948e313b1c243d55841aa066de5f",
           "size": 671120,
@@ -1417,6 +1433,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 462802085,
+          "sha256": "03c1327f06030312b3a2f8bc8d2272c65de37fe0d103a71d58d75d66358b17e9",
+          "size": 2047544,
+          "collected_at": "2026-10-29T07:59:27Z",
+          "release_tag": "snapshot-2026-10-29",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-29/jupiter-v6-462802085.so"
+        },
         {
           "last_deployed_slot": 459479624,
           "sha256": "c0c0ce1c15b0eab3c8b81eacb25cb4895d8ba861a1b0125940609ac6ac064ae2",
