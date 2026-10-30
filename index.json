@@ -1166,6 +1166,14 @@
       "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
         {
+          "last_deployed_slot": 462921807,
+          "sha256": "aebe7418bb465aae2e3b97fc2d3ff0adaef767cf6770f5e3ed2bed461bc4ec3f",
+          "size": 228280,
+          "collected_at": "2026-10-30T08:01:10Z",
+          "release_tag": "snapshot-2026-10-30",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/bisonfi-462921807.so"
+        },
+        {
           "last_deployed_slot": 462134056,
           "sha256": "c358a6ce738a109bc0640f4231e9ca799251d5d1289fab4151a9748f7d9c6271",
           "size": 226984,
@@ -1380,6 +1388,14 @@
       "reference": "https://defillama.com/protocol/whalestreet",
       "versions": [
         {
+          "last_deployed_slot": 462911254,
+          "sha256": "27cce579917e9ee7c4ebfd295027999fe5714a6b8dcb5183b9515d6b2d6d844f",
+          "size": 675848,
+          "collected_at": "2026-10-30T08:01:20Z",
+          "release_tag": "snapshot-2026-10-30",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/whalestreet-462911254.so"
+        },
+        {
           "last_deployed_slot": 462524737,
           "sha256": "8dee97bbe792c476108baf5248f1deac0fd7584ced77c98f3a6ae0afbedcbf5c",
           "size": 671624,
@@ -1564,6 +1580,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 462900625,
+          "sha256": "79c6d1fa167533ef7a6ca88a5e780ef9be8cf824fba69ea39e6532a1fc78335e",
+          "size": 2751232,
+          "collected_at": "2026-10-30T08:01:28Z",
+          "release_tag": "snapshot-2026-10-30",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/dflow-aggregator-v4-462900625.so"
+        },
+        {
           "last_deployed_slot": 457467538,
           "sha256": "8aae2f56130d127f0394c805c1c7002d3b8ff9602515e92939cac37c0857d218",
           "size": 2749496,
@@ -1582,6 +1606,14 @@
       "website": "https://titan.exchange/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 462998699,
+          "sha256": "3bcd3cbe65add1281ade5646b14eee9480e1ab233bfc81995a5853584a0e94f5",
+          "size": 2149584,
+          "collected_at": "2026-10-30T08:01:31Z",
+          "release_tag": "snapshot-2026-10-30",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/titan-462998699.so"
+        },
         {
           "last_deployed_slot": 460152423,
           "sha256": "6620a92b0477f66ac11976cd91aafeebdedfb568fd5ec99772b1b4820b8f4cbd",

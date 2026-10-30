@@ -3,14 +3,14 @@
   "program_id": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "AJ6kePYqAgcFaYcNTYepy7y69HBHVaW3oGrVRSnSkwVC",
-  "sha256": "6620a92b0477f66ac11976cd91aafeebdedfb568fd5ec99772b1b4820b8f4cbd",
-  "size": 2145016,
-  "onchain_sha256": "9dc7f8e4fe9c97a226ff520a07c0e6dcfcce55eac16e377ae04ba738d9b067d6",
+  "sha256": "3bcd3cbe65add1281ade5646b14eee9480e1ab233bfc81995a5853584a0e94f5",
+  "size": 2149584,
+  "onchain_sha256": "e8ff49035730d637ac8305019c5f23c9bd608c14af8bcf31e56e6282823ac937",
   "onchain_size": 2619704,
-  "last_deployed_slot": 460152423,
+  "last_deployed_slot": 462998699,
   "upgrade_authority": "H92mY1R6CYDPpHjisrE3C7xqfgp7751f2R13aRoT4SbB",
-  "collected_at": "2026-10-26T08:11:39Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-26",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/titan-460152423.so"
+  "collected_at": "2026-10-30T08:01:31Z",
+  "previous_slot": 460152423,
+  "release_tag": "snapshot-2026-10-30",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/titan-462998699.so"
 }

@@ -3,14 +3,14 @@
   "program_id": "FW6zUqn4iKRaeopwwhwsquTY6ABWLLgjxtrC3VPnaWBf",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "xQU4hyE3Lv6cu3CZxjLHrfaKUM11y3RXrBpgArpCiGS",
-  "sha256": "8dee97bbe792c476108baf5248f1deac0fd7584ced77c98f3a6ae0afbedcbf5c",
-  "size": 671624,
-  "onchain_sha256": "1eeb4a1600fd3d3a7a7adbcc1d4f1e49c16418c8378881db02f9c34cf5f3ac18",
+  "sha256": "27cce579917e9ee7c4ebfd295027999fe5714a6b8dcb5183b9515d6b2d6d844f",
+  "size": 675848,
+  "onchain_sha256": "98c5c4fccc5c1935853f76499d9bf618bedcca43814d95c5c58986b15de72a6a",
   "onchain_size": 676872,
-  "last_deployed_slot": 462524737,
+  "last_deployed_slot": 462911254,
   "upgrade_authority": "DYAK4jpwhbScSpU9wCmDnUdWrK3zeNzefGYLqHQPzwEe",
-  "collected_at": "2026-10-29T07:59:23Z",
-  "previous_slot": 461623288,
-  "release_tag": "snapshot-2026-10-29",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-29/whalestreet-462524737.so"
+  "collected_at": "2026-10-30T08:01:20Z",
+  "previous_slot": 462524737,
+  "release_tag": "snapshot-2026-10-30",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/whalestreet-462911254.so"
 }
