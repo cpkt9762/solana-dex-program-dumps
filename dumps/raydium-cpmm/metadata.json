@@ -3,14 +3,14 @@
   "program_id": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "DMawCQzbgNTmbzaESc7o6pvL1KAeetY8zA7jNpzntHhU",
-  "sha256": "2a90c3302d1907dc9b8bd0b000e4620166e671316a440f10add0b4ba08f28b3d",
-  "size": 722632,
-  "onchain_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+  "sha256": "2d9e1c76fd3f760542b19067f3eafaef5febb66bcbfe86bb09f5c7c7b16591de",
+  "size": 749848,
+  "onchain_sha256": "c383e1c5b1f578f3d1bf42f12360fca67225b9adda0f3b6c293ad0d6b966818d",
   "onchain_size": 793824,
-  "last_deployed_slot": 452376460,
+  "last_deployed_slot": 463522946,
   "upgrade_authority": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
-  "collected_at": "2026-10-24T18:07:55Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/raydium-cpmm-452376460.so"
+  "collected_at": "2026-10-31T07:57:32Z",
+  "previous_slot": 452376460,
+  "release_tag": "snapshot-2026-10-31",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-31/raydium-cpmm-463522946.so"
 }

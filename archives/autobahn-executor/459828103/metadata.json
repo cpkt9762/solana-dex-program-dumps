@@ -1,0 +1,16 @@
+{
+  "name": "autobahn-executor",
+  "program_id": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "GR11PXvZm3PqAuLXTTRdiuFedVUxEZmJTxuazgmBtq6",
+  "sha256": "b2cab9e59c72e81f40ce68b1ab62071249eb98549e247f716dd30ee3d96493e4",
+  "size": 203136,
+  "onchain_sha256": "c27089251505f03258fa2c5853b4d4ed84dfe1528f5e95965a92aaa44f565a16",
+  "onchain_size": 211880,
+  "last_deployed_slot": 459828103,
+  "upgrade_authority": "DgFSBbJLzWBddPw8yHW4R1ZYovnoHodZ9Njsroep5NZa",
+  "collected_at": "2026-10-26T08:12:03Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/autobahn-executor-459828103.so"
+}

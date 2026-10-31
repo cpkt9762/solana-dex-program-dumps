@@ -29,6 +29,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 463522946,
+          "sha256": "2d9e1c76fd3f760542b19067f3eafaef5febb66bcbfe86bb09f5c7c7b16591de",
+          "size": 749848,
+          "collected_at": "2026-10-31T07:57:32Z",
+          "release_tag": "snapshot-2026-10-31",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-31/raydium-cpmm-463522946.so"
+        },
+        {
           "last_deployed_slot": 452376460,
           "sha256": "2a90c3302d1907dc9b8bd0b000e4620166e671316a440f10add0b4ba08f28b3d",
           "size": 722632,
@@ -1772,6 +1780,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 463354758,
+          "sha256": "cfcf2d915f92af5647018a528704b1b0506e80dff78586df3bed2324d07362c2",
+          "size": 160936,
+          "collected_at": "2026-10-31T07:58:32Z",
+          "release_tag": "snapshot-2026-10-31",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-31/0x-settler-463354758.so"
+        },
+        {
           "last_deployed_slot": 457679884,
           "sha256": "914076a999c59a24dc1c126c5f5dbb62478814a67ca6b675d9ebd8644c0f5fe3",
           "size": 157528,
@@ -1809,6 +1825,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 463426983,
+          "sha256": "3261daf0364804f97b54c43a83a8c661af5d6071757f73a4282ec9be1ac0fe99",
+          "size": 203296,
+          "collected_at": "2026-10-31T07:58:36Z",
+          "release_tag": "snapshot-2026-10-31",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-31/autobahn-executor-463426983.so"
+        },
         {
           "last_deployed_slot": 459828103,
           "sha256": "b2cab9e59c72e81f40ce68b1ab62071249eb98549e247f716dd30ee3d96493e4",
