@@ -1120,6 +1120,14 @@
       "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
         {
+          "last_deployed_slot": 464833996,
+          "sha256": "effc0338917c9c89a1148c874d94bd4ee3ec82e11e656437af1da94429d723b4",
+          "size": 283920,
+          "collected_at": "2026-11-03T08:59:01Z",
+          "release_tag": "snapshot-2026-11-03",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/goonfi-v2-464833996.so"
+        },
+        {
           "last_deployed_slot": 461989610,
           "sha256": "57080072164fa5aedb5365eb5b3605207f9d702f67917fa3472a7e0d3a1d1311",
           "size": 268928,
@@ -1147,6 +1155,14 @@
       "reference": "https://defillama.com/protocol/zerofi",
       "versions": [
         {
+          "last_deployed_slot": 464575172,
+          "sha256": "ad8c82508145bb807a6711bed591a4c416dde590686efc1576c5f6dd36100faa",
+          "size": 384848,
+          "collected_at": "2026-11-03T08:59:05Z",
+          "release_tag": "snapshot-2026-11-03",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/zerofi-464575172.so"
+        },
+        {
           "last_deployed_slot": 461839441,
           "sha256": "d0b3ab3ab4549f2293aadbdfa02fd355739ff892a200be1e7c387b6a2a3dcd30",
           "size": 380208,
@@ -1173,6 +1189,14 @@
       "website": null,
       "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
+        {
+          "last_deployed_slot": 464563291,
+          "sha256": "1277d92c7f159ffb18b9d77b409e7260acff53a3f0679a76e9496be9563f3008",
+          "size": 229808,
+          "collected_at": "2026-11-03T08:59:08Z",
+          "release_tag": "snapshot-2026-11-03",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/bisonfi-464563291.so"
+        },
         {
           "last_deployed_slot": 462921807,
           "sha256": "aebe7418bb465aae2e3b97fc2d3ff0adaef767cf6770f5e3ed2bed461bc4ec3f",
@@ -1560,6 +1584,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 464834796,
+          "sha256": "a8b2a437c4ee56ee8d911130e46d116f22280e9ce7ce2b6ff55fd077d4b9d6bf",
+          "size": 2847960,
+          "collected_at": "2026-11-03T08:59:25Z",
+          "release_tag": "snapshot-2026-11-03",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/okx-dex-router-v3-464834796.so"
+        },
         {
           "last_deployed_slot": 461997826,
           "sha256": "83f2694dc350be8408349e665ea0c6c033c5ce7a2470eb8ed11166d60dd60e7e",
