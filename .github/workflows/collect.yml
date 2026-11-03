@@ -2,7 +2,9 @@ name: Collect DEX program dumps
 
 on:
   schedule:
-    - cron: "0 2 * * *" # every day at 02:00 UTC
+    # Every 6 hours (00:17, 06:17, 12:17 and 18:17 UTC). The minute is not 0 on purpose: GitHub
+    # delays scheduled runs the most at the start of an hour (the old "0 2" run started 5-7 hours late).
+    - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       only:
@@ -17,7 +19,8 @@ on:
 permissions:
   contents: write
 
-# Never run two collections at once: they would race on the same branch.
+# Never run two collections at once: they would race on the same branch (a run that arrives while
+# another one is running waits for it).
 concurrency:
   group: collect-dumps
   cancel-in-progress: false
@@ -27,7 +30,9 @@ env:
 
 jobs:
   collect:
-    runs-on: ubuntu-latest
+    # Pinned instead of ubuntu-latest: GitHub is moving ubuntu-latest to Ubuntu 26.04 (rollout until
+    # 2026-11-19) and the Solana CLI binary has not been tested there. Retest on ubuntu-26.04 first.
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       # Shallow checkout (the default): git only holds metadata, binaries are release assets.

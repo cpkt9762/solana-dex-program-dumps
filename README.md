@@ -1,12 +1,13 @@
 # solana-dex-program-dumps
 
-Daily snapshots of the on-chain program binaries (`.so`) of the major Solana DEXs and swap routers, collected
-from mainnet with the official Solana CLI by GitHub Actions. Every deployed version that was
-observed is kept, named by its `last_deployed_slot`, for reverse engineering, auditing and
+Snapshots of the on-chain program binaries (`.so`) of the major Solana DEXs and swap routers, collected
+from mainnet every 6 hours with the official Solana CLI by GitHub Actions. Every deployed version that
+was observed is kept, named by its `last_deployed_slot`, for reverse engineering, auditing and
 version checks.
 
-- Binaries: [GitHub releases](https://github.com/cpkt9762/solana-dex-program-dumps/releases), one per day with changes (tag `snapshot-YYYY-MM-DD`),
-  each file named `<name>-<last_deployed_slot>.so`
+- Binaries: [GitHub releases](https://github.com/cpkt9762/solana-dex-program-dumps/releases), one per UTC day with changes
+  (tag `snapshot-YYYY-MM-DD`; later runs of the same day add to it), each file named
+  `<name>-<last_deployed_slot>.so`
 - Metadata of the latest version: `dumps/<name>/metadata.json`
 - Metadata of superseded versions: `archives/<name>/<last_deployed_slot>/metadata.json`
 - Every version of every program in one file: [`index.json`](index.json)
@@ -24,7 +25,7 @@ dumps/<name>/metadata.json                  latest version
 archives/<name>/<slot>/metadata.json        superseded versions
 scripts/collect.py                          collector (Python 3.11+, standard library only)
 tests/test_collect.py                       unit tests (no network needed)
-.github/workflows/collect.yml               daily job: collect, publish releases, commit metadata
+.github/workflows/collect.yml               job every 6 hours: collect, publish releases, commit metadata
 release snapshot-<date> -> <name>-<slot>.so  binaries first collected that day (UTC)
 ```
 
@@ -204,8 +205,10 @@ rewrite, because git never contained the binaries.
 
 ## GitHub Actions
 
-`.github/workflows/collect.yml` runs daily at 02:00 UTC and can be started manually from the
-Actions tab (optionally for a subset of programs, or with sha256 verification). It installs the
+`.github/workflows/collect.yml` runs every 6 hours (at minute 17 of hours 0, 6, 12 and 18 UTC) and
+can be started manually from the Actions tab (optionally for a subset of programs, or with sha256
+verification). GitHub often starts scheduled runs late, by hours at busy times, so treat these times
+as approximate. A run installs the
 Solana CLI, runs the unit tests, runs the collector (which creates the releases with the workflow's
 `GITHUB_TOKEN`), then commits and pushes the metadata as `github-actions[bot]` with a message that
 lists every program that changed. The workflow requests `contents: write`, which covers both pushes
@@ -221,9 +224,16 @@ Things worth knowing:
   takes a few minutes because programs are fetched one after another.
 - **"Source code" archives.** GitHub attaches them to every release and offers no way to hide them;
   they only contain this repository's scripts and metadata. One release per day keeps them rare.
+- **Pinned runner.** The job runs on `ubuntu-24.04` instead of `ubuntu-latest`: GitHub is moving
+  `ubuntu-latest` to Ubuntu 26.04 (rollout until 2026-11-19) and the Solana CLI binary has not been
+  tested there. Retest on `ubuntu-26.04` before changing it. The Solana CLI version is pinned too,
+  with the repository variable `SOLANA_VERSION`.
 - **Idle repositories.** GitHub disables scheduled workflows after 60 days without repository
   activity. If nothing was committed for 45 days the job adds an empty keepalive commit.
 - **No overlapping runs.** A concurrency group serialises runs.
+- **Several runs on one day.** All versions first collected on the same UTC day go into the same
+  release `snapshot-YYYY-MM-DD`: a later run uploads its new files to it and rewrites the notes, which
+  always list every version of that day.
 - **Failures.** If some programs cannot be collected, the others are still committed and the job
   is marked as failed at the end.
 
@@ -363,8 +373,9 @@ were checked on 2026-10-25 and can go stale; they are also available as `github`
   the logs, and its published versions stay available.
 - Only programs owned by the upgradeable loader and the non-upgradeable `BPFLoader2` have been
   exercised so far. Programs owned by other loaders (for example loader v4) are untested.
-- The collector sees one snapshot per day. If a program is upgraded twice between two runs, only the
-  last deployment is recorded. History starts with the first run of this repository.
+- The collector samples the chain every 6 hours at best (GitHub can delay or skip scheduled runs). If a
+  program is upgraded more than once between two runs, only the last deployment is recorded. History
+  starts with the first run of this repository.
 
 ## License
 

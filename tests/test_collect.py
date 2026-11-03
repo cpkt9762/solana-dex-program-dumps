@@ -389,6 +389,26 @@ class SnapshotNotesTest(unittest.TestCase):
         self.assertIn(f"[index.json]({repo}/blob/main/index.json)", with_repo)
         self.assertNotIn("github.com/owner/repo", without_repo)
 
+    def test_second_run_of_the_same_day_adds_to_the_same_snapshot(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source, store = FakeSource(), FakeStore()
+            entries = [entry(), entry("raydium-cpmm", OTHER_ID)]
+            source.deploy(PROGRAM_ID, 100, elf(b"v1"))
+            source.deploy(OTHER_ID, 7, elf(b"b"))
+            first = collect.Collector(collect.Layout(root), source, store, release_tag=TAG, sleep=lambda _s: None)
+            first.run(entries)
+            source.deploy(PROGRAM_ID, 250, elf(b"v2"))  # upgraded again later the same day
+            second = collect.Collector(collect.Layout(root), source, store, release_tag=TAG, sleep=lambda _s: None)
+            results = second.run(entries)
+            notes = collect.snapshot_notes(collect.Layout(root), entries, TAG)
+        self.assertEqual([r.outcome for r in results], [collect.Outcome.UPDATED, collect.Outcome.UNCHANGED])
+        self.assertEqual(sorted(store.published), [f"{NAME}-100.so", f"{NAME}-250.so", "raydium-cpmm-7.so"])
+        self.assertEqual({tag for tag, _ in store.published.values()}, {TAG})
+        self.assertIn("3 program version(s)", notes)
+        self.assertIn("| 250 | 100 |", notes)  # the new version points at the one it replaced
+        self.assertIn("| 100 | - |", notes)  # the earlier version of the day is still listed once archived
+
 
 class ElfPaddingTest(unittest.TestCase):
     def test_section_table_ending_in_zeros_is_not_cut(self) -> None:
