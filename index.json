@@ -1298,6 +1298,14 @@
       "reference": "https://defillama.com/protocol/quantumamm",
       "versions": [
         {
+          "last_deployed_slot": 464985056,
+          "sha256": "594ddd559a0f05d72e5e0746671aa1846e414c3f4f5f0185687fbbc156bb1e73",
+          "size": 150528,
+          "collected_at": "2026-11-03T22:36:03Z",
+          "release_tag": "snapshot-2026-11-03",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/quantum-464985056.so"
+        },
+        {
           "last_deployed_slot": 462400514,
           "sha256": "c38799347abc3ed2ddf9cbfc4f7e7bd79c6d2570c150443d75b8fa865126260f",
           "size": 161656,
@@ -1619,6 +1627,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 464993284,
+          "sha256": "83c387e86bfa2576f3b4eb6499baf3e55f91f1c49355ea9d89a07e087d2d507e",
+          "size": 2740904,
+          "collected_at": "2026-11-03T22:36:18Z",
+          "release_tag": "snapshot-2026-11-03",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/dflow-aggregator-v4-464993284.so"
+        },
         {
           "last_deployed_slot": 462900625,
           "sha256": "79c6d1fa167533ef7a6ca88a5e780ef9be8cf824fba69ea39e6532a1fc78335e",
