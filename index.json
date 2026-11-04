@@ -1025,6 +1025,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 465131236,
+          "sha256": "3f3e98031af3e52cd970b7095d9d705c35029f676e4976bca996ca403bc55bd1",
+          "size": 2586336,
+          "collected_at": "2026-11-04T06:41:18Z",
+          "release_tag": "snapshot-2026-11-04",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-04/jupiter-perps-465131236.so"
+        },
+        {
           "last_deployed_slot": 413092478,
           "sha256": "256407815a16b7a647c80962391ce8374c1230579b072ea61b37967efaf9262c",
           "size": 2602920,

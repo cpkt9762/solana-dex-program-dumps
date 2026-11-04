@@ -3,14 +3,14 @@
   "program_id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "C258LjtN8Q928yz2nJe5kwQycckGfWBSrhZBP2mTpLQt",
-  "sha256": "256407815a16b7a647c80962391ce8374c1230579b072ea61b37967efaf9262c",
-  "size": 2602920,
-  "onchain_sha256": "a2891a9277f865eb96feaae67e03cd88efc128d43f6093cc70618ad63cb7d9ba",
+  "sha256": "3f3e98031af3e52cd970b7095d9d705c35029f676e4976bca996ca403bc55bd1",
+  "size": 2586336,
+  "onchain_sha256": "b1d35ccd58b3e8a113612be100fbfe99cd50773ed6e098088498ae0c2f938b9d",
   "onchain_size": 10485715,
-  "last_deployed_slot": 413092478,
+  "last_deployed_slot": 465131236,
   "upgrade_authority": "5myNNmEmPm3UAnJ2ggLEpnTFb9t9Gk8369wKw6n3uAKx",
-  "collected_at": "2026-10-24T18:11:33Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/jupiter-perps-413092478.so"
+  "collected_at": "2026-11-04T06:41:18Z",
+  "previous_slot": 413092478,
+  "release_tag": "snapshot-2026-11-04",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-04/jupiter-perps-465131236.so"
 }
