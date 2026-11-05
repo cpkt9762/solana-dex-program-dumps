@@ -645,6 +645,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 465508612,
+          "sha256": "ed4479576f752fc310f8bf9449238675d93603d0a74786efcc900c4a27a38d56",
+          "size": 712576,
+          "collected_at": "2026-11-05T06:59:45Z",
+          "release_tag": "snapshot-2026-11-05",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-05/humidifi-465508612.so"
+        },
+        {
           "last_deployed_slot": 458946555,
           "sha256": "7a012f408fee971c9ec66486eecd8715a8bbbab998d4394fb0aac0a00714282e",
           "size": 391200,
