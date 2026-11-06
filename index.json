@@ -1136,6 +1136,14 @@
       "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
         {
+          "last_deployed_slot": 466123703,
+          "sha256": "5d09585d4f0a9647d3fa6b328e11d4484ac5ae7e5d6eeb30ada8edd7606f4e76",
+          "size": 284544,
+          "collected_at": "2026-11-06T19:31:35Z",
+          "release_tag": "snapshot-2026-11-06",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-06/goonfi-v2-466123703.so"
+        },
+        {
           "last_deployed_slot": 464833996,
           "sha256": "effc0338917c9c89a1148c874d94bd4ee3ec82e11e656437af1da94429d723b4",
           "size": 283920,
@@ -1367,6 +1375,14 @@
       "website": null,
       "reference": "https://solscan.io/account/HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
       "versions": [
+        {
+          "last_deployed_slot": 466031343,
+          "sha256": "b2af8dbfb0111a3c140e8b8a6315d8c2ef024dc35ebde5aac801934a1c8a6e13",
+          "size": 318120,
+          "collected_at": "2026-11-06T19:31:44Z",
+          "release_tag": "snapshot-2026-11-06",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-06/obsidian-466031343.so"
+        },
         {
           "last_deployed_slot": 466005602,
           "sha256": "ae9105b3537df3de56d8636b16a56e5c5480cc0af0fd8f88337509e5f3cdc0b0",
@@ -1986,6 +2002,14 @@
       "website": "https://bananagun.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 466119752,
+          "sha256": "f78467af7ecd3be29bc16de09f61436da007853b367c485381bc513490d00424",
+          "size": 1523392,
+          "collected_at": "2026-11-06T19:32:07Z",
+          "release_tag": "snapshot-2026-11-06",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-06/banana-gun-router-466119752.so"
+        },
         {
           "last_deployed_slot": 465839878,
           "sha256": "5098912b2ca207b07a388b7cde8e4eac9c43b170ba610fadb105766c5490a4aa",
