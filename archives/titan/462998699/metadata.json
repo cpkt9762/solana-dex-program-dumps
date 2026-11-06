@@ -1,0 +1,16 @@
+{
+  "name": "titan",
+  "program_id": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "AJ6kePYqAgcFaYcNTYepy7y69HBHVaW3oGrVRSnSkwVC",
+  "sha256": "3bcd3cbe65add1281ade5646b14eee9480e1ab233bfc81995a5853584a0e94f5",
+  "size": 2149584,
+  "onchain_sha256": "e8ff49035730d637ac8305019c5f23c9bd608c14af8bcf31e56e6282823ac937",
+  "onchain_size": 2619704,
+  "last_deployed_slot": 462998699,
+  "upgrade_authority": "H92mY1R6CYDPpHjisrE3C7xqfgp7751f2R13aRoT4SbB",
+  "collected_at": "2026-10-30T08:01:31Z",
+  "previous_slot": 460152423,
+  "release_tag": "snapshot-2026-10-30",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-30/titan-462998699.so"
+}
