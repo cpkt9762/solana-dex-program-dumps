@@ -3,14 +3,14 @@
   "program_id": "proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "D1igAa8jmx8d1bFCK52Vb74etsVj9DiVLpXcb4WGPAvT",
-  "sha256": "a8b2a437c4ee56ee8d911130e46d116f22280e9ce7ce2b6ff55fd077d4b9d6bf",
-  "size": 2847960,
-  "onchain_sha256": "541398d48dca4c608bb548a90abb7eec6808aa9fcbf815d0534405c3ecbd6752",
+  "sha256": "1cc114679cdb7f67b1d0fbad9a55f9725cb07c6b5220dddc74a85b129f20a4ec",
+  "size": 2859680,
+  "onchain_sha256": "1ca9fb7cbb9f67837af2ebdffddd583bcca5f4b6f80e400c56a5f990a39e609a",
   "onchain_size": 3742733,
-  "last_deployed_slot": 464834796,
+  "last_deployed_slot": 467648565,
   "upgrade_authority": "CjoV5B96reuCfPh2rRK11G1QptG97jZdyZArTn3EN1Mj",
-  "collected_at": "2026-11-03T08:59:25Z",
-  "previous_slot": 461997826,
-  "release_tag": "snapshot-2026-11-03",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/okx-dex-router-v3-464834796.so"
+  "collected_at": "2026-11-10T19:53:00Z",
+  "previous_slot": 464834796,
+  "release_tag": "snapshot-2026-11-10",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-10/okx-dex-router-v3-467648565.so"
 }

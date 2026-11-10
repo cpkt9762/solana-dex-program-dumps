@@ -1,0 +1,16 @@
+{
+  "name": "bloom-router",
+  "program_id": "b1oomGGqPKGD6errbyfbVMBuzSC8WtAAYo8MwNafWW1",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "8m1oAjo3FMbLDmLtYAAKsTvSQCrGc1vJih2p18eKB5MN",
+  "sha256": "8bafdd9fd0e8841807e829563998b51bf679b201ae79b9c78c6f12d33e26a4af",
+  "size": 201184,
+  "onchain_sha256": "ce1e0ae3c4b541706fb95682e375dbee075b23a65f3546d69e718c17bea71e6b",
+  "onchain_size": 247736,
+  "last_deployed_slot": 453153943,
+  "upgrade_authority": "b1oomXDWMeH1CUXeDqcFNRziEg49zuxhZRk4U27mwzi",
+  "collected_at": "2026-10-26T08:12:14Z",
+  "previous_slot": null,
+  "release_tag": "snapshot-2026-10-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-26/bloom-router-453153943.so"
+}

@@ -3,14 +3,14 @@
   "program_id": "s7SunwrPG5SbViEKiViaDThPRJxkkTrNx2iRPN3exNC",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "DEcSydUJGmtg4SSpvaNfsqSikXnT2evjEwGXmoRPgj8D",
-  "sha256": "3421f2c73e8e0a59697d311c86aece030d858ee1f1ca96ae1019f02430ecfcbb",
-  "size": 2326336,
-  "onchain_sha256": "358667aeb10b77d5065fec35e8226712cddf66ce05d3c05206b7f2f397dc4ec2",
+  "sha256": "d5b3dfaf179f7c445dfaf52230334708766467929740a9a69498e69831f0ffb3",
+  "size": 2327472,
+  "onchain_sha256": "38e6ae09865ffdb5cc7c003cca3ab06d472dc5c86806a59577f43dc6bc4a26b1",
   "onchain_size": 2358572,
-  "last_deployed_slot": 462004686,
+  "last_deployed_slot": 467642695,
   "upgrade_authority": "22WRsfxoB9A6ctwD7735eyYxJidWsVbSvXQKcPAtaywB",
-  "collected_at": "2026-10-28T07:53:53Z",
-  "previous_slot": 461967975,
-  "release_tag": "snapshot-2026-10-28",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/bitget-dex-aggregator-462004686.so"
+  "collected_at": "2026-11-10T19:53:07Z",
+  "previous_slot": 462004686,
+  "release_tag": "snapshot-2026-11-10",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-10/bitget-dex-aggregator-467642695.so"
 }

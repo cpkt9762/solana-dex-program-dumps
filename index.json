@@ -1641,6 +1641,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 467648565,
+          "sha256": "1cc114679cdb7f67b1d0fbad9a55f9725cb07c6b5220dddc74a85b129f20a4ec",
+          "size": 2859680,
+          "collected_at": "2026-11-10T19:53:00Z",
+          "release_tag": "snapshot-2026-11-10",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-10/okx-dex-router-v3-467648565.so"
+        },
+        {
           "last_deployed_slot": 464834796,
           "sha256": "a8b2a437c4ee56ee8d911130e46d116f22280e9ce7ce2b6ff55fd077d4b9d6bf",
           "size": 2847960,
@@ -1818,6 +1826,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 467642695,
+          "sha256": "d5b3dfaf179f7c445dfaf52230334708766467929740a9a69498e69831f0ffb3",
+          "size": 2327472,
+          "collected_at": "2026-11-10T19:53:07Z",
+          "release_tag": "snapshot-2026-11-10",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-10/bitget-dex-aggregator-467642695.so"
+        },
         {
           "last_deployed_slot": 462004686,
           "sha256": "3421f2c73e8e0a59697d311c86aece030d858ee1f1ca96ae1019f02430ecfcbb",
@@ -2054,6 +2070,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 467771621,
+          "sha256": "f88d16b419231c163634a400e950a8083639a492a94771f33ec697b758e47d1d",
+          "size": 201056,
+          "collected_at": "2026-11-10T19:53:17Z",
+          "release_tag": "snapshot-2026-11-10",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-10/bloom-router-467771621.so"
+        },
+        {
           "last_deployed_slot": 453153943,
           "sha256": "8bafdd9fd0e8841807e829563998b51bf679b201ae79b9c78c6f12d33e26a4af",
           "size": 201184,
@@ -2072,6 +2096,14 @@
       "website": "https://www.bonkbot.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 467800963,
+          "sha256": "5b96d5e4d59fa8a71717df072164b8307e6a6ae6dca6cd19bfc08e766a84505d",
+          "size": 378824,
+          "collected_at": "2026-11-10T19:53:19Z",
+          "release_tag": "snapshot-2026-11-10",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-10/bonkbot-router-467800963.so"
+        },
         {
           "last_deployed_slot": 457629310,
           "sha256": "98cc0ea7cc180348fa45d8cfa53db32ad39c6f14e98faf376903e046cc0f2604",
