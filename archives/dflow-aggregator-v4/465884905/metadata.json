@@ -1,0 +1,16 @@
+{
+  "name": "dflow-aggregator-v4",
+  "program_id": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "HKHbVGGPJCbEkbY8Lg5kqdda3Mo8BJqUYaXqyPBaxy3m",
+  "sha256": "001d74ad4484d9ba9a45e119426ded698499ad2f5b6fe6582cf57cb55aadb6ed",
+  "size": 2782704,
+  "onchain_sha256": "c811fe886a55238fc153c25594d2c6c8cda7061bf233a2e59f2eb3afb1a32ae1",
+  "onchain_size": 3188749,
+  "last_deployed_slot": 465884905,
+  "upgrade_authority": "9uo2iJKJkmiYwy5MrkrbGQXbPqwHXqvQaUqxhCkowgsh",
+  "collected_at": "2026-11-06T06:59:55Z",
+  "previous_slot": 464993284,
+  "release_tag": "snapshot-2026-11-06",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-06/dflow-aggregator-v4-465884905.so"
+}
