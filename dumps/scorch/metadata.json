@@ -3,14 +3,14 @@
   "program_id": "ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "2LG7p9rfwyLPYN1Sisv9oVzu2pmAX4kqbXFceG7PgUuE",
-  "sha256": "6a2397cb06fe96f178b901d34204be29783e0d8e1ef742d45d4b1e5688249c73",
-  "size": 129712,
-  "onchain_sha256": "f88983ea398e459a71a4f64a86a0e5cb2ff7d71b34270527653afb7fb39babc2",
+  "sha256": "2442e8a8e0b8e65a64ebfd83c951d7fe96012f429a74deb9d355500617d76c3f",
+  "size": 129304,
+  "onchain_sha256": "2fc8d9ab82d113da69a961dc1d7219255031143a37f67fe4e5b6a276ac5f830c",
   "onchain_size": 139728,
-  "last_deployed_slot": 460477573,
+  "last_deployed_slot": 468079633,
   "upgrade_authority": "F6qazjHEsMwHowDpLEVbwyJrtczPBecgYtFFTeptz862",
-  "collected_at": "2026-10-24T18:12:22Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/scorch-460477573.so"
+  "collected_at": "2026-11-11T19:43:30Z",
+  "previous_slot": 460477573,
+  "release_tag": "snapshot-2026-11-11",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-11/scorch-468079633.so"
 }
