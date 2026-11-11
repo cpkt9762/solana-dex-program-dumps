@@ -1538,6 +1538,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 468023491,
+          "sha256": "f94e738d4b1c231808bbf8e575ea5abb0fa33909c30ddae570ccc01e8bf3a953",
+          "size": 2120296,
+          "collected_at": "2026-11-11T06:44:03Z",
+          "release_tag": "snapshot-2026-11-11",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-11/jupiter-v6-468023491.so"
+        },
+        {
           "last_deployed_slot": 462802085,
           "sha256": "03c1327f06030312b3a2f8bc8d2272c65de37fe0d103a71d58d75d66358b17e9",
           "size": 2047544,
@@ -1915,6 +1923,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 467876889,
+          "sha256": "29ee89290d93bbd45e8bf481839441dca37b50364e8348763c9a04110de93d73",
+          "size": 162584,
+          "collected_at": "2026-11-11T06:44:16Z",
+          "release_tag": "snapshot-2026-11-11",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-11/0x-settler-467876889.so"
+        },
         {
           "last_deployed_slot": 465314494,
           "sha256": "84598934141cabf2eed01c03646b9ccdcc25aba6b31f12202ce80d0eb5499e84",

@@ -1,0 +1,16 @@
+{
+  "name": "0x-settler",
+  "program_id": "Sett1erwx2eqT5A8uvu8GBxDFT2W5TNnhirL7hLmb8m",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "9euj8wLfhHwoF1DUhFRgoc1D7ugYueSVcCMT6bPymsdd",
+  "sha256": "84598934141cabf2eed01c03646b9ccdcc25aba6b31f12202ce80d0eb5499e84",
+  "size": 161872,
+  "onchain_sha256": "526d01bb4457728f24b03ac3dc782934ce5afb6e3577c747e8937a63477c14f3",
+  "onchain_size": 351936,
+  "last_deployed_slot": 465314494,
+  "upgrade_authority": "ppPD9K2cD4et1qrpSBm3cHzemc1TzmykwE8hUsFgivq",
+  "collected_at": "2026-11-04T19:54:04Z",
+  "previous_slot": 463354758,
+  "release_tag": "snapshot-2026-11-04",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-04/0x-settler-465314494.so"
+}
