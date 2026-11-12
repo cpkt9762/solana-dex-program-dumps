@@ -3,14 +3,14 @@
   "program_id": "MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "G92J4ZFggKZ9LbsQ2zBpajRvRto7ed7uRuJJqWsX4BhJ",
-  "sha256": "31ac04c9159fa7090430759ec47e13f6a901cd708464656131be2addb5c36996",
-  "size": 360232,
-  "onchain_sha256": "32eb0eef868de71dd3a05e7e41d7638c2a49a75cad05dd546a33d3cde2d1efda",
+  "sha256": "138cbf98383b7070afb2841b2e29cd86867cbbd99a5f899674c6a5385d0d36c8",
+  "size": 360400,
+  "onchain_sha256": "ca1299a13394a7bcc4639b2a4c45333ab57181f273fedbf5831373287315bd27",
   "onchain_size": 486624,
-  "last_deployed_slot": 459237697,
+  "last_deployed_slot": 468598282,
   "upgrade_authority": "CDFU8tEWsVU2ZMiek57Sgk3Huha2yBNcSHLAts3V3Cbf",
-  "collected_at": "2026-10-24T18:08:40Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/manifest-459237697.so"
+  "collected_at": "2026-11-12T20:06:19Z",
+  "previous_slot": 459237697,
+  "release_tag": "snapshot-2026-11-12",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-12/manifest-468598282.so"
 }

@@ -227,6 +227,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 468598282,
+          "sha256": "138cbf98383b7070afb2841b2e29cd86867cbbd99a5f899674c6a5385d0d36c8",
+          "size": 360400,
+          "collected_at": "2026-11-12T20:06:19Z",
+          "release_tag": "snapshot-2026-11-12",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-12/manifest-468598282.so"
+        },
+        {
           "last_deployed_slot": 459237697,
           "sha256": "31ac04c9159fa7090430759ec47e13f6a901cd708464656131be2addb5c36996",
           "size": 360232,
@@ -1715,6 +1723,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 468646007,
+          "sha256": "53bf872e4aef4571bdd8ee1cd6d7da84b700b736509cca64c9521e3ecb921226",
+          "size": 2815440,
+          "collected_at": "2026-11-12T20:07:37Z",
+          "release_tag": "snapshot-2026-11-12",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-12/dflow-aggregator-v4-468646007.so"
+        },
         {
           "last_deployed_slot": 467533307,
           "sha256": "d2d66df0c8e3f5f7d33b2df3d4931055c017f992883f1b81b54f18db0c5bf145",
