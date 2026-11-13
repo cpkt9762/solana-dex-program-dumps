@@ -151,6 +151,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 468782174,
+          "sha256": "ea4e658199aba1f7d02d9db0e8ade226f99e618f96ffd66f4b7901dbafb97f58",
+          "size": 1428872,
+          "collected_at": "2026-11-13T06:55:40Z",
+          "release_tag": "snapshot-2026-11-13",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-13/meteora-damm-v1-468782174.so"
+        },
+        {
           "last_deployed_slot": 457247107,
           "sha256": "f4f830919517d0d452faad436ace949507759b4bf08120709ecd71858beec6b1",
           "size": 1429984,
@@ -2033,6 +2041,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 468703985,
+          "sha256": "ea9b747747b3d71478fbc8397d7c752e04bb69ce5a929cf871099c049313a674",
+          "size": 203456,
+          "collected_at": "2026-11-13T06:56:51Z",
+          "release_tag": "snapshot-2026-11-13",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-13/autobahn-executor-468703985.so"
+        },
         {
           "last_deployed_slot": 463426983,
           "sha256": "3261daf0364804f97b54c43a83a8c661af5d6071757f73a4282ec9be1ac0fe99",
