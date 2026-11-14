@@ -1424,6 +1424,14 @@
       "reference": "https://solscan.io/account/HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
       "versions": [
         {
+          "last_deployed_slot": 469256584,
+          "sha256": "d89b1b5db292cc2471d804aca0e329a132f3828d654bd0c52ee4bf69e9be79bf",
+          "size": 306960,
+          "collected_at": "2026-11-14T18:16:40Z",
+          "release_tag": "snapshot-2026-11-14",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-14/obsidian-469256584.so"
+        },
+        {
           "last_deployed_slot": 468080890,
           "sha256": "29bf52dc16a841d6ba0fe01fc51c63e0481bcf955df7314b0091a210f8cc0254",
           "size": 314784,
