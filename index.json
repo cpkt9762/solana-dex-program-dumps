@@ -528,6 +528,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 469055660,
+          "sha256": "0630a8108569c1c7a5b833c6e11276ebac03c801c495b1685fcfac99bf865cc5",
+          "size": 1936536,
+          "collected_at": "2026-11-14T06:41:52Z",
+          "release_tag": "snapshot-2026-11-14",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-14/pump-fun-469055660.so"
+        },
+        {
           "last_deployed_slot": 458921440,
           "sha256": "05249b60f8ddf02a53d0f8a43980fde40cce33f73526355b4ef08e292279819f",
           "size": 1934800,
