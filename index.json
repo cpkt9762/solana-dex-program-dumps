@@ -1440,6 +1440,14 @@
       "reference": "https://solscan.io/account/HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
       "versions": [
         {
+          "last_deployed_slot": 470013056,
+          "sha256": "d57635bc0efcd8efd40f888f772e98dfcf86ea92663fd571d55c0566eb5f0141",
+          "size": 307864,
+          "collected_at": "2026-11-16T06:46:16Z",
+          "release_tag": "snapshot-2026-11-16",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/obsidian-470013056.so"
+        },
+        {
           "last_deployed_slot": 469256584,
           "sha256": "d89b1b5db292cc2471d804aca0e329a132f3828d654bd0c52ee4bf69e9be79bf",
           "size": 306960,
@@ -2154,6 +2162,14 @@
       "website": "https://bananagun.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 469862816,
+          "sha256": "1642f18fef95ec15de4a1a655e830d49f852416309b9aabe952aa4225dbfaf95",
+          "size": 1229680,
+          "collected_at": "2026-11-16T06:46:37Z",
+          "release_tag": "snapshot-2026-11-16",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/banana-gun-router-469862816.so"
+        },
         {
           "last_deployed_slot": 469046743,
           "sha256": "1642f18fef95ec15de4a1a655e830d49f852416309b9aabe952aa4225dbfaf95",

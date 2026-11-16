@@ -3,14 +3,14 @@
   "program_id": "HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "6mcBm5FaVN41Mah1owk5zARZHWW9p3GhbRms9vPGCvVC",
-  "sha256": "d89b1b5db292cc2471d804aca0e329a132f3828d654bd0c52ee4bf69e9be79bf",
-  "size": 306960,
-  "onchain_sha256": "4e1aeef58cb92de1909230766347eb4c5f50e912aeebdc031139cc771055472e",
+  "sha256": "d57635bc0efcd8efd40f888f772e98dfcf86ea92663fd571d55c0566eb5f0141",
+  "size": 307864,
+  "onchain_sha256": "7fa6d8cfbb331e61b3cd4084f44822c1e42b0829c25b6cc9e9c2cf343d143876",
   "onchain_size": 318120,
-  "last_deployed_slot": 469256584,
+  "last_deployed_slot": 470013056,
   "upgrade_authority": "6iqLgPtKrpmJaXrAU8HmmcEWk9FVqsTZ2GF3eKD39xew",
-  "collected_at": "2026-11-14T18:16:40Z",
-  "previous_slot": 468080890,
-  "release_tag": "snapshot-2026-11-14",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-14/obsidian-469256584.so"
+  "collected_at": "2026-11-16T06:46:16Z",
+  "previous_slot": 469256584,
+  "release_tag": "snapshot-2026-11-16",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/obsidian-470013056.so"
 }

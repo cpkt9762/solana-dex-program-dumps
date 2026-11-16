@@ -7,10 +7,10 @@
   "size": 1229680,
   "onchain_sha256": "46e78204f064c9062cb031b5586148917748d693041f7ab96f1d32451023d35d",
   "onchain_size": 1526896,
-  "last_deployed_slot": 469046743,
+  "last_deployed_slot": 469862816,
   "upgrade_authority": "ETUvMNMgYPBUQsrJ9Esopwn7nrVva4vG8fNcZJfBCEcd",
-  "collected_at": "2026-11-13T19:52:48Z",
-  "previous_slot": 466119752,
-  "release_tag": "snapshot-2026-11-13",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-13/banana-gun-router-469046743.so"
+  "collected_at": "2026-11-16T06:46:37Z",
+  "previous_slot": 469046743,
+  "release_tag": "snapshot-2026-11-16",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/banana-gun-router-469862816.so"
 }
