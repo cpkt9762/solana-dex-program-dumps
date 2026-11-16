@@ -1618,6 +1618,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 470226883,
+          "sha256": "bcd369e5dd7502294a98d71110fa12e4aa06659ff860ae7a0a56c4d2bd795f09",
+          "size": 2118824,
+          "collected_at": "2026-11-16T22:20:19Z",
+          "release_tag": "snapshot-2026-11-16",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/jupiter-v6-470226883.so"
+        },
+        {
           "last_deployed_slot": 468023491,
           "sha256": "f94e738d4b1c231808bbf8e575ea5abb0fa33909c30ddae570ccc01e8bf3a953",
           "size": 2120296,
@@ -1771,6 +1779,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 470244168,
+          "sha256": "874a9dda52bf28135f33bc0b9cc02ccc84be3d358a086b41bd2cc9d21e12a195",
+          "size": 3000056,
+          "collected_at": "2026-11-16T22:20:42Z",
+          "release_tag": "snapshot-2026-11-16",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/dflow-aggregator-v4-470244168.so"
+        },
         {
           "last_deployed_slot": 469017374,
           "sha256": "61cec2b8670d77f69656965bf1fa385eb8bbea74ceb026af737fa045c17807cc",
@@ -2162,6 +2178,14 @@
       "website": "https://bananagun.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 470181142,
+          "sha256": "8195a1f77ba4dcddad0e18c78c3ef82392cdf80828884be4baa9c755920928a4",
+          "size": 1265136,
+          "collected_at": "2026-11-16T22:21:25Z",
+          "release_tag": "snapshot-2026-11-16",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-16/banana-gun-router-470181142.so"
+        },
         {
           "last_deployed_slot": 469862816,
           "sha256": "1642f18fef95ec15de4a1a655e830d49f852416309b9aabe952aa4225dbfaf95",
