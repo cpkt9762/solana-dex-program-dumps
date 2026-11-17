@@ -685,6 +685,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 470572333,
+          "sha256": "7eea2156618ecbf1e47c0839716db2edc245ce3d12036789032a34c367554316",
+          "size": 702264,
+          "collected_at": "2026-11-17T21:04:23Z",
+          "release_tag": "snapshot-2026-11-17",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-17/humidifi-470572333.so"
+        },
+        {
           "last_deployed_slot": 467404880,
           "sha256": "5a2d2d32f539e65f7eaeead928d3218272722c340aaa6f378db042b9015f6637",
           "size": 702176,
@@ -2016,6 +2024,14 @@
       "website": "https://liquidmesh.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 470517967,
+          "sha256": "32c95cb1c72c96486c14dd4790ca75e0fbe6ac8567f9b685d3784fec69740f86",
+          "size": 1158256,
+          "collected_at": "2026-11-17T21:05:11Z",
+          "release_tag": "snapshot-2026-11-17",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-17/liquidmesh-router-470517967.so"
+        },
         {
           "last_deployed_slot": 462359193,
           "sha256": "32c95cb1c72c96486c14dd4790ca75e0fbe6ac8567f9b685d3784fec69740f86",

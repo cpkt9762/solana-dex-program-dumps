@@ -5,12 +5,12 @@
   "program_data_address": "BbNg33EhQ4RcJ2KVmvt6No9uvQmtCS6NfjWKsK1GEBsC",
   "sha256": "32c95cb1c72c96486c14dd4790ca75e0fbe6ac8567f9b685d3784fec69740f86",
   "size": 1158256,
-  "onchain_sha256": "32c95cb1c72c96486c14dd4790ca75e0fbe6ac8567f9b685d3784fec69740f86",
-  "onchain_size": 1158256,
-  "last_deployed_slot": 462359193,
+  "onchain_sha256": "4fb8cd39b2b85d95fbd1b0051e1a929fadaca7972a64738baff4e361530bd851",
+  "onchain_size": 1188256,
+  "last_deployed_slot": 470517967,
   "upgrade_authority": "G5YwUcyR9VXipwdRbWeno6Fr12oDEveLLsHrcKCPirVM",
-  "collected_at": "2026-10-28T07:53:56Z",
-  "previous_slot": 459513437,
-  "release_tag": "snapshot-2026-10-28",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-28/liquidmesh-router-462359193.so"
+  "collected_at": "2026-11-17T21:05:11Z",
+  "previous_slot": 462359193,
+  "release_tag": "snapshot-2026-11-17",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-17/liquidmesh-router-470517967.so"
 }

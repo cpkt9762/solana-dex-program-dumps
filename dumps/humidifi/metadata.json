@@ -3,14 +3,14 @@
   "program_id": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "G9S64i58RRWJA28vZiNhnP56Ux4Ef7hfMgHNREnZZSom",
-  "sha256": "5a2d2d32f539e65f7eaeead928d3218272722c340aaa6f378db042b9015f6637",
-  "size": 702176,
-  "onchain_sha256": "c2f942e200296fe749293c432d694c67d09d64473a63ee3b37e290062c22963e",
+  "sha256": "7eea2156618ecbf1e47c0839716db2edc245ce3d12036789032a34c367554316",
+  "size": 702264,
+  "onchain_sha256": "433bdfe7e9b6dea7ea4ea263f9dad7735cf75a6af7c05fde5bed0e9e402d3f62",
   "onchain_size": 712576,
-  "last_deployed_slot": 467404880,
+  "last_deployed_slot": 470572333,
   "upgrade_authority": "BYfBnGhT3oBnDAfMojHTQMzYBjrEL9W6hcrdrWMmuY2z",
-  "collected_at": "2026-11-09T22:30:00Z",
-  "previous_slot": 465508612,
-  "release_tag": "snapshot-2026-11-09",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-09/humidifi-467404880.so"
+  "collected_at": "2026-11-17T21:04:23Z",
+  "previous_slot": 467404880,
+  "release_tag": "snapshot-2026-11-17",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-17/humidifi-470572333.so"
 }
