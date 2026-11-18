@@ -1243,6 +1243,14 @@
       "reference": "https://defillama.com/protocol/zerofi",
       "versions": [
         {
+          "last_deployed_slot": 470784727,
+          "sha256": "4bb0e7919413b8a0103d2a2ae5e8814ac3115bd3e7910ecfe3e6302cbb8bd7da",
+          "size": 388608,
+          "collected_at": "2026-11-18T07:41:50Z",
+          "release_tag": "snapshot-2026-11-18",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-18/zerofi-470784727.so"
+        },
+        {
           "last_deployed_slot": 464575172,
           "sha256": "ad8c82508145bb807a6711bed591a4c416dde590686efc1576c5f6dd36100faa",
           "size": 384848,
