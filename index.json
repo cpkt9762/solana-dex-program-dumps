@@ -1286,6 +1286,14 @@
       "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
         {
+          "last_deployed_slot": 470982720,
+          "sha256": "d643676332c398aff636db6b460817ab2223de9fd080eb5e4daf13dd0cdcd140",
+          "size": 229600,
+          "collected_at": "2026-11-18T20:42:11Z",
+          "release_tag": "snapshot-2026-11-18",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-18/bisonfi-470982720.so"
+        },
+        {
           "last_deployed_slot": 464563291,
           "sha256": "1277d92c7f159ffb18b9d77b409e7260acff53a3f0679a76e9496be9563f3008",
           "size": 229808,
@@ -1533,6 +1541,14 @@
       "website": null,
       "reference": "https://solscan.io/account/9VX8EKBg6vM6tA68xaDsPkbrx26XConZjkQmhVApUptc",
       "versions": [
+        {
+          "last_deployed_slot": 470963587,
+          "sha256": "f882af67fc130869f8f77d12c7638e2b06a0dcd7f7c48807f5b783511962f235",
+          "size": 210464,
+          "collected_at": "2026-11-18T20:42:24Z",
+          "release_tag": "snapshot-2026-11-18",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-18/taurusfi-470963587.so"
+        },
         {
           "last_deployed_slot": 459497904,
           "sha256": "aca1671bfdd54fe1de2b7afb977c7687ef14ff3ecbe58a718e8e1ad1a9a50044",

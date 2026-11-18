@@ -3,14 +3,14 @@
   "program_id": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "42snJ7ip4zKKsip3EtaMoBo8wzoRsQJSzgUSFXAVJFfG",
-  "sha256": "1277d92c7f159ffb18b9d77b409e7260acff53a3f0679a76e9496be9563f3008",
-  "size": 229808,
-  "onchain_sha256": "7eab5123b4424b89d88b8914bc48e9288f494c4cc3ff4757c2da466f5949d668",
+  "sha256": "d643676332c398aff636db6b460817ab2223de9fd080eb5e4daf13dd0cdcd140",
+  "size": 229600,
+  "onchain_sha256": "2528876a5a749f4dfa55bc8f48b62faeee419db8fe7fe6705474d4d604a6ccf5",
   "onchain_size": 252552,
-  "last_deployed_slot": 464563291,
+  "last_deployed_slot": 470982720,
   "upgrade_authority": "6dDjBZdpafRKe7WuVHYTF1HphW1BWiKqioMD5eBGYipS",
-  "collected_at": "2026-11-03T08:59:08Z",
-  "previous_slot": 462921807,
-  "release_tag": "snapshot-2026-11-03",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-03/bisonfi-464563291.so"
+  "collected_at": "2026-11-18T20:42:11Z",
+  "previous_slot": 464563291,
+  "release_tag": "snapshot-2026-11-18",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-18/bisonfi-470982720.so"
 }
