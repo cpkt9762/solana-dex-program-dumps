@@ -3,14 +3,14 @@
   "program_id": "Sett1erwx2eqT5A8uvu8GBxDFT2W5TNnhirL7hLmb8m",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "9euj8wLfhHwoF1DUhFRgoc1D7ugYueSVcCMT6bPymsdd",
-  "sha256": "29ee89290d93bbd45e8bf481839441dca37b50364e8348763c9a04110de93d73",
-  "size": 162584,
-  "onchain_sha256": "b5d99f4ffb23ee738a0734664de6ebb51926a707d8ff61862f8964144b970a12",
+  "sha256": "13c3d492cd145b6f40a58891c1fb0121737db378c0eefdad9dbe6c7d3ba44085",
+  "size": 164616,
+  "onchain_sha256": "0da157cf91a84e447d008fe4ff80a6e67f8a05cab55a980c9dabd78a6775a590",
   "onchain_size": 351936,
-  "last_deployed_slot": 467876889,
+  "last_deployed_slot": 471377041,
   "upgrade_authority": "ppPD9K2cD4et1qrpSBm3cHzemc1TzmykwE8hUsFgivq",
-  "collected_at": "2026-11-11T06:44:16Z",
-  "previous_slot": 465314494,
-  "release_tag": "snapshot-2026-11-11",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-11/0x-settler-467876889.so"
+  "collected_at": "2026-11-19T20:48:21Z",
+  "previous_slot": 467876889,
+  "release_tag": "snapshot-2026-11-19",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-19/0x-settler-471377041.so"
 }

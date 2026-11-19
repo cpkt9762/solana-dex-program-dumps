@@ -1013,6 +1013,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 471391543,
+          "sha256": "44ef6ba373be0003cc1c1e3c4b93c077723647893b99f5de6eacd4c869c5eab1",
+          "size": 595440,
+          "collected_at": "2026-11-19T20:47:48Z",
+          "release_tag": "snapshot-2026-11-19",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-19/stabble-stable-471391543.so"
+        },
+        {
           "last_deployed_slot": 395407721,
           "sha256": "f878f7aa22ff190348863b4316e7facda04b2f1078f317c4cdc1818a1ce7c526",
           "size": 561632,
@@ -1031,6 +1039,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 471391464,
+          "sha256": "729ca2c3fbfe4c1f4e878533332cc25000b321dd7456499caa6ccb07bbf63315",
+          "size": 526720,
+          "collected_at": "2026-11-19T20:47:53Z",
+          "release_tag": "snapshot-2026-11-19",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-19/stabble-weighted-471391464.so"
+        },
         {
           "last_deployed_slot": 460237949,
           "sha256": "fd4703de8422f6b828c8b63311299ea94a285c281c1b8bd4189e6948064b923c",
@@ -2091,6 +2107,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 471377041,
+          "sha256": "13c3d492cd145b6f40a58891c1fb0121737db378c0eefdad9dbe6c7d3ba44085",
+          "size": 164616,
+          "collected_at": "2026-11-19T20:48:21Z",
+          "release_tag": "snapshot-2026-11-19",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-19/0x-settler-471377041.so"
+        },
         {
           "last_deployed_slot": 467876889,
           "sha256": "29ee89290d93bbd45e8bf481839441dca37b50364e8348763c9a04110de93d73",

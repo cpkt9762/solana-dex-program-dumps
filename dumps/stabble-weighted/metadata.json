@@ -3,14 +3,14 @@
   "program_id": "swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "4FcCErmtQ69JaMgDMH7qCezVyEN5yNtDr7vBcceWQFHp",
-  "sha256": "fd4703de8422f6b828c8b63311299ea94a285c281c1b8bd4189e6948064b923c",
-  "size": 482496,
-  "onchain_sha256": "880b1ba903f20572b7002227723c282b644f39011808e78bce607e6bf3693cd0",
+  "sha256": "729ca2c3fbfe4c1f4e878533332cc25000b321dd7456499caa6ccb07bbf63315",
+  "size": 526720,
+  "onchain_sha256": "996d3fe82a1667412f79fe8a8764c724648c72c76795c0d34c09345dc823abac",
   "onchain_size": 1246000,
-  "last_deployed_slot": 460237949,
+  "last_deployed_slot": 471391464,
   "upgrade_authority": "9rHUPE2ng7stBuaeAM7heiVHLLGPAqGjYKQ3BBUWxKSP",
-  "collected_at": "2026-10-24T18:11:20Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/stabble-weighted-460237949.so"
+  "collected_at": "2026-11-19T20:47:53Z",
+  "previous_slot": 460237949,
+  "release_tag": "snapshot-2026-11-19",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-19/stabble-weighted-471391464.so"
 }
