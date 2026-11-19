@@ -1887,6 +1887,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 471185003,
+          "sha256": "efaa4a8851c1019ca2d93dc6ebf3da24755b975959cd3cb202c5b0dcab2654ad",
+          "size": 3279712,
+          "collected_at": "2026-11-19T07:38:39Z",
+          "release_tag": "snapshot-2026-11-19",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-19/titan-471185003.so"
+        },
+        {
           "last_deployed_slot": 468205845,
           "sha256": "4e0b18781f989fe1bfeec60f5d7b4d262e9c8e361d56bbb7ce6b9976ecee9b45",
           "size": 2756400,
