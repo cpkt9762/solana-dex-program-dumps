@@ -1828,6 +1828,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 471571067,
+          "sha256": "029f69d0080dde893a41cbdae4194f6aa78e10a7f3774e6fd3d6c43766d12a77",
+          "size": 3020064,
+          "collected_at": "2026-11-20T07:29:42Z",
+          "release_tag": "snapshot-2026-11-20",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-20/dflow-aggregator-v4-471571067.so"
+        },
+        {
           "last_deployed_slot": 470244168,
           "sha256": "874a9dda52bf28135f33bc0b9cc02ccc84be3d358a086b41bd2cc9d21e12a195",
           "size": 3000056,
