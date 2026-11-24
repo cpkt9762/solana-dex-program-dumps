@@ -1326,6 +1326,14 @@
       "reference": "https://defillama.com/protocol/bisonfi",
       "versions": [
         {
+          "last_deployed_slot": 473502688,
+          "sha256": "a6dc13be0f93d291eac98b23ec711e266b4919c6da052cc86cabc3fefa20aac5",
+          "size": 232464,
+          "collected_at": "2026-11-24T22:36:20Z",
+          "release_tag": "snapshot-2026-11-24",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/bisonfi-473502688.so"
+        },
+        {
           "last_deployed_slot": 470982720,
           "sha256": "d643676332c398aff636db6b460817ab2223de9fd080eb5e4daf13dd0cdcd140",
           "size": 229600,
@@ -1951,6 +1959,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 473476267,
+          "sha256": "68fc765cdf4005c560db3ba9db453061fd381b43c3049991423c50b80ddeee43",
+          "size": 3324616,
+          "collected_at": "2026-11-24T22:36:39Z",
+          "release_tag": "snapshot-2026-11-24",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/titan-473476267.so"
+        },
+        {
           "last_deployed_slot": 471185003,
           "sha256": "efaa4a8851c1019ca2d93dc6ebf3da24755b975959cd3cb202c5b0dcab2654ad",
           "size": 3279712,
@@ -2298,6 +2314,14 @@
       "website": "https://bananagun.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 473453054,
+          "sha256": "0347c225dd6941f4112b0bbbd25433f3f6c1a2f451118e845d9ae01305be0006",
+          "size": 1301872,
+          "collected_at": "2026-11-24T22:36:51Z",
+          "release_tag": "snapshot-2026-11-24",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/banana-gun-router-473453054.so"
+        },
         {
           "last_deployed_slot": 470181142,
           "sha256": "8195a1f77ba4dcddad0e18c78c3ef82392cdf80828884be4baa9c755920928a4",
