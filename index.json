@@ -319,6 +319,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 473252785,
+          "sha256": "22f2309b6211d98d982d76cae4b0295d6afe119523de58f4d86a3a35854aa135",
+          "size": 1495120,
+          "collected_at": "2026-11-24T10:04:28Z",
+          "release_tag": "snapshot-2026-11-24",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/byreal-473252785.so"
+        },
+        {
           "last_deployed_slot": 438767271,
           "sha256": "1dc2dd8b6fcdd01ed9818333a9fb02aac19a1eb06fb74ec1db83bdb7dd5fce16",
           "size": 1488392,
@@ -1800,6 +1808,14 @@
       "website": null,
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 473200129,
+          "sha256": "66e73140b12f6e3d505d94c5c3e9e5355afabc8feea76231a3366dda6afe041a",
+          "size": 3050520,
+          "collected_at": "2026-11-24T10:05:25Z",
+          "release_tag": "snapshot-2026-11-24",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/okx-dex-router-v3-473200129.so"
+        },
         {
           "last_deployed_slot": 467648565,
           "sha256": "1cc114679cdb7f67b1d0fbad9a55f9725cb07c6b5220dddc74a85b129f20a4ec",

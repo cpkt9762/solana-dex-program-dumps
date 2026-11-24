@@ -3,14 +3,14 @@
   "program_id": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "6YDesqidNpd8H4pWThk3yzT1aYaHLK4XYDXJcwbgMxdq",
-  "sha256": "1dc2dd8b6fcdd01ed9818333a9fb02aac19a1eb06fb74ec1db83bdb7dd5fce16",
-  "size": 1488392,
-  "onchain_sha256": "47e871597ac7c6750991722744a2fca235e6fc10448eb705adce10e7261c660c",
+  "sha256": "22f2309b6211d98d982d76cae4b0295d6afe119523de58f4d86a3a35854aa135",
+  "size": 1495120,
+  "onchain_sha256": "7cc295fb8c9b363a353d4b99bd41d2cbe43e31562ab59a63522d3348555406d5",
   "onchain_size": 1498048,
-  "last_deployed_slot": 438767271,
+  "last_deployed_slot": 473252785,
   "upgrade_authority": "EmEa9b4yGffixdeFQ9zoyB3V5D9PZAbcE79mfwXb3bhs",
-  "collected_at": "2026-10-24T18:08:56Z",
-  "previous_slot": null,
-  "release_tag": "snapshot-2026-10-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-10-24/byreal-438767271.so"
+  "collected_at": "2026-11-24T10:04:28Z",
+  "previous_slot": 438767271,
+  "release_tag": "snapshot-2026-11-24",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/byreal-473252785.so"
 }
