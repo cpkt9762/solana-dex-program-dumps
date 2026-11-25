@@ -2172,6 +2172,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 473772026,
+          "sha256": "6835a0b1906fc5de90b17d05c0e321ccc95b6a708bfb1fc8ab7607992aa0094f",
+          "size": 158160,
+          "collected_at": "2026-11-25T21:50:41Z",
+          "release_tag": "snapshot-2026-11-25",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-25/0x-settler-473772026.so"
+        },
+        {
           "last_deployed_slot": 471377041,
           "sha256": "13c3d492cd145b6f40a58891c1fb0121737db378c0eefdad9dbe6c7d3ba44085",
           "size": 164616,
