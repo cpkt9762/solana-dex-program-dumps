@@ -365,6 +365,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 474039366,
+          "sha256": "5a3830088166de5bf3093ffe927dd181225c3f54885be1c548737eca6e6989b6",
+          "size": 715664,
+          "collected_at": "2026-11-26T08:35:19Z",
+          "release_tag": "snapshot-2026-11-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-26/invariant-474039366.so"
+        },
+        {
           "last_deployed_slot": 343244916,
           "sha256": "b5149b0ce7755fbd3b08bbd145fda2d5e49b954d1ff25606600dd65141c42183",
           "size": 733720,
