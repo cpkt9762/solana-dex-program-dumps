@@ -3,14 +3,14 @@
   "program_id": "BANANAjs7FJiPQqJTGFzkZJndT9o7UmKiYYGaJz6frGu",
   "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
   "program_data_address": "6gNHNxTZFRNip1rjfJZNLPs5aoQzJJxN6cQHEV8weT8X",
-  "sha256": "0347c225dd6941f4112b0bbbd25433f3f6c1a2f451118e845d9ae01305be0006",
-  "size": 1301872,
-  "onchain_sha256": "8a5d3691fba79c9ed98ab8fd56c864b0a4746999f9b019606d4dead49936d6ba",
+  "sha256": "e8435a30218aabe75400e6b543eb4b3e9fae10aa8edd19c29a09f2175d76dd2f",
+  "size": 1308056,
+  "onchain_sha256": "45260c36009e673b8555df770a0a44ea8aeda2478be2b2bb194e3517d1914337",
   "onchain_size": 1526896,
-  "last_deployed_slot": 473453054,
+  "last_deployed_slot": 474246722,
   "upgrade_authority": "ETUvMNMgYPBUQsrJ9Esopwn7nrVva4vG8fNcZJfBCEcd",
-  "collected_at": "2026-11-24T22:36:51Z",
-  "previous_slot": 470181142,
-  "release_tag": "snapshot-2026-11-24",
-  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-24/banana-gun-router-473453054.so"
+  "collected_at": "2026-11-26T21:43:37Z",
+  "previous_slot": 473453054,
+  "release_tag": "snapshot-2026-11-26",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-26/banana-gun-router-474246722.so"
 }

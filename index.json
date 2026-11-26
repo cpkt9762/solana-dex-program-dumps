@@ -1493,6 +1493,14 @@
       "reference": "https://defillama.com/protocol/scorch",
       "versions": [
         {
+          "last_deployed_slot": 474206609,
+          "sha256": "2c40b00959ccbabbda7e4758b215a810d8d507db6fc2a9e0d89c0b3931915354",
+          "size": 130992,
+          "collected_at": "2026-11-26T21:43:15Z",
+          "release_tag": "snapshot-2026-11-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-26/scorch-474206609.so"
+        },
+        {
           "last_deployed_slot": 468079633,
           "sha256": "2442e8a8e0b8e65a64ebfd83c951d7fe96012f429a74deb9d355500617d76c3f",
           "size": 129304,
@@ -2330,6 +2338,14 @@
       "website": "https://bananagun.io/",
       "reference": null,
       "versions": [
+        {
+          "last_deployed_slot": 474246722,
+          "sha256": "e8435a30218aabe75400e6b543eb4b3e9fae10aa8edd19c29a09f2175d76dd2f",
+          "size": 1308056,
+          "collected_at": "2026-11-26T21:43:37Z",
+          "release_tag": "snapshot-2026-11-26",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-26/banana-gun-router-474246722.so"
+        },
         {
           "last_deployed_slot": 473453054,
           "sha256": "0347c225dd6941f4112b0bbbd25433f3f6c1a2f451118e845d9ae01305be0006",
