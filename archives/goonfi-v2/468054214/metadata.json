@@ -1,0 +1,16 @@
+{
+  "name": "goonfi-v2",
+  "program_id": "goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE",
+  "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "program_data_address": "124gUYwjVnJQ4sJsFug9gHPzPLEtwCbAQC5LkbaDgx9s",
+  "sha256": "a8fbb2328bededd4800ced8698319179e7b9773a973897542510007cacfdce56",
+  "size": 284264,
+  "onchain_sha256": "f0cbaf8e4e0959eea523b8005ee3ecdde42125dcf0dae1c447f322849cd1eaea",
+  "onchain_size": 292384,
+  "last_deployed_slot": 468054214,
+  "upgrade_authority": "BBvfpKqYovhzEjS4Ch1xZXFdxkaoUiXsujR9kgN1t8iR",
+  "collected_at": "2026-11-11T19:43:24Z",
+  "previous_slot": 466123703,
+  "release_tag": "snapshot-2026-11-11",
+  "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-11/goonfi-v2-468054214.so"
+}

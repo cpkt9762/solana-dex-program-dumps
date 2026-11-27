@@ -1240,6 +1240,14 @@
       "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
         {
+          "last_deployed_slot": 474484401,
+          "sha256": "a8fbb2328bededd4800ced8698319179e7b9773a973897542510007cacfdce56",
+          "size": 284264,
+          "collected_at": "2026-11-27T08:47:34Z",
+          "release_tag": "snapshot-2026-11-27",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-27/goonfi-v2-474484401.so"
+        },
+        {
           "last_deployed_slot": 468054214,
           "sha256": "a8fbb2328bededd4800ced8698319179e7b9773a973897542510007cacfdce56",
           "size": 284264,
