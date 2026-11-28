@@ -544,6 +544,14 @@
       "reference": null,
       "versions": [
         {
+          "last_deployed_slot": 474715515,
+          "sha256": "0d3baab02d7549b747b3901281d0d33042dd3a0f0478ca08047a935dec8c4edc",
+          "size": 1955512,
+          "collected_at": "2026-11-28T08:02:19Z",
+          "release_tag": "snapshot-2026-11-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-28/pump-fun-474715515.so"
+        },
+        {
           "last_deployed_slot": 471854454,
           "sha256": "e8a317880a7093be924351f0ab76d2d95e4493a4e329dae2bba23881733bc9d6",
           "size": 1939544,
@@ -1239,6 +1247,14 @@
       "website": null,
       "reference": "https://defillama.com/protocol/goonfi",
       "versions": [
+        {
+          "last_deployed_slot": 474862792,
+          "sha256": "6cf4384153d3ae6bc22f761486bd1db654f6381ee292815a1963d8683390b0d8",
+          "size": 312048,
+          "collected_at": "2026-11-28T08:02:50Z",
+          "release_tag": "snapshot-2026-11-28",
+          "download_url": "https://github.com/cpkt9762/solana-dex-program-dumps/releases/download/snapshot-2026-11-28/goonfi-v2-474862792.so"
+        },
         {
           "last_deployed_slot": 474484401,
           "sha256": "a8fbb2328bededd4800ced8698319179e7b9773a973897542510007cacfdce56",
